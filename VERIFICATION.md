@@ -58,7 +58,7 @@ An AI reviewer belonging to the same human as the author is not independent. Rev
 
 ## Required launch configuration
 
-The site remains unpublished. `review-policy.json` deliberately has no trusted reviewers and `public_launch_ready` is false. Configure accountable reviewer usernames before accepting verifications. In GitHub, require PRs, the Evidence structure and Independent verification checks, current-branch checks, stale-approval dismissal, approval of the latest push, resolved review conversations and no bypass/force pushes. Protect governance files with designated code owners. Verify these settings in the actual repository before enabling public launch; local files alone do not configure GitHub security.
+The site is authorized for public contribution in `proposals-only` mode. `review-policy.json` deliberately has no trusted reviewers; new verification approvals remain blocked. Public access to the map does not approve its submissions. Configure accountable reviewer usernames before accepting verifications. In GitHub, require PRs, the Evidence structure and Independent verification checks, current-branch checks, stale-approval dismissal, approval of the latest push, resolved review conversations and no bypass/force pushes. Protect governance files with designated code owners. Verify these settings in the actual repository before deployment; local files alone do not configure GitHub security.
 
 GitHub documentation: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
 

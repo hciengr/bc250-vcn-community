@@ -44,7 +44,7 @@ The importer checks the target channel, retains message/author IDs, timestamps, 
 
 Public launch instructions are in `PUBLISHING.md`. `ruby package_public.rb` creates a static `_site` artifact; `.github/workflows/pages.yml` publishes it from a standalone repository. Each work card provides a downloadable AI task packet, and a shared issue link when `repository_url` is configured. All packets are also available in `agent-tasks.json`; `AGENTS.md` defines worker evidence and review requirements.
 
-This directory is ready to become its own repository. Initialize Git here, choose a repository destination, and push it. Enable static hosting for the project root if desired. Configure `repository_url` in `data.json`, rebuild, and direct contributors to repository issues/PRs. The issue templates and workflow are included; no repository or public site has been created by this local preparation.
+This directory is ready to become its own repository. Initialize Git here, choose a repository destination, and push it. Enable static hosting for the project root if desired. Configure `repository_url` in `data.json`, rebuild, and direct contributors to repository issues/PRs. The issue templates and workflow are included; the source repository is configured under hciengr and GitHub Actions records website deployment status.
 
 The package includes project notes, the candidate metadata and public evidence references, not proprietary firmware images or a flash/write tool. A license has deliberately not been assigned to existing material; choose one after establishing rights to the content you intend to distribute.
 
@@ -74,4 +74,4 @@ For each pending `upstream/<commit>.json`, inspect changed paths against the pre
 
 ## Verification gate
 
-Read VERIFICATION.md before public launch. New accepted claims and completed tasks require structured, independently reproduced evidence; CI checks actual trusted GitHub review identities. Pending static findings C32–C42 are orange until that review. Historical seeded claims are frozen source findings, not independently reviewed community approvals. `sync_worker.rb` links a worker/human identity to one exact repository snapshot and hash-checks its evidence. Public deployment is blocked by review-policy.json until actual repository protections and trusted reviewers are configured.
+Read VERIFICATION.md before public launch. New accepted claims and completed tasks require structured, independently reproduced evidence; CI checks actual trusted GitHub review identities. Pending static findings C32–C42 are orange until that review. Historical seeded claims are frozen source findings, not independently reviewed community approvals. `sync_worker.rb` links a worker/human identity to one exact repository snapshot and hash-checks its evidence. Public hosting is authorized in proposals-only mode; acceptance of new verified findings remains blocked until trusted reviewers are configured.

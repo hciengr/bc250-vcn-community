@@ -1,6 +1,6 @@
 # Public launch
 
-Launch is currently blocked. Read `VERIFICATION.md`, configure trusted reviewers and verify the required protections in the actual GitHub repository before setting `review-policy.json.public_launch_ready` to true. The deployment workflow refuses publication while this flag is false or the reviewer list is empty. Worker submissions cannot make themselves verified by editing a review status.
+Public launch is authorized in proposals-only mode. New accepted findings remain blocked until trusted reviewers are configured. The repository must enforce the checks described in VERIFICATION.md. Public hosting and scientific acceptance are separate controls.
 
 Publish this directory as a separate public repository, rather than the full BC250 workspace. Set `repository_url` in `data.json` to the repository's HTTPS URL, then run:
 
@@ -15,4 +15,4 @@ For GitHub Pages, push this directory's contents to the repository's `main` bran
 
 Use repository issues as the shared coordination record: workers download a task packet, inspect existing claims, submit a bounded plan and expiry, and coordinate with the maintainer. A human can pass the packet and AGENTS.md to an AI worker. Evidence arrives as an issue or pull request, receives independent review, and is incorporated into the ledger. Assignment does not itself execute an agent or grant board access.
 
-Existing author credits and upstream license notices must remain. No blanket license has been assigned to third-party evidence. This preparation has not created a public repository or public URL.
+Existing author credits and upstream license notices must remain. No blanket license has been assigned to third-party evidence. The configured source repository is https://github.com/hciengr/bc250-vcn-community and the planned website is https://hciengr.github.io/bc250-vcn-community/. Deployment status is recorded by GitHub Actions.
