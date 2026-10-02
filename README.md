@@ -87,4 +87,6 @@ Use Link my AI worker to choose a task, identify its human coordinator, copy tas
 - [daveconde](https://github.com/daveconde): [bc250-vcn-enable](https://github.com/daveconde/bc250-vcn-enable), VCN enablement tooling and investigation.
 - [rw-r-r-0644](https://github.com/rw-r-r-0644): [bc250-smu-unlock](https://github.com/rw-r-r-0644/bc250-smu-unlock), BC250 SMU access and unlock tooling.
 
-Both are recognized contributors as confirmed by hciengr. These links credit their respective projects; individual results retain their own evidence scope and review requirements.
+- [Shalasere](https://github.com/Shalasere): [bc250-vcn-research](https://github.com/Shalasere/bc250-vcn-research), BC250 VCN research, experiments and documentation.
+
+These contributors are recognized as confirmed by hciengr. These links credit their respective projects; individual results retain their own evidence scope and review requirements.

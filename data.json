@@ -1401,6 +1401,14 @@
       "project": "bc250-smu-unlock",
       "contribution": "BC250 SMU access and unlock tooling",
       "recognition": "Contributor confirmed by hciengr"
+    },
+    {
+      "handle": "Shalasere",
+      "profile_url": "https://github.com/Shalasere",
+      "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+      "project": "bc250-vcn-research",
+      "contribution": "BC250 VCN research, experiments and documentation",
+      "recognition": "Contributor confirmed by hciengr"
     }
   ]
 }

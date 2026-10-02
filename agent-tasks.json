@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+  "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
   "tasks": [
     {
       "task": {
@@ -82,9 +82,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -233,9 +241,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -369,9 +385,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -466,9 +490,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -593,9 +625,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -680,9 +720,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -859,9 +907,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1018,9 +1074,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1187,9 +1251,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1343,9 +1415,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1486,9 +1566,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1609,9 +1697,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1708,9 +1804,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1887,9 +1991,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2083,9 +2195,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2253,9 +2373,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2423,9 +2551,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2524,9 +2660,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2680,9 +2824,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2830,9 +2982,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2945,9 +3105,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -3124,9 +3292,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -3214,9 +3390,17 @@
           "project": "bc250-smu-unlock",
           "contribution": "BC250 SMU access and unlock tooling",
           "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "Shalasere",
+          "profile_url": "https://github.com/Shalasere",
+          "project_url": "https://github.com/Shalasere/bc250-vcn-research",
+          "project": "bc250-vcn-research",
+          "contribution": "BC250 VCN research, experiments and documentation",
+          "recognition": "Contributor confirmed by hciengr"
         }
       ],
-      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
+      "ledger_sha256": "df26f6454adbb120f5ed96d2e8fbec2fa181b9f6251c8729708b04d93d9d3091",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     }
