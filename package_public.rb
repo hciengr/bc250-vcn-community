@@ -3,7 +3,7 @@ root=__dir__
 dest=File.join(root,'_site')
 FileUtils.rm_rf(dest)
 FileUtils.mkdir_p(dest)
-%w[index.html assets evidence submissions upstream].each do |name|
+%w[index.html map.html assets evidence submissions upstream].each do |name|
  source=File.join(root,name)
  if name=='upstream'
   FileUtils.mkdir_p(File.join(dest,name))

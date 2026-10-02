@@ -4,7 +4,7 @@ A visual research project for connecting firmware authentication, platform acces
 
 ## Open
 
-Open `index.html` directly in a browser. It has no external dependencies, analytics or network calls. A static web host can serve the same directory. `data.json` is the canonical shared state; `assets/data.js` is generated for file-based browsing.
+Open `index.html` for the research entry page or `map.html` for the detailed evidence map. It has no external dependencies, analytics or network calls. A static web host can serve the same directory. `data.json` is the canonical shared state; `assets/data.js` is generated for file-based browsing.
 
 ```sh
 ruby build.rb
@@ -42,7 +42,7 @@ The importer checks the target channel, retains message/author IDs, timestamps, 
 
 ## Publish as a community project
 
-Public launch instructions are in `PUBLISHING.md`. `ruby package_public.rb` creates a static `_site` artifact; `.github/workflows/pages.yml` publishes it from a standalone repository. Each work card provides a downloadable AI task packet, and a shared issue link when `repository_url` is configured. All packets are also available in `agent-tasks.json`; `AGENTS.md` defines worker evidence and review requirements.
+Public launch instructions are in `PUBLISHING.md`. `ruby package_public.rb` creates a static `_site` artifact; `.github/workflows/pages.yml` publishes it from a standalone repository. Each work card opens a copyable task packet in a terminal-style text panel, and a shared issue link when `repository_url` is configured. All packets are also available in `agent-tasks.json`; `AGENTS.md` defines worker evidence and review requirements.
 
 This directory is ready to become its own repository. Initialize Git here, choose a repository destination, and push it. Enable static hosting for the project root if desired. Configure `repository_url` in `data.json`, rebuild, and direct contributors to repository issues/PRs. The issue templates and workflow are included; the source repository is configured under hciengr and GitHub Actions records website deployment status.
 
@@ -50,7 +50,8 @@ The package includes project notes, the candidate metadata and public evidence r
 
 ## Files
 
-- `index.html`, `assets/`: portable dashboard.
+- `index.html`: research entry page.
+- `map.html`, `assets/`: detailed evidence map and guided submission forms.
 - `data.json`: canonical claims, stages, tasks, dependency graph and reviewed report inbox.
 - `build.rb`: validation, browser-data generation and evidence manifest.
 - `import_discord.rb`: offline channel export ingestion.
@@ -75,3 +76,18 @@ For each pending `upstream/<commit>.json`, inspect changed paths against the pre
 ## Verification gate
 
 Read VERIFICATION.md before public launch. New accepted claims and completed tasks require structured, independently reproduced evidence; CI checks actual trusted GitHub review identities. Pending static findings C32–C42 are orange until that review. Historical seeded claims are frozen source findings, not independently reviewed community approvals. `sync_worker.rb` links a worker/human identity to one exact repository snapshot and hash-checks its evidence. Public hosting is authorized in proposals-only mode; acceptance of new verified findings remains blocked until trusted reviewers are configured.
+
+## Guided contributions
+
+Use Submit evidence for a short form that prepares a GitHub issue with the finding, artifact link or attachment reminder, evidence type and ledger identity. Reproduction details can be added before posting or during triage; incomplete intake is never verified automatically. The review handoff clearly distinguishes a draft from a posted issue and provides a copy fallback for long submissions.
+
+Use Link my AI worker to choose a task, identify its human coordinator, copy task-specific instructions, download its snapshot packet and prepare a worker registration issue. Check existing issues before starting. The site supplies instructions and coordination records; contributors run their own AI workers. No API credentials are requested.
+
+## Community contributors
+
+- [daveconde](https://github.com/daveconde): [bc250-vcn-enable](https://github.com/daveconde/bc250-vcn-enable), VCN enablement tooling and investigation.
+- [rw-r-r-0644](https://github.com/rw-r-r-0644): [bc250-smu-unlock](https://github.com/rw-r-r-0644/bc250-smu-unlock), BC250 SMU access and unlock tooling.
+
+- [Shalasere](https://github.com/Shalasere): [bc250-vcn-research](https://github.com/Shalasere/bc250-vcn-research), BC250 VCN research, experiments and documentation.
+
+These contributors are recognized as confirmed by hciengr. These links credit their respective projects; individual results retain their own evidence scope and review requirements.
