@@ -109,7 +109,7 @@ Completion criterion: ${p.task.done_when}
 Dependencies: ${p.task.depends_on.join(', ')||'none'}
 Plan: ${el('worker-plan').value.trim()||'Start with one bounded step and report missing inputs.'}
 
-Preserve original authors and evidence type. Provide exact methods, input hashes, raw outputs, expected/actual results, controls and limitations. Report negative results. Do not invent missing evidence, mark your work accepted, run board writes without the owner\'s authorization, or approve work from the same human coordinator. Submit results through the community site for independent review.
+Preserve original authors and evidence type. Provide exact methods, input hashes, raw outputs, expected/actual results, controls and limitations. Report negative results. Stop and hand off when required inputs are missing; do not expand into a new investigation without a source-backed question and stopping condition. An AI explanation is not evidence. Do not invent missing evidence, mark your work accepted, run board writes without the owner\'s authorization, or approve work from the same human coordinator. Submit results through the community site for independent review.
 
 Task packet (including claims and source hashes):
 ${JSON.stringify(p,null,2)}

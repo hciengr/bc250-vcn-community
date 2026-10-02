@@ -4,7 +4,7 @@ require 'cgi'
 require 'uri'
 root=File.expand_path('..',__dir__)
 Dir.mktmpdir('vcn-browser-') do |temp|
- html=File.read(File.join(root,'index.html')).sub('<head>',"<head><base href=\"file://#{URI::DEFAULT_PARSER.escape(root)}/\">")
+ html=File.read(File.join(root,'map.html')).sub('<head>',"<head><base href=\"file://#{URI::DEFAULT_PARSER.escape(root)}/\">")
  html=html.sub('</body>',"<script>#{File.read(File.join(__dir__,'contributions.js'))}</script></body>")
  path=File.join(temp,'test.html');File.write(path,html)
  dom,err,status=Open3.capture3(ENV.fetch('CHROMIUM','chromium'),'--headless','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--virtual-time-budget=3000','--dump-dom',"file://#{path}")

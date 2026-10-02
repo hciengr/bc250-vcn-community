@@ -4,7 +4,7 @@ A visual research project for connecting firmware authentication, platform acces
 
 ## Open
 
-Open `index.html` directly in a browser. It has no external dependencies, analytics or network calls. A static web host can serve the same directory. `data.json` is the canonical shared state; `assets/data.js` is generated for file-based browsing.
+Open `index.html` for the simple starting page or `map.html` for the detailed evidence map. It has no external dependencies, analytics or network calls. A static web host can serve the same directory. `data.json` is the canonical shared state; `assets/data.js` is generated for file-based browsing.
 
 ```sh
 ruby build.rb
@@ -50,7 +50,8 @@ The package includes project notes, the candidate metadata and public evidence r
 
 ## Files
 
-- `index.html`, `assets/`: portable dashboard.
+- `index.html`: focused contributor starting page.
+- `map.html`, `assets/`: detailed evidence map and guided submission forms.
 - `data.json`: canonical claims, stages, tasks, dependency graph and reviewed report inbox.
 - `build.rb`: validation, browser-data generation and evidence manifest.
 - `import_discord.rb`: offline channel export ingestion.
