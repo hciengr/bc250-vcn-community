@@ -1,0 +1,26 @@
+[
+  {
+    "path": "tools/audit-vcn-load-reset-gate.rb",
+    "sha256": "851fae380723f4de4841c67afaf093c7e8e816cdb5ee89de4aac2dd71dc1bcea"
+  },
+  {
+    "path": "tools/audit-vcn-load-contract.pl",
+    "sha256": "a9ccb1b937a8811c5934462247cb01224fc6700ee3f64473d3bcfd8f9109b6a3"
+  },
+  {
+    "path": "tools/audit-vcn-kdb-provenance.pl",
+    "sha256": "0e6556adb66c9fb4d944cfee7a2806f88c05600a67667c8b146d35b7e2c5566e"
+  },
+  {
+    "path": "ghidra/inputs/psp-p3/t28-payload.bin",
+    "sha256": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9"
+  },
+  {
+    "path": "analysis/reference-sources/vcn/amdgpu_psp.c",
+    "sha256": "4eb9ce8a315de3812a18aa28b412cde9b86749cdf7b9906cf3383f60abdfab7b"
+  },
+  {
+    "path": "exports/vcn-priority-audit/load-reset-functions.asm",
+    "sha256": "47248e97fcb7ad0edd037b80e5e77c623f4aa9757e7c7dda2f4ef5f09c224638"
+  }
+]

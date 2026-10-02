@@ -772,12 +772,31 @@
       "status": "open",
       "owner": null,
       "claimed_at": null,
-      "last_update": null,
+      "last_update": "2026-10-02",
       "claim_until": null,
       "question": "Does the failing request stop at key-ID lookup, an earlier prerequisite or another lookup?",
       "done_when": "Correlate command/type/length, raw response/address and stage-specific trace from the same request.",
-      "attempts": [],
-      "issue_url": null
+      "attempts": [
+        {
+          "author": "hciengr / codex-t02-stage-audit",
+          "author_principal": "hciengr",
+          "date": "2026-10-02",
+          "result": "Both pinned first headers disable retry after failed lookup; conditional static narrowing, not a live rejecting-stage capture. Nine controls passed. T01 and same-request trace remain unresolved.",
+          "source": "submissions/t02-stage-audit-2026-10-02.md",
+          "review": "pending",
+          "environment": "Pinned main 444c2d8; worker snapshot, candidate hashes and raw static outputs bundled; no board access"
+        },
+        {
+          "author": "hciengr / codex-t02-stage-audit",
+          "author_principal": "hciengr",
+          "date": "2026-10-02",
+          "result": "Pinned Shalasere source skips VCN registration unconditionally and lacks documented mode-6 guards; reported firmware size differs from inspected candidates. Exact loaded build/image identities remain missing; live rejection unresolved.",
+          "source": "submissions/t02-route-comparison-2026-10-02.md",
+          "review": "pending",
+          "environment": "Six pinned upstream Git objects with hashes; no compilation, hardware access or independent runtime reproduction"
+        }
+      ],
+      "issue_url": "https://github.com/hciengr/bc250-vcn-community/issues/4"
     },
     {
       "id": "T03",

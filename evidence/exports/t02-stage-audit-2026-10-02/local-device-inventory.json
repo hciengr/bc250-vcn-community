@@ -1,0 +1,6 @@
+{
+  "method": "Read /sys/bus/pci/devices vendor/device files only",
+  "target": "1002:13fe",
+  "matching_devices": [],
+  "scope": "Local PCI inventory only; remote availability untested"
+}

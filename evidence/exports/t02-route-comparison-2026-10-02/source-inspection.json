@@ -1,0 +1,72 @@
+{
+  "upstream": "Shalasere/bc250-vcn-research",
+  "commit": "4a91ceb86275fbceeaf1fb3062f2f086e7f780c5",
+  "kind": "static source inspection and attributed report comparison",
+  "inputs": [
+    {
+      "path": "research/SESSION_SUMMARY_2026_09_30.md",
+      "sha256": "5aca837ce6f70357556341c9bde4fe808f45117d0aeaa9701d06fdf1f8f5beb3",
+      "bytes": 13001
+    },
+    {
+      "path": "research/CORRECTIONS_2026_09_30.md",
+      "sha256": "e6c55824d9d41d732ad06f7def4a18c89a8d63df924ec6a2ca8d1e29f204ed53",
+      "bytes": 6876
+    },
+    {
+      "path": "code/direct-load/PATCHES.md",
+      "sha256": "0b8a76c257bd97247e8407ccec94e71ffd1a70fe34a87c265860f81fcf54d53a",
+      "bytes": 7489
+    },
+    {
+      "path": "code/direct-load/amdgpu_vcn.c",
+      "sha256": "0fa07ab009226e6f776a3fdc543b9addfe46b02eff7040b8be43448b755acb81",
+      "bytes": 46736
+    },
+    {
+      "path": "code/direct-load/vcn_v2_0.c",
+      "sha256": "08b063ba4d4121a6d66da1a12858a679d08ad209440524fb9f8a0cd5ad17e229",
+      "bytes": 72518
+    },
+    {
+      "path": "code/direct-load/amdgpu_drv.c",
+      "sha256": "09792b4706effdb320ebecba867e7ec3249eab94b7685a7545a4a8d5ca425380",
+      "bytes": 108431
+    }
+  ],
+  "setup_function": "void amdgpu_vcn_setup_ucode(struct amdgpu_device *adev, int i)\n{\n\tunsigned int idx;\n\n\t/* BC-250 VCN silicon probe (clean-room): do NOT register VCN with the\n\t * PSP firmware list, so the PSP never issues LOAD_IP_FW(VCN 0x39) and\n\t * stays healthy -> init can reach vcn_v2_0 hw_init. */\n\tdev_info(adev->dev, \"VCN-PROBE: skip PSP ucode registration for VCN inst %d\\n\", i);\n\treturn;\n\n\tif (adev->firmware.load_type == AMDGPU_FW_LOAD_PSP) {\n\t\tconst struct common_firmware_header *hdr;\n\n\t\tif (adev->vcn.harvest_config & (1 << i))\n\t\t\treturn;\n\n\t\tif ((amdgpu_ip_version(adev, UVD_HWIP, 0) == IP_VERSION(4, 0, 3) ||\n\t\t     amdgpu_ip_version(adev, UVD_HWIP, 0) == IP_VERSION(5, 0, 1) ||\n\t\t     amdgpu_ip_version(adev, UVD_HWIP, 0) == IP_VERSION(5, 0, 2))\n\t\t    && (i > 0))\n\t\t\treturn;\n\n\t\thdr = (const struct common_firmware_header *)adev->vcn.inst[i].fw->data;\n\t\t/* currently only support 2 FW instances */\n\t\tif (i >= 2) {\n\t\t\tdev_info(adev->dev, \"More then 2 VCN FW instances!\\n\");\n\t\t\treturn;\n\t\t}\n\t\tidx = AMDGPU_UCODE_ID_VCN + i;\n\t\tadev->firmware.ucode[idx].ucode_id = idx;\n\t\tadev->firmware.ucode[idx].fw = adev->vcn.inst[i].fw;\n\t\tadev->firmware.fw_size +=\n\t\t\tALIGN(le32_to_cpu(hdr->ucode_size_bytes), PAGE_SIZE);\n\t}\n}",
+  "direct_mode_uses": [
+    {
+      "line": 299,
+      "text": "if (!amdgpu_vcn_direct) {"
+    },
+    {
+      "line": 402,
+      "text": "if (!amdgpu_vcn_direct && adev->firmware.load_type == AMDGPU_FW_LOAD_PSP) {"
+    },
+    {
+      "line": 457,
+      "text": "if (!amdgpu_vcn_direct && adev->firmware.load_type == AMDGPU_FW_LOAD_PSP) {"
+    },
+    {
+      "line": 1026,
+      "text": "if (!amdgpu_vcn_direct && (adev->pg_flags & AMD_PG_SUPPORT_VCN_DPG)) {"
+    },
+    {
+      "line": 1030,
+      "text": "if (amdgpu_vcn_direct)"
+    },
+    {
+      "line": 2004,
+      "text": "if (!amdgpu_vcn_direct && adev->firmware.load_type == AMDGPU_FW_LOAD_PSP) {"
+    }
+  ],
+  "observations": {
+    "registration_return_precedes_psp_block_without_if_guard": true,
+    "numeric_mode_skip_guards_found": false,
+    "reported_firmware_file_bytes": 405952,
+    "reported_payload_bytes": 405696,
+    "reported_payload_offset": 256
+  },
+  "limitations": "No compilation, board access or identification of the module actually used by the author. Published source gaps are not contradictions of raw board observations."
+}

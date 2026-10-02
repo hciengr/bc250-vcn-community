@@ -1,0 +1,139 @@
+{
+  "task": {
+    "id": "T02",
+    "title": "Locate the exact live PSP rejecting stage",
+    "stage": "S06",
+    "skills": [
+      "board access",
+      "PSP reversing"
+    ],
+    "priority": 1,
+    "depends_on": [
+      "T01"
+    ],
+    "status": "open",
+    "owner": null,
+    "claimed_at": null,
+    "last_update": null,
+    "claim_until": null,
+    "question": "Does the failing request stop at key-ID lookup, an earlier prerequisite or another lookup?",
+    "done_when": "Correlate command/type/length, raw response/address and stage-specific trace from the same request.",
+    "attempts": [],
+    "issue_url": null
+  },
+  "stage": {
+    "id": "S06",
+    "title": "Key ID → usage → signature",
+    "column": "right",
+    "row": 4,
+    "state": "partial",
+    "claims": [
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C28"
+    ],
+    "next_evidence": "Live KDB during the exact request and rejecting instruction path."
+  },
+  "claims": [
+    {
+      "id": "C07",
+      "title": "Type 13 requests usage 6; missing ID precedes usage enforcement",
+      "state": "proven",
+      "kind": "static",
+      "scope": "Missing ID returns ffff0008; matched enforced usage mismatch returns 80000205.",
+      "sources": [
+        "evidence/exports/vcn-kdb-association/README.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C08",
+      "title": "Both candidates fail ID lookup in extracted P3 KDB fixtures",
+      "state": "proven",
+      "kind": "model",
+      "scope": "BL/TOS offline fixtures only; not a captured PSP completion.",
+      "sources": [
+        "evidence/exports/navi10-vcn-auth-check/README.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C09",
+      "title": "Both candidate signatures verify with matching reference keys",
+      "state": "proven",
+      "kind": "offline-crypto",
+      "scope": "Actual OpenSSL results and corruption controls; not BC250 trust or execution.",
+      "sources": [
+        "evidence/exports/navi10-vcn-auth-check/README.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C10",
+      "title": "Staging-to-runtime KDB copy is traced; earlier producer is open",
+      "state": "partial",
+      "kind": "static",
+      "scope": "staging base + 784000 → analysis VA e25834; live byte identity unresolved.",
+      "sources": [
+        "evidence/exports/vcn-kdb-provenance/README.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C28",
+      "title": "Header lookup wrapper may attempt four 0x100-spaced headers",
+      "state": "proven",
+      "kind": "static",
+      "scope": "Byte+7f and word+18 control retries. One missing-ID lookup is not necessarily the final image failure; trace returned wrapper status.",
+      "sources": [
+        "evidence/notes/vcn-priority-audit-2026-10-01.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "T01",
+      "title": "Pin down one reproducible board baseline",
+      "stage": "S01",
+      "skills": [
+        "board access",
+        "Linux"
+      ],
+      "priority": 1,
+      "depends_on": [],
+      "status": "open",
+      "owner": null,
+      "claimed_at": null,
+      "last_update": null,
+      "claim_until": null,
+      "question": "Which BIOS, kernel, candidate and startup route produce the failure?",
+      "done_when": "Attach BIOS/candidate hashes, exact kernel/patches, firmware filename, admission and harvest trace, full timestamped log.",
+      "attempts": [],
+      "issue_url": null
+    }
+  ],
+  "instructions": "Read AGENTS.md and VERIFICATION.md. Sync the repository and check issues before claiming. Workers submit evidence; a different human principal must reproduce and approve. Preserve snapshot SHA-256 in submissions.",
+  "sources": {
+    "evidence/exports/vcn-kdb-association/README.md": "68c1ef31bdcc31112297fa6f988fa70a1a1ea2c0539b7866605e0c009aa29b08",
+    "evidence/exports/navi10-vcn-auth-check/README.md": "ebd37bb468f982cf91053b0f5f080db6a7e72b46d6c2ddc78233f540dc6adcde",
+    "evidence/exports/vcn-kdb-provenance/README.md": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78",
+    "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
+  },
+  "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+  "repository_url": "https://github.com/hciengr/bc250-vcn-community",
+  "baseline_date": "2026-10-01",
+  "worker": {
+    "id": "codex-t02-stage-audit",
+    "human_principal": "hciengr",
+    "source_commit": "444c2d857470031a4f1c0a4adf20b9e5f6b52af9",
+    "synced_at": "2026-10-02T05:29:24Z"
+  }
+}
