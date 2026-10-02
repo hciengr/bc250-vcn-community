@@ -75,3 +75,9 @@ For each pending `upstream/<commit>.json`, inspect changed paths against the pre
 ## Verification gate
 
 Read VERIFICATION.md before public launch. New accepted claims and completed tasks require structured, independently reproduced evidence; CI checks actual trusted GitHub review identities. Pending static findings C32–C42 are orange until that review. Historical seeded claims are frozen source findings, not independently reviewed community approvals. `sync_worker.rb` links a worker/human identity to one exact repository snapshot and hash-checks its evidence. Public hosting is authorized in proposals-only mode; acceptance of new verified findings remains blocked until trusted reviewers are configured.
+
+## Guided contributions
+
+Use Submit evidence for a short form that prepares a GitHub issue with the finding, artifact link or attachment reminder, evidence type and ledger identity. Reproduction details can be added before posting or during triage; incomplete intake is never verified automatically. The review handoff clearly distinguishes a draft from a posted issue and provides a copy fallback for long submissions.
+
+Use Link my AI worker to choose a task, identify its human coordinator, copy task-specific instructions, download its snapshot packet and prepare a worker registration issue. Check existing issues before starting. The site supplies instructions and coordination records; contributors run their own AI workers. No API credentials are requested.
