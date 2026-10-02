@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "kind": "offline_reproduction_prerequisite_inventory",
+  "auditor_scripts": [
+    {
+      "name": "clamp",
+      "recorded_path": "tools/audit-vcn-clamp-boundary.pl",
+      "expected_sha256": "793ef4e35af205546ec38af930f392b204bff4a63cd7846af98f0306247da8d0",
+      "status": "matched",
+      "found_at": "tools/audit-vcn-clamp-boundary.pl",
+      "scope": "Pinned loader/driver comparison, twenty checks"
+    },
+    {
+      "name": "isa",
+      "recorded_path": "tools/audit-isa-cross-reference.pl",
+      "expected_sha256": "273fda37297c8a33d3ed6f1a588c10abad9ff70b0c0c527c6d44c39a24963c24",
+      "status": "matched",
+      "found_at": "tools/audit-isa-cross-reference.pl",
+      "scope": "Raw instruction fields and both SSIP/SSIU layouts"
+    },
+    {
+      "name": "parent",
+      "recorded_path": "tools/trace-row6-ack.pl",
+      "expected_sha256": "b36e3d1bddb0b3fbea6e24ef13ac1c06ffae7885b56fda50b129ebc1391d9062",
+      "status": "matched",
+      "found_at": "tools/trace-row6-ack.pl",
+      "scope": "Nineteen synthetic protocol assertions"
+    },
+    {
+      "name": "policy",
+      "recorded_path": "tools/trace-video-policy.pl",
+      "expected_sha256": "2fe11ecb8e8fa937b667af82e97e6ee19130bdbd15a0236cac994ee04d94ccfc",
+      "status": "matched",
+      "found_at": "tools/trace-video-policy.pl",
+      "scope": "Both policy mappings; no runtime upload capture"
+    },
+    {
+      "name": "metrics",
+      "recorded_path": "tools/identify-video-clocks.pl",
+      "expected_sha256": "35989b76bb82742b01bad8aa73d96bfd854b7cacc860c7ca73b42a74d1dadeca",
+      "status": "matched",
+      "found_at": "tools/identify-video-clocks.pl",
+      "scope": "Firmware child records plus saved ABI layout"
+    },
+    {
+      "name": "recovery",
+      "recorded_path": "tools/summarize-pmfw-recovery.pl",
+      "expected_sha256": "4f68584bafd9b45758879ea8c12c178df336f0c06f8bcf9d39bd1cb5db8e0cab",
+      "status": "matched",
+      "found_at": "tools/summarize-pmfw-recovery.pl",
+      "scope": "Comparison of existing baseline/refined Ghidra exports"
+    },
+    {
+      "name": "driver",
+      "recorded_path": "tools/audit-vcn-driver-gates.pl",
+      "expected_sha256": "169a7a63d25b0ab9cd57f18ae8f91b32aab879e846ff76cf539d668a22601497",
+      "status": "matched",
+      "found_at": "tools/audit-vcn-driver-gates.pl",
+      "scope": "Nineteen driver-source checks and synthetic predicates"
+    },
+    {
+      "name": "load_contract",
+      "recorded_path": "tools/audit-vcn-load-contract.pl",
+      "expected_sha256": "a9ccb1b937a8811c5934462247cb01224fc6700ee3f64473d3bcfd8f9109b6a3",
+      "status": "matched",
+      "found_at": "tools/audit-vcn-load-contract.pl",
+      "scope": "Eight source checks and synthetic response/harvest examples"
+    },
+    {
+      "name": "psp_ordering",
+      "recorded_path": "tools/audit-psp-smu-ordering.pl",
+      "expected_sha256": "1f038941a0ab4d717bad8677359da8139a9d059869d0858cca52284bd3d5e365",
+      "status": "matched",
+      "found_at": "tools/audit-psp-smu-ordering.pl",
+      "scope": "Saved-table, queue and instruction-order checks"
+    },
+    {
+      "name": "psp_handoff",
+      "recorded_path": "tools/audit-psp-smu-handoff.pl",
+      "expected_sha256": "b40fecb83fa2806d7b8dcb9fab988c7eb84a6a919b1e7be8355311c4ebf69ff1",
+      "status": "matched",
+      "found_at": "tools/audit-psp-smu-handoff.pl",
+      "scope": "Raw literals, thirty-one mapping fixtures and five completion fixtures"
+    },
+    {
+      "name": "load_completion",
+      "recorded_path": "tools/audit-vcn-load-reset-gate.rb",
+      "expected_sha256": "851fae380723f4de4841c67afaf093c7e8e816cdb5ee89de4aac2dd71dc1bcea",
+      "status": "matched",
+      "found_at": "tools/audit-vcn-load-reset-gate.rb",
+      "scope": "Twenty-six raw instruction checks and five branch fixtures"
+    },
+    {
+      "name": "access_policy",
+      "recorded_path": "tools/audit-vcn-policy-coverage.rb",
+      "expected_sha256": "b14ef70a1d8589aacd89ec7b543475276fef57e3423fd5a41354dd90a7281273",
+      "status": "matched",
+      "found_at": "tools/audit-vcn-policy-coverage.rb",
+      "scope": "Stored policy inventories and comparison capsule; no live grants"
+    },
+    {
+      "name": "access_policy_controls",
+      "recorded_path": "tools/test-vcn-policy-coverage.rb",
+      "expected_sha256": "52cce4c7b81ba2621a3262d984fd93831bcc99dfd263263a0545dddb3e59a159",
+      "status": "matched",
+      "found_at": "tools/test-vcn-policy-coverage.rb",
+      "scope": "Six parser/coverage controls"
+    },
+    {
+      "name": "dma",
+      "recorded_path": "tools/audit-dma-completion.pl",
+      "expected_sha256": "8354c0886efa7545350c3ed84ba4032c3f257f543f15ba317f5ec6949e795b9e",
+      "status": "matched",
+      "found_at": "tools/audit-dma-completion.pl",
+      "scope": "Raw transfer-path checks; no live DMA"
+    },
+    {
+      "name": "snapshot_controls",
+      "recorded_path": "tools/test-bc250-snapshots.pl",
+      "expected_sha256": "ee7eeb666f26a8e1d619fc88d83847cb1d24f37939bf64b6f3071ed01578cff9",
+      "status": "matched",
+      "found_at": "tools/test-bc250-snapshots.pl",
+      "scope": "Six snapshot-comparison fixtures; no captures"
+    },
+    {
+      "name": "navi10_auth",
+      "recorded_path": "tools/check-vcn-auth.pl",
+      "expected_sha256": "fe287be27f81ac24256f6320a573b7fb5711f3d5d4435fc86d64c79fc9da76f0",
+      "status": "matched",
+      "found_at": "tools/check-vcn-auth.pl",
+      "scope": "File-driven key lookup and actual OpenSSL signature controls; no PSP submission"
+    }
+  ],
+  "recorded_core_inputs": [
+    {
+      "path": "firmware/smu/smu_fw_robin_1_trim",
+      "expected_sha256": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+      "actual_sha256": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+      "status": "matched"
+    },
+    {
+      "path": "ghidra/inputs/psp-p3/t02-payload.bin",
+      "expected_sha256": "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d",
+      "actual_sha256": "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d",
+      "status": "matched"
+    },
+    {
+      "path": "ghidra/inputs/psp-p3/t28-payload.bin",
+      "expected_sha256": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+      "actual_sha256": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+      "status": "matched"
+    },
+    {
+      "path": "tools/isa-summary.pdf",
+      "expected_sha256": "474c4aaf2d429ff79c48127e738c4110cecd8072133169ad6d00a050edf244b7",
+      "actual_sha256": "474c4aaf2d429ff79c48127e738c4110cecd8072133169ad6d00a050edf244b7",
+      "status": "matched"
+    },
+    {
+      "path": "analysis/reference-sources/vcn/community_enable_vcn.py",
+      "expected_sha256": "19f9a01c4183b3a1155a2eb161d4ba2e648ccc1e4ff6ba6d2d29fdbc60e88f3d",
+      "actual_sha256": "19f9a01c4183b3a1155a2eb161d4ba2e648ccc1e4ff6ba6d2d29fdbc60e88f3d",
+      "status": "matched"
+    },
+    {
+      "path": "analysis/reference-sources/vcn/vcn_v2_0.c",
+      "expected_sha256": "753849c7c491b137913668f77b8a3a0f539c7cf5cd46423db22b8f1513d9d9f6",
+      "actual_sha256": "753849c7c491b137913668f77b8a3a0f539c7cf5cd46423db22b8f1513d9d9f6",
+      "status": "matched"
+    }
+  ],
+  "recorded_runner": {
+    "path": "tools/run-vcn-contribution-checks.rb",
+    "present": true
+  },
+  "recorded_minimums_match": true,
+  "full_suite_execution_performed": false,
+  "hardware_operations": 0,
+  "limitations": [
+    "The historical manifest records only six core inputs, not every transitive dependency.",
+    "Matching these prerequisites is not proof that the full suite will execute or that any firmware runs on hardware.",
+    "Bundled aliases identify the same script bytes; an auditor may still require the larger workspace working directory."
+  ]
+}

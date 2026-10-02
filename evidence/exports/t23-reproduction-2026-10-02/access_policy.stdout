@@ -1,0 +1,6 @@
+BC250_P3 t24 8e0000: 1405 pairs; frame-C=0, VCN values=0, direct targets=2
+BC250_P3 t45 8e0000: 144 pairs; frame-C=0, VCN values=0, direct targets=0
+SteamDeck_F7A0116 t24 168c70: 1482 pairs; frame-C=32, VCN values=14, direct targets=2
+SteamDeck_F7A0116 t45 168c70: 467 pairs; frame-C=5, VCN values=4, direct targets=3
+SteamDeck_F7A0116 t24 968c70: 1482 pairs; frame-C=32, VCN values=14, direct targets=2
+SteamDeck_F7A0116 t45 968c70: 467 pairs; frame-C=5, VCN values=4, direct targets=3

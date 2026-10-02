@@ -1,0 +1,130 @@
+{
+  "task": "T23",
+  "worker": {
+    "id": "codex-t23-reproduction",
+    "human_principal": "hciengr",
+    "source_commit": "444c2d857470031a4f1c0a4adf20b9e5f6b52af9",
+    "synced_at": "2026-10-02T05:12:58Z"
+  },
+  "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+  "kind": "offline_reproduction",
+  "review": "pending",
+  "independent_review": false,
+  "reason": "Same human coordinator as the earlier analysis",
+  "core_input_hashes_identical": true,
+  "checks": [
+    {
+      "name": "clamp",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "isa",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "parent",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "policy",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "metrics",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "recovery",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "driver",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "load_contract",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "psp_ordering",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "psp_handoff",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "load_completion",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "access_policy",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "access_policy_controls",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "dma",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "snapshot_controls",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    },
+    {
+      "name": "navi10_auth",
+      "passed": true,
+      "script_unchanged": true,
+      "stdout_identical": true,
+      "stderr_identical": true
+    }
+  ],
+  "hardware_operations": 0
+}

@@ -1,0 +1,75 @@
+{
+   "dependency_sha256" : {
+      "amdgpu_ring.c" : "08697e2e1731112282c724952ab0219302b3ba3b0c4c29a480cfeb9b2925d080",
+      "amdgpu_ucode.c" : "3b786c1da23c314830fa8232d908a872f13400f21aadf33afe9b0f5a181b534d",
+      "amdgpu_vcn.c" : "f4fa6fa891cb1b56d4bd5602dd97801a4fc12d3fbdb385a10388ddc6c883e670",
+      "amdgpu_vcn.h" : "aae122032df161880e34d2e17cfd546e128e2572bcc8fc505fb434b3a14a3ac3"
+   },
+   "hardware_operations" : 0,
+   "hardware_vcn_enabled" : null,
+   "inferred_firmware_request" : "amdgpu/vcn_2_0_3.bin",
+   "limitation" : "Source checks and arithmetic only; no kernel execution, transport validation, MMIO reads or firmware emulation. Predicate satisfaction is not readiness.",
+   "mask_header_sha256" : "4c9ed19c3e744be938ada218d188c19ad7dc71e0dfb1652637ab116618bd489e",
+   "pgfsm" : {
+      "config_with_pg_support" : "0x000aaaa5",
+      "config_without_pg_support" : "0x00055555",
+      "expected_with_pg_support" : "0x000aaaa0",
+      "expected_without_pg_support" : 0,
+      "status_mask" : "0x000fffff"
+   },
+   "sha256" : "753849c7c491b137913668f77b8a3a0f539c7cf5cd46423db22b8f1513d9d9f6",
+   "source" : "analysis/reference-sources/vcn/vcn_v2_0.c",
+   "source_checks" : [
+      "Two PGFSM waits used as standalone statements",
+      "VCPU readiness uses bit 1",
+      "VCPU poll has ten attempts of 100 samples",
+      "DPG branch returns before non-DPG power setup",
+      "DPG has no equivalent status-bit-1 readiness loop",
+      "Indirect DPG upload failure is returned",
+      "MMSCH mask comparison can accept all ones",
+      "MMSCH startup caller is SR-IOV path",
+      "Hardware init discards SR-IOV startup return at call site",
+      "Hardware init propagates ring test error",
+      "Decode ring tests exact marker",
+      "Cached PG state bypasses start",
+      "Scratch seed precedes ring allocation and its begin-use callback",
+      "Ring allocation invokes begin-use",
+      "VCN begin-use discards ungate callback result",
+      "PSP firmware registration skips harvested instances",
+      "Legacy firmware-name switch lacks VCN 2.0.3",
+      "Fallback firmware prefix uses vcn and IP version",
+      "Early init requests firmware using derived prefix"
+   ],
+   "synthetic_predicate_samples" : [
+      {
+         "decode_marker_predicate" : false,
+         "mmsch_vf_mask_predicate" : false,
+         "raw" : "0x00000000",
+         "vcpu_bit_predicate" : false
+      },
+      {
+         "decode_marker_predicate" : false,
+         "mmsch_vf_mask_predicate" : false,
+         "raw" : "0x00000002",
+         "vcpu_bit_predicate" : true
+      },
+      {
+         "decode_marker_predicate" : false,
+         "mmsch_vf_mask_predicate" : true,
+         "raw" : "0xffffffff",
+         "vcpu_bit_predicate" : true
+      },
+      {
+         "decode_marker_predicate" : false,
+         "mmsch_vf_mask_predicate" : false,
+         "raw" : "0xcafedead",
+         "vcpu_bit_predicate" : false
+      },
+      {
+         "decode_marker_predicate" : true,
+         "mmsch_vf_mask_predicate" : true,
+         "raw" : "0xdeadbeef",
+         "vcpu_bit_predicate" : true
+      }
+   ]
+}

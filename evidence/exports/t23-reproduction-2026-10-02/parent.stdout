@@ -1,0 +1,20 @@
+ok 1 - row-6 record
+ok 2 - status address
+ok 3 - handshake address
+ok 4 - state1_two_stage: complete ordered protocol
+ok 5 - does not invent physical power meaning
+ok 6 - state1_immediate_predicates: complete ordered protocol
+ok 7 - does not invent physical power meaning
+ok 8 - state0_two_stage: complete ordered protocol
+ok 9 - does not invent physical power meaning
+ok 10 - image_cache_bypass: not fresh acknowledgment
+ok 11 - cache unchanged
+ok 12 - status_only_is_insufficient: not fresh acknowledgment
+ok 13 - cache unchanged
+ok 14 - handshake_stuck: not fresh acknowledgment
+ok 15 - cache unchanged
+ok 16 - status_stuck: not fresh acknowledgment
+ok 17 - cache unchanged
+ok 18 - handshake sample cannot replace status sample
+ok 19 - state-zero completion updates cache to zero
+1..19

@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-10-02T05:13:14Z",
+  "mode": "offline evidence review",
+  "inputs": {
+    "firmware/smu/smu_fw_robin_1_trim": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+    "ghidra/inputs/psp-p3/t02-payload.bin": "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d",
+    "ghidra/inputs/psp-p3/t28-payload.bin": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+    "tools/isa-summary.pdf": "474c4aaf2d429ff79c48127e738c4110cecd8072133169ad6d00a050edf244b7",
+    "analysis/reference-sources/vcn/community_enable_vcn.py": "19f9a01c4183b3a1155a2eb161d4ba2e648ccc1e4ff6ba6d2d29fdbc60e88f3d",
+    "analysis/reference-sources/vcn/vcn_v2_0.c": "753849c7c491b137913668f77b8a3a0f539c7cf5cd46423db22b8f1513d9d9f6"
+  },
+  "checks": [
+    {
+      "name": "clamp",
+      "command": [
+        "perl",
+        "tools/audit-vcn-clamp-boundary.pl"
+      ],
+      "scope": "Pinned loader/driver comparison, twenty checks",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "clamp.stdout",
+      "stderr": "clamp.stderr",
+      "script_sha256": "793ef4e35af205546ec38af930f392b204bff4a63cd7846af98f0306247da8d0",
+      "stdout_sha256": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "isa",
+      "command": [
+        "perl",
+        "tools/audit-isa-cross-reference.pl"
+      ],
+      "scope": "Raw instruction fields and both SSIP/SSIU layouts",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "isa.stdout",
+      "stderr": "isa.stderr",
+      "script_sha256": "273fda37297c8a33d3ed6f1a588c10abad9ff70b0c0c527c6d44c39a24963c24",
+      "stdout_sha256": "cb632075a109fdf507e22323851da4f19b0483d54790478a2ff9ae2c81066e24",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "parent",
+      "command": [
+        "perl",
+        "tools/trace-row6-ack.pl",
+        "--self-test"
+      ],
+      "scope": "Nineteen synthetic protocol assertions",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "parent.stdout",
+      "stderr": "parent.stderr",
+      "script_sha256": "b36e3d1bddb0b3fbea6e24ef13ac1c06ffae7885b56fda50b129ebc1391d9062",
+      "stdout_sha256": "f00171a214e2c74fa9ac9309c7d3ad1667be554aacf4b660902cca43a0a16bf1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "policy",
+      "command": [
+        "perl",
+        "tools/trace-video-policy.pl"
+      ],
+      "scope": "Both policy mappings; no runtime upload capture",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "policy.stdout",
+      "stderr": "policy.stderr",
+      "script_sha256": "2fe11ecb8e8fa937b667af82e97e6ee19130bdbd15a0236cac994ee04d94ccfc",
+      "stdout_sha256": "ba257f4da45ceaf2163978ab0150e705b702f3a53d00580cf6d07225578df7f1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "metrics",
+      "command": [
+        "perl",
+        "tools/identify-video-clocks.pl"
+      ],
+      "scope": "Firmware child records plus saved ABI layout",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "metrics.stdout",
+      "stderr": "metrics.stderr",
+      "script_sha256": "35989b76bb82742b01bad8aa73d96bfd854b7cacc860c7ca73b42a74d1dadeca",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "recovery",
+      "command": [
+        "perl",
+        "tools/summarize-pmfw-recovery.pl"
+      ],
+      "scope": "Comparison of existing baseline/refined Ghidra exports",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "recovery.stdout",
+      "stderr": "recovery.stderr",
+      "script_sha256": "4f68584bafd9b45758879ea8c12c178df336f0c06f8bcf9d39bd1cb5db8e0cab",
+      "stdout_sha256": "31fbbf672579fe986ae13d9dc9819a0992a193968cc7c696cbbb141f74a6bfa6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "driver",
+      "command": [
+        "perl",
+        "tools/audit-vcn-driver-gates.pl"
+      ],
+      "scope": "Nineteen driver-source checks and synthetic predicates",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "driver.stdout",
+      "stderr": "driver.stderr",
+      "script_sha256": "169a7a63d25b0ab9cd57f18ae8f91b32aab879e846ff76cf539d668a22601497",
+      "stdout_sha256": "2b1af85d1fbea407ee1367bce4a2fde601e04d14711219786b07c9bb8c9ceb34",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "load_contract",
+      "command": [
+        "perl",
+        "tools/audit-vcn-load-contract.pl"
+      ],
+      "scope": "Eight source checks and synthetic response/harvest examples",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "load_contract.stdout",
+      "stderr": "load_contract.stderr",
+      "script_sha256": "a9ccb1b937a8811c5934462247cb01224fc6700ee3f64473d3bcfd8f9109b6a3",
+      "stdout_sha256": "7ba3c824e83c39dc86efaa3bee470a0f721fc35974a28ba6cfb9f955dc9d6202",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "psp_ordering",
+      "command": [
+        "perl",
+        "tools/audit-psp-smu-ordering.pl"
+      ],
+      "scope": "Saved-table, queue and instruction-order checks",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "psp_ordering.stdout",
+      "stderr": "psp_ordering.stderr",
+      "script_sha256": "1f038941a0ab4d717bad8677359da8139a9d059869d0858cca52284bd3d5e365",
+      "stdout_sha256": "8a9c0fcea07d903f93d44e93ab1071eecd962f1b591c128fab99d361651e3d02",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "psp_handoff",
+      "command": [
+        "perl",
+        "tools/audit-psp-smu-handoff.pl"
+      ],
+      "scope": "Raw literals, thirty-one mapping fixtures and five completion fixtures",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "psp_handoff.stdout",
+      "stderr": "psp_handoff.stderr",
+      "script_sha256": "b40fecb83fa2806d7b8dcb9fab988c7eb84a6a919b1e7be8355311c4ebf69ff1",
+      "stdout_sha256": "a70f5faec02c79ea7ef1f4048a44f3a9bca1008621b4341e32f338e3a69b9c4c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "load_completion",
+      "command": [
+        "ruby",
+        "tools/audit-vcn-load-reset-gate.rb"
+      ],
+      "scope": "Twenty-six raw instruction checks and five branch fixtures",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "load_completion.stdout",
+      "stderr": "load_completion.stderr",
+      "script_sha256": "851fae380723f4de4841c67afaf093c7e8e816cdb5ee89de4aac2dd71dc1bcea",
+      "stdout_sha256": "86b09e91edf357ad1f4e44bf0fef663c8c780695cff936104c674be842c6d466",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "access_policy",
+      "command": [
+        "ruby",
+        "tools/audit-vcn-policy-coverage.rb"
+      ],
+      "scope": "Stored policy inventories and comparison capsule; no live grants",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "access_policy.stdout",
+      "stderr": "access_policy.stderr",
+      "script_sha256": "b14ef70a1d8589aacd89ec7b543475276fef57e3423fd5a41354dd90a7281273",
+      "stdout_sha256": "e92eeecee35ab2c25c9abdf2c2f4afa0509d979ad57708f22ee39fda20594580",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "access_policy_controls",
+      "command": [
+        "ruby",
+        "tools/test-vcn-policy-coverage.rb"
+      ],
+      "scope": "Six parser/coverage controls",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "access_policy_controls.stdout",
+      "stderr": "access_policy_controls.stderr",
+      "script_sha256": "52cce4c7b81ba2621a3262d984fd93831bcc99dfd263263a0545dddb3e59a159",
+      "stdout_sha256": "7e5922d5c0adbf03bd7bf59cd0063e8ff1b6ac53ab10ed82150ada4f6309fa6e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "dma",
+      "command": [
+        "perl",
+        "tools/audit-dma-completion.pl"
+      ],
+      "scope": "Raw transfer-path checks; no live DMA",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "dma.stdout",
+      "stderr": "dma.stderr",
+      "script_sha256": "8354c0886efa7545350c3ed84ba4032c3f257f543f15ba317f5ec6949e795b9e",
+      "stdout_sha256": "1b578e7e4f7f57997457815b31011b6893be7538e46d7d5c6e2d39fc7e34c548",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "snapshot_controls",
+      "command": [
+        "perl",
+        "tools/test-bc250-snapshots.pl"
+      ],
+      "scope": "Six snapshot-comparison fixtures; no captures",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "snapshot_controls.stdout",
+      "stderr": "snapshot_controls.stderr",
+      "script_sha256": "ee7eeb666f26a8e1d619fc88d83847cb1d24f37939bf64b6f3071ed01578cff9",
+      "stdout_sha256": "d5e25fcbf0433710fe052164da5101d9998ff56729f047b462b74600f958e05f",
+      "stderr_sha256": "bf3b7023550e62998f4e0a7619ecfd0382a91acafe38c08d3feac2383794d3e5"
+    },
+    {
+      "name": "navi10_auth",
+      "command": [
+        "perl",
+        "tools/check-vcn-auth.pl",
+        "navi10"
+      ],
+      "scope": "File-driven key lookup and actual OpenSSL signature controls; no PSP submission",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "navi10_auth.stdout",
+      "stderr": "navi10_auth.stderr",
+      "script_sha256": "fe287be27f81ac24256f6320a573b7fb5711f3d5d4435fc86d64c79fc9da76f0",
+      "stdout_sha256": "d15fb5577ba16777d2ee54430b945c813efdf86a9ad44324dfc191149af94e8a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "hardware_operations": 0,
+  "hardware_vcn_enabled": null,
+  "limitations": [
+    "Commands require local firmware, comparison inputs and saved Ghidra exports.",
+    "Some existing auditors refresh their own saved JSON reports; this runner preserves command output separately.",
+    "Command success verifies each stated scope, not firmware execution or physical clamp causality.",
+    "Python suite logs are historical and are not rerun or included in these results.",
+    "This is a selected VCN evidence suite, not every unrelated test in the workspace."
+  ]
+}

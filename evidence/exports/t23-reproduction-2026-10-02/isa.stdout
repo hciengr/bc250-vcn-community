@@ -1,0 +1,121 @@
+{
+   "conclusion" : "SSIP is the stronger static configuration inference; raw store opcode alone cannot choose SSIP/SSIU.",
+   "firmware_sha256" : "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+   "hardware_operations" : 0,
+   "layouts" : {
+      "SSIP" : {
+         "first" : "0x00014020",
+         "index19_child" : 12,
+         "last" : "0x00014104",
+         "neighbor_stores" : [
+            "0x00014118",
+            "0x0001411c"
+         ],
+         "worker_matches" : 20
+      },
+      "SSIU" : {
+         "first" : "0x0001402c",
+         "index19_child" : null,
+         "last" : "0x00014110",
+         "neighbor_stores" : [
+            "0x0001411c",
+            "0x00014120"
+         ],
+         "worker_matches" : 19
+      }
+   },
+   "limitations" : "Selected encoding and address checks only; no runtime configuration, DMA, PSP ARM semantics, or VCN enablement validated.",
+   "manual_sha256" : "474c4aaf2d429ff79c48127e738c4110cecd8072133169ad6d00a050edf244b7",
+   "s32i_pair_stores" : [
+      {
+         "destination" : "0x0115f850",
+         "pc" : "0x00024418"
+      },
+      {
+         "destination" : "0x0115f854",
+         "pc" : "0x00024429"
+      },
+      {
+         "destination" : "0x0115f858",
+         "pc" : "0x0002448b"
+      },
+      {
+         "destination" : "0x0115f85c",
+         "pc" : "0x00024497"
+      },
+      {
+         "destination" : "0x0115f860",
+         "pc" : "0x000244f4"
+      },
+      {
+         "destination" : "0x0115f864",
+         "pc" : "0x00024505"
+      },
+      {
+         "destination" : "0x0115f868",
+         "pc" : "0x00024562"
+      },
+      {
+         "destination" : "0x0115f86c",
+         "pc" : "0x00024573"
+      }
+   ],
+   "selected_instruction_checks" : [
+      {
+         "base_register" : 4,
+         "bytes" : "03c403",
+         "fr" : 0,
+         "increment" : 12,
+         "instruction" : "SSIP or SSIU (configuration-dependent)",
+         "pages" : [
+            620,
+            621,
+            622
+         ],
+         "pc" : "0x0002e6c0"
+      },
+      {
+         "base_register" : 3,
+         "bytes" : "03c301",
+         "fr" : 0,
+         "increment" : 4,
+         "instruction" : "SSIP or SSIU (configuration-dependent)",
+         "pages" : [
+            620,
+            621,
+            622
+         ],
+         "pc" : "0x0002f1bc"
+      },
+      {
+         "bytes" : "3010fa",
+         "instruction" : "CONST.S f1,0",
+         "pages" : [
+            386,
+            387
+         ],
+         "pc" : "0x0002e451",
+         "result" : "0x00000000"
+      },
+      {
+         "bytes" : "76a30a",
+         "loop_end" : "0x0002e6c3",
+         "pages" : [
+            475,
+            476,
+            477
+         ],
+         "pc" : "0x0002e6b5"
+      },
+      {
+         "bytes" : "769507",
+         "loop_end" : "0x0001cb7d",
+         "pages" : [
+            475,
+            476,
+            477
+         ],
+         "pc" : "0x0001cb72"
+      }
+   ]
+}

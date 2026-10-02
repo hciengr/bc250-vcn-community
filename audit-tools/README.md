@@ -16,3 +16,7 @@ Equivalent copies are in this directory. The policy fixture tests can run standa
 Read the included evidence note for results, limits and expected artifacts. The load/reset auditor also requires the fresh function export listed in the report. A Ghidra refresh uses read-only processing of the existing mapped t28 project; no firmware patch is required.
 
 Review requested: independent interpretation of complete policy rows and descriptor geometry, an RN/CZN comparison with source provenance, and independent load/reset branch validation. Fixture models must remain labeled as models. No static audit establishes cold-reset hardware field identity or live execution.
+
+## Check full-suite prerequisites first
+
+T23's fresh reproduction report is in `submissions/t23-reproduction-2026-10-02.md`. Run `ruby audit-tools/check-suite-inputs.rb .` from a community clone to inventory the historical suite's script hashes and six recorded core inputs without executing auditors. Exit 1 means at least one recorded prerequisite or the runner is missing/changed. Exit 0 only confirms this minimum inventory; additional firmware, reference headers and saved exports remain necessary. Run `ruby audit-tools/test-suite-inputs.rb` for the preflight's five synthetic controls.

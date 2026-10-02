@@ -1,0 +1,78 @@
+{
+  "task": {
+    "id": "T23",
+    "title": "Independently reproduce the contribution audit suite",
+    "stage": "S16",
+    "skills": [
+      "firmware analysis",
+      "evidence review"
+    ],
+    "priority": 1,
+    "depends_on": [],
+    "status": "open",
+    "owner": null,
+    "claimed_at": null,
+    "last_update": null,
+    "claim_until": null,
+    "question": "Run the sixteen offline auditors on pinned inputs, retain the manifest and review static-versus-fixture scope; do not infer hardware enablement.",
+    "done_when": "Run the sixteen offline auditors on pinned inputs, retain the manifest and review static-versus-fixture scope; do not infer hardware enablement. Independent reviewer accepts the scoped evidence.",
+    "attempts": [],
+    "issue_url": null
+  },
+  "stage": {
+    "id": "S16",
+    "title": "MMIO boundary and local clock sequence",
+    "column": "left",
+    "row": 4,
+    "state": "partial",
+    "claims": [
+      "C37",
+      "C40"
+    ],
+    "next_evidence": "Source differences verified. Mark PGFSM not reached on early exit; compare complete CGC programming only after access is established."
+  },
+  "claims": [
+    {
+      "id": "C37",
+      "title": "Loader exits before PGFSM and omits a later CGC mode clear",
+      "state": "partial",
+      "kind": "static",
+      "scope": "All-ones POWER_STATUS returns before local programming. The reachable later path omits CGC_CTRL clear 7FFFF800 including REGS_MODE and SUVD updates. Not a demonstrated clamp cause.",
+      "sources": [
+        "evidence/notes/vcn-contribution-review.md",
+        "evidence/exports/vcn-clamp-boundary/audit.json"
+      ],
+      "review": "pending",
+      "reviewers": []
+    },
+    {
+      "id": "C40",
+      "title": "Sixteen selected offline contribution checks pass",
+      "state": "partial",
+      "kind": "model",
+      "scope": "Fresh rerun preserves outputs, script/core-input hashes and exit codes. Source checks, arithmetic, fixtures and crypto controls have separate scope; no hardware operations.",
+      "sources": [
+        "evidence/notes/vcn-contribution-review.md",
+        "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/manifest.json"
+      ],
+      "review": "pending",
+      "reviewers": []
+    }
+  ],
+  "dependencies": [],
+  "instructions": "Read AGENTS.md and VERIFICATION.md. Sync the repository and check issues before claiming. Workers submit evidence; a different human principal must reproduce and approve. Preserve snapshot SHA-256 in submissions.",
+  "sources": {
+    "evidence/notes/vcn-contribution-review.md": "c68194a46841ebb029c2fab31323cd96a0e8592829c4eb577786cafb1b29b163",
+    "evidence/exports/vcn-clamp-boundary/audit.json": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338",
+    "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/manifest.json": "eed42a5e62456a8196d812122130f62dd8a13dd33aa4b18c76c70455b3a37d9b"
+  },
+  "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+  "repository_url": "https://github.com/hciengr/bc250-vcn-community",
+  "baseline_date": "2026-10-01",
+  "worker": {
+    "id": "codex-t23-reproduction",
+    "human_principal": "hciengr",
+    "source_commit": "444c2d857470031a4f1c0a4adf20b9e5f6b52af9",
+    "synced_at": "2026-10-02T05:12:58Z"
+  }
+}
