@@ -1,0 +1,518 @@
+{
+  "commit": "4a91ceb86275fbceeaf1fb3062f2f086e7f780c5",
+  "previous_commit": null,
+  "detected_at": "2026-10-02T03:16:14Z",
+  "status": "pending",
+  "changes": [
+    {
+      "path": ".gitignore",
+      "change": "added",
+      "before": null,
+      "after": "d39a0bbfd8d113fc4cdec452fa55edea64db3066"
+    },
+    {
+      "path": "LICENSE",
+      "change": "added",
+      "before": null,
+      "after": "a8a07d32aff1014d2cce527e5814544974feda6b"
+    },
+    {
+      "path": "README.md",
+      "change": "added",
+      "before": null,
+      "after": "7ad721cf2bae876f7073be687435cd3df910cd17"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/apcb_callgraph_analysis.txt",
+      "change": "added",
+      "before": null,
+      "after": "13a55f7c1ba1f555fb6bf2bb5d634abc8c20fe97"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/apcb_parsing_analysis.txt",
+      "change": "added",
+      "before": null,
+      "after": "8b24187fcbf6f3567f23ed27628dcc81c9d6b9d8"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/fun044cc_decompiled.c",
+      "change": "added",
+      "before": null,
+      "after": "40e19ce7dd9759aa581eb74662eb4792bcaab0d6"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/indirect_overflow_results.txt",
+      "change": "added",
+      "before": null,
+      "after": "efcc5700492f3c19ef29d7c80a6fb26fb95c72b9"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/overflow_deep_analysis.txt",
+      "change": "added",
+      "before": null,
+      "after": "10b90d782787d0b31e14ec5f3de2bb2a4cce7c9d"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/pspbl_function_catalog.txt",
+      "change": "added",
+      "before": null,
+      "after": "0a11ff5ba4fa0041cd913ae2cb901ca66715e107"
+    },
+    {
+      "path": "artifacts/psp-rce-outputs/suspect_decompilations.txt",
+      "change": "added",
+      "before": null,
+      "after": "a1ceb22fb81b2f9effa31e57dcb4adbb3e082ca8"
+    },
+    {
+      "path": "artifacts/vcn_exploit_execution_2026_09_06.txt",
+      "change": "added",
+      "before": null,
+      "after": "1d1ce9daf75a8d73e4e95395435dc0d9167c06b0"
+    },
+    {
+      "path": "code/direct-load/PATCHES.md",
+      "change": "added",
+      "before": null,
+      "after": "4fedab01c3d3bd942abdf226f0fe0d2008f1d92f"
+    },
+    {
+      "path": "code/direct-load/amdgpu.h",
+      "change": "added",
+      "before": null,
+      "after": "037e342b603382762474e44b44517cf194069055"
+    },
+    {
+      "path": "code/direct-load/amdgpu_discovery.hunk.patch",
+      "change": "added",
+      "before": null,
+      "after": "6e64d37a96b8defa29da77e5ecc96f8717da7d44"
+    },
+    {
+      "path": "code/direct-load/amdgpu_drv.c",
+      "change": "added",
+      "before": null,
+      "after": "c8272a2b623abda5ec534ca72dc59cb5aba876dd"
+    },
+    {
+      "path": "code/direct-load/amdgpu_trace.h",
+      "change": "added",
+      "before": null,
+      "after": "72f13cd5f540709f5c6fa312db029e6970b727be"
+    },
+    {
+      "path": "code/direct-load/amdgpu_trace.h.hunk.patch",
+      "change": "added",
+      "before": null,
+      "after": "a837f49b1a9e1e834a9e8855875ce2b098dbc5f7"
+    },
+    {
+      "path": "code/direct-load/amdgpu_vcn.c",
+      "change": "added",
+      "before": null,
+      "after": "67714292eaf213f1154883bab4842b88387f624c"
+    },
+    {
+      "path": "code/direct-load/vcn_v2_0.c",
+      "change": "added",
+      "before": null,
+      "after": "f2889e15d605515ce84bfabc05a9a7220cc5b8c5"
+    },
+    {
+      "path": "code/direct-load/wsl-build.sh",
+      "change": "added",
+      "before": null,
+      "after": "1ce680f012d189496c32d51166cc69afbf90bf36"
+    },
+    {
+      "path": "code/execute_fix.py",
+      "change": "added",
+      "before": null,
+      "after": "6204a546778ae0d0d0755002181f359fb5c4d211"
+    },
+    {
+      "path": "code/execute_fix_hw.py",
+      "change": "added",
+      "before": null,
+      "after": "7e93aaf0231679d6194220b055d385e6da525757"
+    },
+    {
+      "path": "code/psp-rce-analysis/apcb_callgraph.py",
+      "change": "added",
+      "before": null,
+      "after": "3e892d68c872862ffc6aa00a4f1693f09760cc47"
+    },
+    {
+      "path": "code/psp-rce-analysis/apcb_parsing_deep.py",
+      "change": "added",
+      "before": null,
+      "after": "3463aafb11099930554e00687a6073d92e83155b"
+    },
+    {
+      "path": "code/psp-rce-analysis/config_to_context.py",
+      "change": "added",
+      "before": null,
+      "after": "2e68d93426de9d9c61f925dbb461d53f09228b2a"
+    },
+    {
+      "path": "code/psp-rce-analysis/decompress_abls.py",
+      "change": "added",
+      "before": null,
+      "after": "d9dac9147b54d04830c775b457f25d6e5f244054"
+    },
+    {
+      "path": "code/psp-rce-analysis/deep_decompile_suspects.py",
+      "change": "added",
+      "before": null,
+      "after": "89406c14a229b9c40bf1505179d262e87155a2b7"
+    },
+    {
+      "path": "code/psp-rce-analysis/deep_overflow_hunt.py",
+      "change": "added",
+      "before": null,
+      "after": "588bb2e0cdcfe1a2c5537ccabdb3378eb37f58b5"
+    },
+    {
+      "path": "code/psp-rce-analysis/dispatch_callers.py",
+      "change": "added",
+      "before": null,
+      "after": "2458b32c759f528ac2489f382cf877ee801d6e75"
+    },
+    {
+      "path": "code/psp-rce-analysis/enumerate_pspbl_functions.py",
+      "change": "added",
+      "before": null,
+      "after": "925c0949e5e4863d7bbe537479cc0737f24d6803"
+    },
+    {
+      "path": "code/psp-rce-analysis/extract_abl4.py",
+      "change": "added",
+      "before": null,
+      "after": "cf8a2494d493f2131f895411d60306f973e09f03"
+    },
+    {
+      "path": "code/psp-rce-analysis/extract_apcb.py",
+      "change": "added",
+      "before": null,
+      "after": "82ec71f9c9f48fc6d7b84e10e4373e3a4dc839f8"
+    },
+    {
+      "path": "code/psp-rce-analysis/fun044cc_direct_path.py",
+      "change": "added",
+      "before": null,
+      "after": "beff89bbb6dc350823a0755cf76ef4caa6243a18"
+    },
+    {
+      "path": "code/psp-rce-analysis/ghidra_allocator_decompile.py",
+      "change": "added",
+      "before": null,
+      "after": "29c99e5da8d4e7b526cd5ee133b2a3c456cbbb4a"
+    },
+    {
+      "path": "code/psp-rce-analysis/ghidra_debug_print.py",
+      "change": "added",
+      "before": null,
+      "after": "64be29ac51cbeb241cd7f16a98797ad19ce54ed0"
+    },
+    {
+      "path": "code/psp-rce-analysis/ghidra_trace_output.py",
+      "change": "added",
+      "before": null,
+      "after": "e34fcf6791e03dd56617057ea4dc925059d8a0bc"
+    },
+    {
+      "path": "code/psp-rce-analysis/ghidra_vuln_decompile.py",
+      "change": "added",
+      "before": null,
+      "after": "6ea1eb90626ba87c6d5f160fe7c2ea61d671fbf1"
+    },
+    {
+      "path": "code/psp-rce-analysis/indirect_overflow_hunt.py",
+      "change": "added",
+      "before": null,
+      "after": "5a00e4e7cbca532b5c9651e151871d54e111ec47"
+    },
+    {
+      "path": "code/psp-rce-analysis/memcpy_callsite_trace.py",
+      "change": "added",
+      "before": null,
+      "after": "4987c2994a0898142bec79aae0a4cd1d01d4d590"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_address_model.py",
+      "change": "added",
+      "before": null,
+      "after": "836f8b8242a10e713cc8afdd3c74343b030968af"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_context_resolution.py",
+      "change": "added",
+      "before": null,
+      "after": "b751cdf46ccd1e7c1c1e51038c78d4fabb7c948f"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_dma_chain.py",
+      "change": "added",
+      "before": null,
+      "after": "643ddd81710436698c64a6e6d7e647bffc8305cc"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_dma_dest.py",
+      "change": "added",
+      "before": null,
+      "after": "c9284ba78f94fb593b70cf646bd65bd2b43649f7"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_early_boot.py",
+      "change": "added",
+      "before": null,
+      "after": "5ba742d5119a3d119ba45b261d8792d290e2ba03"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_overflow_deep.py",
+      "change": "added",
+      "before": null,
+      "after": "734fd38cd1a92b17a3cfc1933712ad2ca1c06619"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_runtime_init.py",
+      "change": "added",
+      "before": null,
+      "after": "35f85ae4b9c3ffdfcea0c4ff5fe37e7e79993d94"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_stack_scan.py",
+      "change": "added",
+      "before": null,
+      "after": "d9c9b73d5b9bde1b19b34e1361c3447cb4c208c1"
+    },
+    {
+      "path": "code/psp-rce-analysis/pspbl_svc_patch.py",
+      "change": "added",
+      "before": null,
+      "after": "1c8513a442c91cc246a70ddbfb4f02e33423abdb"
+    },
+    {
+      "path": "code/psp-rce-analysis/s3_abl4_branch.py",
+      "change": "added",
+      "before": null,
+      "after": "c3b97e3e8a50c117b2793bfbbc98343a7ac883fe"
+    },
+    {
+      "path": "code/psp-rce-analysis/s3_resume_trace.py",
+      "change": "added",
+      "before": null,
+      "after": "197cffdf3700331d35214024e457569305c2be73"
+    },
+    {
+      "path": "code/psp-rce-analysis/search_pspbl_for_vuln.py",
+      "change": "added",
+      "before": null,
+      "after": "5d2017dd0249a68952c26ef61612c363ff5e1e3b"
+    },
+    {
+      "path": "code/psp-rce-analysis/svc_final_resolution.py",
+      "change": "added",
+      "before": null,
+      "after": "1124644decf7cf01f999272dd766f83a2071f017"
+    },
+    {
+      "path": "code/psp-rce-analysis/svc_vector_trace.py",
+      "change": "added",
+      "before": null,
+      "after": "9fd5c5fc8722d00a5adc372a1413198ba4ed7f98"
+    },
+    {
+      "path": "code/psp-rce-analysis/svc_vector_writer.py",
+      "change": "added",
+      "before": null,
+      "after": "fb3ddb3e9027c25fab8a5892e9fe0eb790a09b0c"
+    },
+    {
+      "path": "code/test_dpm_vcn_enable.py",
+      "change": "added",
+      "before": null,
+      "after": "9b99bba69fd44715129d8ef188bda37686480572"
+    },
+    {
+      "path": "code/toctou-analysis/ccp_bar_scan.py",
+      "change": "added",
+      "before": null,
+      "after": "269235b150887c0828ec4416eca639f41cb0d8c7"
+    },
+    {
+      "path": "code/toctou-analysis/ccp_sram_probe.py",
+      "change": "added",
+      "before": null,
+      "after": "6525f645c8c89c2a3ef04723b1a8c50b0e7d6715"
+    },
+    {
+      "path": "code/vcn_powerup_fixed.py",
+      "change": "added",
+      "before": null,
+      "after": "64e82b13204eff11cfd1b72618a0526d745520f1"
+    },
+    {
+      "path": "code/vcn_smu_adapter.py",
+      "change": "added",
+      "before": null,
+      "after": "f29902b65bcb23fbbbdede2a726a8928bfa2ed74"
+    },
+    {
+      "path": "debug_vcpu.py",
+      "change": "added",
+      "before": null,
+      "after": "e1ce0167f81ab831b5c74025ab5d2e73db0e5a0b"
+    },
+    {
+      "path": "firmware/vangogh_smu_full.bin",
+      "change": "added",
+      "before": null,
+      "after": "e777f7176501d869373fe224823dc23e0ad58c19"
+    },
+    {
+      "path": "research/BC250_VCN_UNLOCK_STATE_2026_09_14.md",
+      "change": "added",
+      "before": null,
+      "after": "5aedfcbcbb4382e50cad09f48f254d023d98922a"
+    },
+    {
+      "path": "research/COMMUNITY_REPORT_2026_09_06.md",
+      "change": "added",
+      "before": null,
+      "after": "9b3db7adf4cf1dc55ef59b0d1a1fcef4ba781e7a"
+    },
+    {
+      "path": "research/COMMUNITY_REPORT_2026_09_09.md",
+      "change": "added",
+      "before": null,
+      "after": "aa7e7f60877ed9592f95e182e22fcb75e4b0b993"
+    },
+    {
+      "path": "research/COMMUNITY_REPORT_2026_09_11.md",
+      "change": "added",
+      "before": null,
+      "after": "6a18c6870b35fe9c8b076ea6a0387d37212c00ea"
+    },
+    {
+      "path": "research/CONSOLIDATED_RESEARCH_SNAPSHOT_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "563d97ca8bf59e9159519f88c544ba1afa772b89"
+    },
+    {
+      "path": "research/CORRECTIONS_2026_09_30.md",
+      "change": "added",
+      "before": null,
+      "after": "5ef11bc4e665c84856a5340af18846cf6b78703d"
+    },
+    {
+      "path": "research/EXHAUSTION_LOG.md",
+      "change": "added",
+      "before": null,
+      "after": "9da22b858fe11e698ab8413a993626e1ee9df652"
+    },
+    {
+      "path": "research/GHIDRA_ANALYSIS_GUIDE.md",
+      "change": "added",
+      "before": null,
+      "after": "d7a8e82683a0a28711460e9634a1603ef4058335"
+    },
+    {
+      "path": "research/GHIDRA_SMU_ANALYSIS_GUIDE_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "3872f8ebe7ce4381f84784796dc7e84ef9d7db9f"
+    },
+    {
+      "path": "research/HANDOFF_TO_NEXT_SESSION.md",
+      "change": "added",
+      "before": null,
+      "after": "b9d1b1ced1027fdd4cf41632afa6d9b56f0e0020"
+    },
+    {
+      "path": "research/INTEGRATED_RESEARCH_SUMMARY_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "f6f41aab5b0c75e3a513b6226457aa42a83d3092"
+    },
+    {
+      "path": "research/LIVE_SMU_PROBE_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "b0bc77a75c80d78f7ef1260b50069d01c8da71f7"
+    },
+    {
+      "path": "research/PATCHED_AMDGPU_RESULT_AND_DEUCHER_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "3607c359ce62c7270e1e0d19733485ce0b0d471d"
+    },
+    {
+      "path": "research/PSP_RCE_VIA_APCB_EXPERIMENT_2026_09_17.md",
+      "change": "added",
+      "before": null,
+      "after": "5188a2dcb9800b8ca583afd4efd171ce2761d837"
+    },
+    {
+      "path": "research/READY_FOR_COMMUNITY.md",
+      "change": "added",
+      "before": null,
+      "after": "29997cd2bdb6c89c2da81fe7941b2ef33669169d"
+    },
+    {
+      "path": "research/SESSION_FINAL_2026_09_14.md",
+      "change": "added",
+      "before": null,
+      "after": "36389d8447d1353a48da7cc8de5133cc0baedffc"
+    },
+    {
+      "path": "research/SESSION_SUMMARY_2026_09_06.md",
+      "change": "added",
+      "before": null,
+      "after": "897a44a02f202799ec1984255ac621958cf598a1"
+    },
+    {
+      "path": "research/SESSION_SUMMARY_2026_09_30.md",
+      "change": "added",
+      "before": null,
+      "after": "0286c4c65e8b0278d7a7f7e45fda07060db3e426"
+    },
+    {
+      "path": "research/SMU_AUTHORITY_WRITE_TESTS_2026_09_14.md",
+      "change": "added",
+      "before": null,
+      "after": "7f896233c4fe9e34318bb4f1c34e16fe85517700"
+    },
+    {
+      "path": "research/SMU_EXPLOIT_CHAIN_RESULT_2026_09_13.md",
+      "change": "added",
+      "before": null,
+      "after": "da4af2aa1249b7de5b76619dbc9e30800f491de9"
+    },
+    {
+      "path": "research/SUBOR_Z_PLUS_IPDS_DIFF_2026_09_14.md",
+      "change": "added",
+      "before": null,
+      "after": "5e50bc6fcda56a88f13b9caa573295105aa6aaa1"
+    },
+    {
+      "path": "research/TOCTOU_ANALYSIS_2026_09_20.md",
+      "change": "added",
+      "before": null,
+      "after": "a5bb10557e790069fefd5c1c2a4e76614ca97b8b"
+    },
+    {
+      "path": "research/VG_VS_BC250_SMU_DIFF_2026_09_14.md",
+      "change": "added",
+      "before": null,
+      "after": "cf8851fdb16a520dbac14c4d3096e82b2ea98d30"
+    },
+    {
+      "path": "research/pspbl_analysis_ledger.md",
+      "change": "added",
+      "before": null,
+      "after": "4b47e7c66e25f76bf570ed3143850fb65a35f8d1"
+    }
+  ]
+}

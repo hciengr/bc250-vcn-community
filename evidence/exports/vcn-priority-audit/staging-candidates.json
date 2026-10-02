@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-01",
+  "targets": [
+    7880704,
+    7880960
+  ],
+  "sources": [
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/ABL0~0x30_21.11.26.0",
+      "bytes": 1088,
+      "sha256": "8591b9e8429f74aff7e1a38c79fb385ffbab017cb30295432ff1d9a9313e0adf",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/ABL1~0x31_21.11.26.0",
+      "bytes": 48848,
+      "sha256": "a13925644a95648e9867e333c0c7d11b4cfe9b91ed83febcc8cd55b3b1da2f83",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/ABL2~0x32_21.11.26.0",
+      "bytes": 16240,
+      "sha256": "7bec60035bd5c969bb37d6c9d2b44622babf1cdccd10c761d620e0621cf9fd4f",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/ABL3~0x33_21.11.26.0",
+      "bytes": 41312,
+      "sha256": "a29f61ad3c67f56d81f4ce3b2d6c4c3e8cd3ee30960eaaa73945213354e81ada",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/ABL4~0x34_21.11.26.0",
+      "bytes": 40928,
+      "sha256": "8ae6efffc2d111cbb9f49c2271879ade621dd7be901360ebfc8b6155b560589f",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/APCB~0x60",
+      "bytes": 8192,
+      "sha256": "616e9187575864b7b437dc24502d8e5b04c15e941384b0d3d05e18831fefb567",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/APOB",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/APOB_NV_COPY~0x63",
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/BIOS",
+      "bytes": 2088960,
+      "sha256": "5aea760ba5d94e9ad0668603712dfc7802205306d462b2f0c7f4edb825134979",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/BL_PUBLIC_KEY~0x50_1",
+      "bytes": 3536,
+      "sha256": "78c3fe9b99ca6c815715303c440de2a5ece6ef267ee5b50c89f559fe59eb963a",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/DEBUG_UNLOCK~0x13_29.1C.0.1",
+      "bytes": 8192,
+      "sha256": "13c2b04a901321e48a31f7945700465e7bd3223673841093d8587b3d517b3800",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/DRIVER_ENTRIES~0x28_0.1C.0.2",
+      "bytes": 108400,
+      "sha256": "ebd9a7d279c5ac5751ebcc76fa7380c2da003e8f9bb49c1a419ef4c951e320e1",
+      "comparison_control": false,
+      "hits": [
+        {
+          "kind": "raw_u32",
+          "offset": 39036,
+          "value": 7880704
+        }
+      ]
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/FW_XHCI~0x44_0.0.0.1",
+      "bytes": 528,
+      "sha256": "305c09095dbdd6ab4ad3cfa2d50c10af028903f2a62297c58a0513521ce1dc7f",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/HARDWARE_IP_CONFIG~0x20_0.0.0.1",
+      "bytes": 1616,
+      "sha256": "d64943c125658784fd192607e15544e509616ee050c576bdccb3be2e370267a9",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/PSP_FW_TRUSTED_OS~0x2_0.1C.0.2",
+      "bytes": 82768,
+      "sha256": "fc6459ae7833c5ba2f942904ad9c5d97aa3a069267e7344aa33934dd9536d11a",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/SEC_DBG_PUBLIC_KEY~0x9",
+      "bytes": 1088,
+      "sha256": "347eb437947a9f41c65bb764e331afd0ac4e368738217c3b3bf3c61499723ba0",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/SEC_GASKET~0x24_B.51.0.16",
+      "bytes": 11856,
+      "sha256": "b365d5b135da12b097a4ef5aecc47a284f1ccd49ac3d251b35b2c0a6de8c9e55",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/SMU_OFFCHIP_FW~0x8_0.58.6.0",
+      "bytes": 262656,
+      "sha256": "6a3da1ef6024c3143283fb92468fd71d628e9402a751c4a9799a20f473549ad9",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/SMU_OFF_CHIP_FW_2~0x12_0.58.6.0",
+      "bytes": 262656,
+      "sha256": "dbd60a2154461ee517c70bdfd9d2f64b43fc429d42fa9cc20a9a8626be3f26fd",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/TOS_PUBLIC_KEY~0x51_1",
+      "bytes": 1856,
+      "sha256": "1ca4d22f6eb87b0806aeb3061e0e4a31c567ea2c1b21df3d2132a1c4b90c0ede",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/TOS_SECURITY_POLICY~0x45_B.51.1.16",
+      "bytes": 1760,
+      "sha256": "272514c082e604915f1f48bd1ef1ce1c439011cdb1b2240271e9608bbe6f9931",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "analysis/psp_extract/BC250_3.00_unique/UMC_FW~0x4f_81.2.12.0",
+      "bytes": 66048,
+      "sha256": "4435c945ce914b29cc45965ea48a59d2e4d8deb584292e316ebc5258fbd4cf57",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "exports/abl0-p3/abl0-payload.bin",
+      "bytes": 3856,
+      "sha256": "cd74db322ad1e3e3b000f985ee2cffb5ed3d2c1d1e9ef0737b099eb4e574bd2e",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "exports/abl0-p3/abl1-payload.bin",
+      "bytes": 94608,
+      "sha256": "ce0d5f3350b1382207c16f1cfda24a2161e7e05c3c3cfe5b4ee610273bdda84a",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "exports/abl0-p3/abl2-payload.bin",
+      "bytes": 30336,
+      "sha256": "210752e62ff88cea6347c408f0b6e16834a30dfb26259499c9a7fc60e5fd2987",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "exports/abl0-p3/abl3-payload.bin",
+      "bytes": 85200,
+      "sha256": "4b9f013864e9c96d5fed681a43af5e91d8322aaf6c51679e728b0ca099df94ba",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "exports/abl0-p3/abl4-payload.bin",
+      "bytes": 88000,
+      "sha256": "5e3908768e281b0a2235e9988743f6a8fa383772ebf20ef0e183c039c7fedca6",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "ghidra/inputs/psp-p3/t02-payload.bin",
+      "bytes": 82256,
+      "sha256": "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d",
+      "comparison_control": false,
+      "hits": []
+    },
+    {
+      "file": "ghidra/inputs/psp-p3/t28-payload.bin",
+      "bytes": 107888,
+      "sha256": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+      "comparison_control": false,
+      "hits": [
+        {
+          "kind": "raw_u32",
+          "offset": 38780,
+          "value": 7880704
+        }
+      ]
+    },
+    {
+      "file": "exports/rom-source-hunt/extracted/4800s_psp/MX25L12872F_AMD_4800S.bin_unique_extracted/PSP_FW_BOOT_LOADER~0x1_0.2C.0.6",
+      "bytes": 33984,
+      "sha256": "2bfe1d1c11a7efbd24a4febfda8c12d89815af19c687e0cfd96c5da02fa3666a",
+      "comparison_control": true,
+      "hits": [
+        {
+          "kind": "raw_u32",
+          "offset": 26836,
+          "value": 7880704
+        },
+        {
+          "kind": "raw_u32",
+          "offset": 26840,
+          "value": 7880960
+        }
+      ]
+    }
+  ],
+  "method": "Exact u32 at every byte; Thumb MOVW/MOVT candidate pairs at halfword alignment up to 64 bytes apart with matching register",
+  "limits": [
+    "Opcode candidates can be data or unreachable code; no intervening-clobber analysis",
+    "No exclusion of ADD-based constants, aliases, transformations, encrypted code, another address space or runtime-only producers",
+    "4800S is a comparison, not the BC250 earlier loader",
+    "t28 hits describe the known consumer; they do not identify the upstream producer"
+  ]
+}

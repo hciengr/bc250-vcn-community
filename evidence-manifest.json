@@ -1,0 +1,282 @@
+[
+  {
+    "path": "evidence/analysis/reference-sources/vcn/filter-comparison/README.md",
+    "sha256": "407b5753a82d01b40821ac5e4d8d1eddf1bddf7d5e7c6bf0c704271c9e87aea1"
+  },
+  {
+    "path": "evidence/analysis/reference-sources/vcn/filter-comparison/vcn_3_0_0_offset.h",
+    "sha256": "d1071cd768c0550abe3a8203c0e962ea9839254dfdaf6ba44f25e69e31ee53c7"
+  },
+  {
+    "path": "evidence/analysis/reference-sources/vcn/filter-comparison/vcn_3_0_0_sh_mask.h",
+    "sha256": "4cb679e51338387e759e0bb9dde3ae1d0dee775ceaa0dd6bbdb0a875ebcd6ee1"
+  },
+  {
+    "path": "evidence/analysis/steamdeck-comparison/signature/README.md",
+    "sha256": "8a5aa631af333af700635451b64c88c2ea9143f9faef49055a16bb4278a2f24b"
+  },
+  {
+    "path": "evidence/analysis/steamdeck-comparison/vangogh-candidate.json",
+    "sha256": "99fa5c574154af68dbcf01b75a6d12591b2b0ba455905b744eaa1698437e8ecc"
+  },
+  {
+    "path": "evidence/community-domain-c.md",
+    "sha256": "bdc041f3cae676140f3cfb0e3a6e09697d96be5b462d9d315c4857920d077fc7"
+  },
+  {
+    "path": "evidence/exports/navi10-vcn-auth-check/README.md",
+    "sha256": "ebd37bb468f982cf91053b0f5f080db6a7e72b46d6c2ddc78233f540dc6adcde"
+  },
+  {
+    "path": "evidence/exports/navi10-vcn-key/README.md",
+    "sha256": "6bbbc68d01037ddcf767fb9de0c7b1da9fde3c41b0b9a7e46a7c4f8938a31976"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/audit.json",
+    "sha256": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/access_policy.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/access_policy.stdout",
+    "sha256": "e92eeecee35ab2c25c9abdf2c2f4afa0509d979ad57708f22ee39fda20594580"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/access_policy_controls.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/access_policy_controls.stdout",
+    "sha256": "7e5922d5c0adbf03bd7bf59cd0063e8ff1b6ac53ab10ed82150ada4f6309fa6e"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/clamp.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/clamp.stdout",
+    "sha256": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/dma.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/dma.stdout",
+    "sha256": "1b578e7e4f7f57997457815b31011b6893be7538e46d7d5c6e2d39fc7e34c548"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/driver.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/driver.stdout",
+    "sha256": "2b1af85d1fbea407ee1367bce4a2fde601e04d14711219786b07c9bb8c9ceb34"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/isa.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/isa.stdout",
+    "sha256": "cb632075a109fdf507e22323851da4f19b0483d54790478a2ff9ae2c81066e24"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/load_completion.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/load_completion.stdout",
+    "sha256": "86b09e91edf357ad1f4e44bf0fef663c8c780695cff936104c674be842c6d466"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/load_contract.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/load_contract.stdout",
+    "sha256": "7ba3c824e83c39dc86efaa3bee470a0f721fc35974a28ba6cfb9f955dc9d6202"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/manifest.json",
+    "sha256": "eed42a5e62456a8196d812122130f62dd8a13dd33aa4b18c76c70455b3a37d9b"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/metrics.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/metrics.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/navi10_auth.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/navi10_auth.stdout",
+    "sha256": "d15fb5577ba16777d2ee54430b945c813efdf86a9ad44324dfc191149af94e8a"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/parent.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/parent.stdout",
+    "sha256": "f00171a214e2c74fa9ac9309c7d3ad1667be554aacf4b660902cca43a0a16bf1"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/policy.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/policy.stdout",
+    "sha256": "ba257f4da45ceaf2163978ab0150e705b702f3a53d00580cf6d07225578df7f1"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/psp_handoff.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/psp_handoff.stdout",
+    "sha256": "a70f5faec02c79ea7ef1f4048a44f3a9bca1008621b4341e32f338e3a69b9c4c"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/psp_ordering.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/psp_ordering.stdout",
+    "sha256": "8a9c0fcea07d903f93d44e93ab1071eecd962f1b591c128fab99d361651e3d02"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/recovery.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/recovery.stdout",
+    "sha256": "31fbbf672579fe986ae13d9dc9819a0992a193968cc7c696cbbb141f74a6bfa6"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/snapshot_controls.stderr",
+    "sha256": "bf3b7023550e62998f4e0a7619ecfd0382a91acafe38c08d3feac2383794d3e5"
+  },
+  {
+    "path": "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/snapshot_controls.stdout",
+    "sha256": "d5e25fcbf0433710fe052164da5101d9998ff56729f047b462b74600f958e05f"
+  },
+  {
+    "path": "evidence/exports/vcn-kdb-association/README.md",
+    "sha256": "68c1ef31bdcc31112297fa6f988fa70a1a1ea2c0539b7866605e0c009aa29b08"
+  },
+  {
+    "path": "evidence/exports/vcn-kdb-provenance/README.md",
+    "sha256": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78"
+  },
+  {
+    "path": "evidence/exports/vcn-priority-audit/load-reset-functions.asm",
+    "sha256": "47248e97fcb7ad0edd037b80e5e77c623f4aa9757e7c7dda2f4ef5f09c224638"
+  },
+  {
+    "path": "evidence/exports/vcn-priority-audit/load-reset-gate.json",
+    "sha256": "bded96956f968d1f8863dc44659f951327fde88097f8135ae66161085e4bb542"
+  },
+  {
+    "path": "evidence/exports/vcn-priority-audit/local-pci-inventory.json",
+    "sha256": "1d751464ca5bf5d2807db7e35e62213884538fde31be2d6b66a54ad26924da52"
+  },
+  {
+    "path": "evidence/exports/vcn-priority-audit/policy-coverage.json",
+    "sha256": "4acb79935200d97168c5d0b30b078eeb147149c4e6501f8be8634a84e7cfde26"
+  },
+  {
+    "path": "evidence/exports/vcn-priority-audit/staging-candidates.json",
+    "sha256": "87d9ec490f25db63a424423a4b9554bbe750032946e138636fedfee4a017bb2e"
+  },
+  {
+    "path": "evidence/notes/analysis-progress.md",
+    "sha256": "5dfb075423e0b251a97b2607a8197832ec1351e5440b93cc3ec79abb03748bc3"
+  },
+  {
+    "path": "evidence/notes/domain-identity-and-psp-handoffs.md",
+    "sha256": "7cc2ad503617e7486735a5ac9891ef755c5e410b95fe9571368fa954c44d077f"
+  },
+  {
+    "path": "evidence/notes/driver-to-bc250-enablement.md",
+    "sha256": "1e9ab39c5a2f6ce4b52f0ddf343ac38bc274de5a57d6128e7bd4e85387ab8516"
+  },
+  {
+    "path": "evidence/notes/gfx-to-video-path-trace.md",
+    "sha256": "d9922840bd298d8615af5d4aa9b8d75329f0731aa1b7a051ee0f594f7db2d90e"
+  },
+  {
+    "path": "evidence/notes/harvest-indirect-write-path.md",
+    "sha256": "90b4652ea0e5b0fec56c0f5ac5aec469167d490813865e7c157b2d48f06928ef"
+  },
+  {
+    "path": "evidence/notes/harvest-runtime-producer-resume.md",
+    "sha256": "faaa7c2355e7cdf1fee42f7dc45e3e983f786c952bd94e2eee4f1bf97163108f"
+  },
+  {
+    "path": "evidence/notes/isa-cross-reference.md",
+    "sha256": "7e44da23213bc27e1e69de6f8862e70d6d75e067874aef4935e4dd434c1b783a"
+  },
+  {
+    "path": "evidence/notes/navi12-tuple-trace.md",
+    "sha256": "6b598320c06ff7bb827e20ac336638a9433d324966cd08ed3b548589e1801f1f"
+  },
+  {
+    "path": "evidence/notes/pmfw-state-gate.md",
+    "sha256": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
+  },
+  {
+    "path": "evidence/notes/power-acknowledgment.md",
+    "sha256": "400620d20e2984a48071ce102bfda64c471639cf8ba4cdcb78702085cabf8dd8"
+  },
+  {
+    "path": "evidence/notes/psp-service-chain.md",
+    "sha256": "3fbc36fec9f083b1924d20a7349a311a83340217d07ff2f584fe245b75b4526c"
+  },
+  {
+    "path": "evidence/notes/psp-smu-ordering-and-register-roles.md",
+    "sha256": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
+  },
+  {
+    "path": "evidence/notes/psp-vcn-completion-state-flow.md",
+    "sha256": "789f957bd1e6d408f47529f368a880234d16ef7413b1e7d2c9afb125c1acb478"
+  },
+  {
+    "path": "evidence/notes/psp-vcn-restore-vs-autoload.md",
+    "sha256": "e5b6d4c5d96293e372b0c5f7637c676eb1a2a9dd08e8caa8df1ab49a7a0ef2a0"
+  },
+  {
+    "path": "evidence/notes/runtime-section-namespace-correction.md",
+    "sha256": "96b6a410dbccc40398e431e31703b925bbcadbc494dc8dc33ebd641434c4ff19"
+  },
+  {
+    "path": "evidence/notes/vcn-cold-start-and-acknowledgments.md",
+    "sha256": "489bd6476a3916c40f19647867d0905a6074d45f75c117b7e8d6dfb4b5071877"
+  },
+  {
+    "path": "evidence/notes/vcn-contribution-review.md",
+    "sha256": "c68194a46841ebb029c2fab31323cd96a0e8592829c4eb577786cafb1b29b163"
+  },
+  {
+    "path": "evidence/notes/vcn-priority-audit-2026-10-01.md",
+    "sha256": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
+  },
+  {
+    "path": "evidence/notes/vcn-psp-load-contract.md",
+    "sha256": "3cc984ced173a897e7c7b2da77b965d9d215dc56c87fae0fd9339091bfaab44f"
+  },
+  {
+    "path": "evidence/notes/vcn-startup-dependencies.md",
+    "sha256": "5345319eda8892343b507d845abe37cb42fd4aa82591d20088d0134ee31ba8da"
+  },
+  {
+    "path": "evidence/shalasere-upstream-2026-10-01.md",
+    "sha256": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1"
+  }
+]

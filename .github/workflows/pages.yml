@@ -1,0 +1,31 @@
+name: Publish community lab
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require reviewed launch configuration
+        run: ruby -rjson -e 'p=JSON.parse(File.read("review-policy.json")); abort "Public launch is blocked until trusted reviewers and repository protections are configured." unless p["public_launch_ready"] == true && !p["trusted_reviewers"].empty?'
+      - run: ruby build.rb
+      - run: ruby test_verification.rb
+      - run: ruby package_public.rb
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment

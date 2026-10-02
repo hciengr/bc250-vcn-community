@@ -1,0 +1,48 @@
+name: Validate evidence project
+on:
+  push:
+  pull_request:
+  pull_request_review:
+    types: [submitted, dismissed]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  validate:
+    name: Evidence structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - run: ruby build.rb
+      - run: ruby test_verification.rb
+      - run: ruby test_worker_sync.rb
+      - run: ruby test_review_gate.rb
+      - name: Check generated files were committed
+        run: git diff --exit-code -- assets/data.js evidence-manifest.json agent-tasks.json
+  review:
+    name: Independent verification
+    if: github.event.pull_request != null
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Use trusted base validation code
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          mkdir -p /tmp/bc250-review-check
+          git show "$BASE_SHA:check_review.rb" > /tmp/bc250-review-check/check_review.rb
+          git show "$BASE_SHA:verification.rb" > /tmp/bc250-review-check/verification.rb
+      - name: Check provenance and real review identity
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: ruby /tmp/bc250-review-check/check_review.rb

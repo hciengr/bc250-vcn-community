@@ -1,0 +1,254 @@
+{
+   "completion_fixtures" : [
+      {
+         "completion_byte_written" : true,
+         "mailbox_return" : "0x00000000",
+         "return_propagated" : true
+      },
+      {
+         "completion_byte_written" : true,
+         "mailbox_return" : "0x80000306",
+         "return_propagated" : true
+      },
+      {
+         "completion_byte_written" : true,
+         "mailbox_return" : "0x80000307",
+         "return_propagated" : true
+      },
+      {
+         "completion_byte_written" : true,
+         "mailbox_return" : "0xffff000c",
+         "return_propagated" : true
+      },
+      {
+         "completion_byte_written" : false,
+         "mailbox_return" : "0xffff0000",
+         "return_propagated" : true
+      }
+   ],
+   "driver_sha256" : "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+   "hardware_operations" : 0,
+   "kernel_sha256" : "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d",
+   "limitation" : "Raw literals and synthetic predicates checked against instruction exports; no firmware or hardware emulation.",
+   "mapping_fixtures" : [
+      {
+         "control_register" : "0x3220000",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 1,
+         "window_pointer" : "0x1110700"
+      },
+      {
+         "control_register" : "0x3220004",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 2,
+         "window_pointer" : "0x1210700"
+      },
+      {
+         "control_register" : "0x3220004",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 3,
+         "window_pointer" : "0x1310700"
+      },
+      {
+         "control_register" : "0x3220008",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 4,
+         "window_pointer" : "0x1410700"
+      },
+      {
+         "control_register" : "0x3220008",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 5,
+         "window_pointer" : "0x1510700"
+      },
+      {
+         "control_register" : "0x322000c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 6,
+         "window_pointer" : "0x1610700"
+      },
+      {
+         "control_register" : "0x322000c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 7,
+         "window_pointer" : "0x1710700"
+      },
+      {
+         "control_register" : "0x3220010",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 8,
+         "window_pointer" : "0x1810700"
+      },
+      {
+         "control_register" : "0x3220010",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 9,
+         "window_pointer" : "0x1910700"
+      },
+      {
+         "control_register" : "0x3220014",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 10,
+         "window_pointer" : "0x1a10700"
+      },
+      {
+         "control_register" : "0x3220014",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 11,
+         "window_pointer" : "0x1b10700"
+      },
+      {
+         "control_register" : "0x3220018",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 12,
+         "window_pointer" : "0x1c10700"
+      },
+      {
+         "control_register" : "0x3220018",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 13,
+         "window_pointer" : "0x1d10700"
+      },
+      {
+         "control_register" : "0x322001c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 14,
+         "window_pointer" : "0x1e10700"
+      },
+      {
+         "control_register" : "0x322001c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 15,
+         "window_pointer" : "0x1f10700"
+      },
+      {
+         "control_register" : "0x3220020",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 16,
+         "window_pointer" : "0x2010700"
+      },
+      {
+         "control_register" : "0x3220020",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 17,
+         "window_pointer" : "0x2110700"
+      },
+      {
+         "control_register" : "0x3220024",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 18,
+         "window_pointer" : "0x2210700"
+      },
+      {
+         "control_register" : "0x3220024",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 19,
+         "window_pointer" : "0x2310700"
+      },
+      {
+         "control_register" : "0x3220028",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 20,
+         "window_pointer" : "0x2410700"
+      },
+      {
+         "control_register" : "0x3220028",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 21,
+         "window_pointer" : "0x2510700"
+      },
+      {
+         "control_register" : "0x322002c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 22,
+         "window_pointer" : "0x2610700"
+      },
+      {
+         "control_register" : "0x322002c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 23,
+         "window_pointer" : "0x2710700"
+      },
+      {
+         "control_register" : "0x3220030",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 24,
+         "window_pointer" : "0x2810700"
+      },
+      {
+         "control_register" : "0x3220030",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 25,
+         "window_pointer" : "0x2910700"
+      },
+      {
+         "control_register" : "0x3220034",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 26,
+         "window_pointer" : "0x2a10700"
+      },
+      {
+         "control_register" : "0x3220034",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 27,
+         "window_pointer" : "0x2b10700"
+      },
+      {
+         "control_register" : "0x3220038",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 28,
+         "window_pointer" : "0x2c10700"
+      },
+      {
+         "control_register" : "0x3220038",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 29,
+         "window_pointer" : "0x2d10700"
+      },
+      {
+         "control_register" : "0x322003c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "lower",
+         "slot" : 30,
+         "window_pointer" : "0x2e10700"
+      },
+      {
+         "control_register" : "0x322003c",
+         "encoded_target_page" : "0x3b",
+         "halfword" : "upper",
+         "slot" : 31,
+         "window_pointer" : "0x2f10700"
+      }
+   ],
+   "physical_alias_proven" : false,
+   "type18_branch" : "0xe0fb8e"
+}

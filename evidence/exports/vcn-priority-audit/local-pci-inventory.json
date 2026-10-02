@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-01",
+  "devices": [
+    {
+      "bdf": "0000:00:00.0",
+      "vendor": "0x8086",
+      "device": "0x9a36"
+    },
+    {
+      "bdf": "0000:00:01.0",
+      "vendor": "0x8086",
+      "device": "0x9a01"
+    },
+    {
+      "bdf": "0000:00:02.0",
+      "vendor": "0x8086",
+      "device": "0x9a60"
+    },
+    {
+      "bdf": "0000:00:04.0",
+      "vendor": "0x8086",
+      "device": "0x9a03"
+    },
+    {
+      "bdf": "0000:00:06.0",
+      "vendor": "0x8086",
+      "device": "0x09ab"
+    },
+    {
+      "bdf": "0000:00:07.0",
+      "vendor": "0x8086",
+      "device": "0x9a2b"
+    },
+    {
+      "bdf": "0000:00:08.0",
+      "vendor": "0x8086",
+      "device": "0x9a11"
+    },
+    {
+      "bdf": "0000:00:0a.0",
+      "vendor": "0x8086",
+      "device": "0x9a0d"
+    },
+    {
+      "bdf": "0000:00:0d.0",
+      "vendor": "0x8086",
+      "device": "0x9a17"
+    },
+    {
+      "bdf": "0000:00:0d.2",
+      "vendor": "0x8086",
+      "device": "0x9a1f"
+    },
+    {
+      "bdf": "0000:00:0e.0",
+      "vendor": "0x8086",
+      "device": "0x9a0b"
+    },
+    {
+      "bdf": "0000:00:14.0",
+      "vendor": "0x8086",
+      "device": "0x43ed"
+    },
+    {
+      "bdf": "0000:00:14.2",
+      "vendor": "0x8086",
+      "device": "0x43ef"
+    },
+    {
+      "bdf": "0000:00:15.0",
+      "vendor": "0x8086",
+      "device": "0x43e8"
+    },
+    {
+      "bdf": "0000:00:15.1",
+      "vendor": "0x8086",
+      "device": "0x43e9"
+    },
+    {
+      "bdf": "0000:00:16.0",
+      "vendor": "0x8086",
+      "device": "0x43e0"
+    },
+    {
+      "bdf": "0000:00:1c.0",
+      "vendor": "0x8086",
+      "device": "0x43bc"
+    },
+    {
+      "bdf": "0000:00:1c.6",
+      "vendor": "0x8086",
+      "device": "0x43be"
+    },
+    {
+      "bdf": "0000:00:1c.7",
+      "vendor": "0x8086",
+      "device": "0x43bf"
+    },
+    {
+      "bdf": "0000:00:1f.0",
+      "vendor": "0x8086",
+      "device": "0x438b"
+    },
+    {
+      "bdf": "0000:00:1f.3",
+      "vendor": "0x8086",
+      "device": "0x43c8"
+    },
+    {
+      "bdf": "0000:00:1f.4",
+      "vendor": "0x8086",
+      "device": "0x43a3"
+    },
+    {
+      "bdf": "0000:00:1f.5",
+      "vendor": "0x8086",
+      "device": "0x43a4"
+    },
+    {
+      "bdf": "0000:01:00.0",
+      "vendor": "0x10de",
+      "device": "0x2520"
+    },
+    {
+      "bdf": "0000:01:00.1",
+      "vendor": "0x10de",
+      "device": "0x228e"
+    },
+    {
+      "bdf": "0000:2d:00.0",
+      "vendor": "0x10ec",
+      "device": "0x8168"
+    },
+    {
+      "bdf": "0000:2e:00.0",
+      "vendor": "0x17a0",
+      "device": "0x9755"
+    },
+    {
+      "bdf": "0000:2f:00.0",
+      "vendor": "0x14c3",
+      "device": "0x7961"
+    },
+    {
+      "bdf": "10000:e0:06.0",
+      "vendor": "0x8086",
+      "device": "0x9a0f"
+    },
+    {
+      "bdf": "10000:e1:00.0",
+      "vendor": "0x8086",
+      "device": "0xf1aa"
+    }
+  ],
+  "bc250_present": false,
+  "qualification": "Local PCI sysfs inventory, not the community board or remote endpoints"
+}

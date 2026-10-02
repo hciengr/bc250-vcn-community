@@ -1,0 +1,1 @@
+window.VCN_UPSTREAM = {"repository":"https://github.com/Shalasere/bc250-vcn-research","commit":"4a91ceb86275fbceeaf1fb3062f2f086e7f780c5","checked_at":"2026-10-02T04:04:29Z","commit_date":"2026-10-01T20:55:37-06:00","pending_revisions":1,"firmware":{"path":"firmware/vangogh_smu_full.bin","bytes":524800,"sha256":"c4de5edc9eb2a9676b7c9a6811e71fee793192ba7bb340d7f6689c7b7eb89b25"}};

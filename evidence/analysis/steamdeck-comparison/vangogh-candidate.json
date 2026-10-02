@@ -1,0 +1,18 @@
+{
+   "bc250_files_scanned" : 22,
+   "crc32" : "0x984e0772",
+   "crc_valid" : true,
+   "file" : "/lib/firmware/amdgpu/vangogh_vcn.bin",
+   "header_size_bytes" : 32,
+   "header_version" : "1.0",
+   "identifier_hits" : [],
+   "ip_version" : "3.0",
+   "payload_offset" : 256,
+   "payload_plus_38_candidate_id" : "70ec3e2d8a694792ac7969ff8ac9caca",
+   "payload_sha256" : "2c913174a7bc09120e01aa77492e5d9ba7ab9b5a3599636b813243c7a369d08d",
+   "payload_size" : 572112,
+   "qualification" : "Package bounds and CRC only; no signature authentication or BC-250 compatibility proof. Candidate ID interpretation is from the BC-250 loader +0x38 comparison; occurrence does not establish membership in its runtime trust table.",
+   "sha256" : "eafebdb4043b825b12826198a7d76d8acc4e251fb102329dc1c78cf7bdcc15e2",
+   "size_bytes" : 572368,
+   "ucode_version" : "0x0412100c"
+}

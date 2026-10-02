@@ -1,0 +1,6 @@
+[Unit]
+Description=Track public Shalasere BC250 VCN research changes
+[Service]
+Type=oneshot
+WorkingDirectory=/home/hci/Desktop/BC250/community/vcn
+ExecStart=/usr/bin/ruby /home/hci/Desktop/BC250/community/vcn/sync_upstream.rb

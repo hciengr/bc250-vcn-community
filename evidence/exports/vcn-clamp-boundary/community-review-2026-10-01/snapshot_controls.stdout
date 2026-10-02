@@ -1,0 +1,7 @@
+ok 1 - matching snapshots accepted
+ok 2 - unchanged snapshots have no changes
+ok 3 - cached change recorded
+ok 4 - change does not imply enablement
+ok 5 - firmware mismatch rejected
+ok 6 - failed capture rejected
+1..6

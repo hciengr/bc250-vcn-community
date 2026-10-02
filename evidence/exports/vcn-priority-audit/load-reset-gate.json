@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-01",
+  "firmware_sha256": "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9",
+  "mapping": "t28 VA = payload offset + e00100",
+  "raw_instruction_checks": [
+    {
+      "va": 14721292,
+      "bytes": "00f010f8",
+      "meaning": "BL",
+      "target": 14721328
+    },
+    {
+      "va": 14721296,
+      "bytes": "48b1",
+      "meaning": "CBZ",
+      "target": 14721318,
+      "register": 0
+    },
+    {
+      "va": 14721302,
+      "bytes": "31b1",
+      "meaning": "CBZ",
+      "target": 14721318,
+      "register": 1
+    },
+    {
+      "va": 14721306,
+      "bytes": "21b9",
+      "meaning": "CBNZ",
+      "target": 14721318,
+      "register": 1
+    },
+    {
+      "va": 14721310,
+      "bytes": "042d",
+      "meaning": "CMP r5,4; wrapper bounds retry count"
+    },
+    {
+      "va": 14773754,
+      "bytes": "f3f775f9",
+      "meaning": "BL",
+      "target": 14721256
+    },
+    {
+      "va": 14773758,
+      "bytes": "0400",
+      "meaning": "MOVS r4,r0"
+    },
+    {
+      "va": 14773760,
+      "bytes": "25d1",
+      "meaning": "BNE",
+      "target": 14773838,
+      "register": null
+    },
+    {
+      "va": 14773838,
+      "bytes": "98e0",
+      "meaning": "B",
+      "target": 14774146,
+      "register": null
+    },
+    {
+      "va": 14774150,
+      "bytes": "5fdf",
+      "meaning": "SVC 5f cleanup"
+    },
+    {
+      "va": 14774170,
+      "bytes": "2046",
+      "meaning": "MOV r0,r4 returns retained image status"
+    },
+    {
+      "va": 14736284,
+      "bytes": "09f0f4f8",
+      "meaning": "BL",
+      "target": 14773640
+    },
+    {
+      "va": 14736288,
+      "bytes": "0700",
+      "meaning": "MOVS r7,r0"
+    },
+    {
+      "va": 14736290,
+      "bytes": "2ed1",
+      "meaning": "BNE",
+      "target": 14736386,
+      "register": null
+    },
+    {
+      "va": 14736418,
+      "bytes": "dfb9",
+      "meaning": "CBNZ",
+      "target": 14736476,
+      "register": 7
+    },
+    {
+      "va": 14736470,
+      "bytes": "01f05fff",
+      "meaning": "BL",
+      "target": 14744344
+    },
+    {
+      "va": 14736476,
+      "bytes": "3846",
+      "meaning": "MOV r0,r7 returns retained ordinary-loader status"
+    },
+    {
+      "va": 14744596,
+      "bytes": "03d1",
+      "meaning": "BNE",
+      "target": 14744606,
+      "register": null
+    },
+    {
+      "va": 14744604,
+      "bytes": "7cdf",
+      "meaning": "SVC 7c conditional management write"
+    },
+    {
+      "va": 14744606,
+      "bytes": "07f05ffa",
+      "meaning": "BL",
+      "target": 14774496
+    },
+    {
+      "va": 14774498,
+      "bytes": "0024",
+      "meaning": "MOVS r4,0; late helper fixes its returned status to zero"
+    },
+    {
+      "va": 14774500,
+      "bytes": "0248",
+      "meaning": "LDR r0, literal at e170f0"
+    },
+    {
+      "va": 14774502,
+      "bytes": "0121",
+      "meaning": "MOVS r1,1"
+    },
+    {
+      "va": 14774504,
+      "bytes": "0422",
+      "meaning": "MOVS r2,4"
+    },
+    {
+      "va": 14774506,
+      "bytes": "7cdf",
+      "meaning": "SVC 7c late filter-target write"
+    },
+    {
+      "va": 14774508,
+      "bytes": "2046",
+      "meaning": "MOV r0,r4 discards SVC status"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "final_missing_id",
+      "image_status": 4294901768,
+      "context": 65535,
+      "completion_reached": false,
+      "management_write_requested": false,
+      "late_filter_write_requested": false,
+      "physical_reset_released": null,
+      "qualification": "Bounded branch-contract fixture, not execution; acceptance alone does not guarantee other checks pass"
+    },
+    {
+      "name": "final_usage_mismatch",
+      "image_status": 2147484165,
+      "context": 65535,
+      "completion_reached": false,
+      "management_write_requested": false,
+      "late_filter_write_requested": false,
+      "physical_reset_released": null,
+      "qualification": "Bounded branch-contract fixture, not execution; acceptance alone does not guarantee other checks pass"
+    },
+    {
+      "name": "accepted_host_context",
+      "image_status": 0,
+      "context": 65535,
+      "completion_reached": true,
+      "management_write_requested": true,
+      "late_filter_write_requested": true,
+      "physical_reset_released": null,
+      "qualification": "Bounded branch-contract fixture, not execution; acceptance alone does not guarantee other checks pass"
+    },
+    {
+      "name": "accepted_index_context",
+      "image_status": 0,
+      "context": 1,
+      "completion_reached": true,
+      "management_write_requested": false,
+      "late_filter_write_requested": true,
+      "physical_reset_released": null,
+      "qualification": "Bounded branch-contract fixture, not execution; acceptance alone does not guarantee other checks pass"
+    },
+    {
+      "name": "accepted_all_ones_context",
+      "image_status": 0,
+      "context": 4294967295,
+      "completion_reached": true,
+      "management_write_requested": false,
+      "late_filter_write_requested": true,
+      "physical_reset_released": null,
+      "qualification": "Bounded branch-contract fixture, not execution; acceptance alone does not guarantee other checks pass"
+    }
+  ],
+  "conclusion": "A final nonzero image-processing status takes cleanup and skips ordinary type-13 completion, including its conditional 0900c004 write and late 1f8a4 write.",
+  "header_retry_caveat": "Wrapper e0a0e8 may try up to four 0x100-spaced headers when byte+7f is nonzero and word+18 is zero; a missing ID at one attempted header is not necessarily the final image-processing result.",
+  "limits": [
+    "No field-name or physical reset validation",
+    "Only recovered ordinary LOAD_IP_FW route; restore/replay and other writers remain separate",
+    "Normal stack-protector return and firmware ABI assumed",
+    "Other prerequisites/checks can prevent completion even with image status zero",
+    "Known SVC store instruction does not prove store acceptance; late helper discards its status"
+  ]
+}

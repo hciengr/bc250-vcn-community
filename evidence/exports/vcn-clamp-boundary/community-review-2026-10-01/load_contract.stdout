@@ -1,0 +1,89 @@
+{
+   "hardware_operations" : 0,
+   "limitation" : "Static branch checks and synthetic counterexamples only. No ABL0 producer established. Status zero alone does not prove acceptance or VCPU execution.",
+   "software_harvest_bit_examples" : [
+      {
+         "harvest_config" : 0,
+         "instance0_registration_skipped" : false,
+         "instance1_registration_skipped" : false
+      },
+      {
+         "harvest_config" : 1,
+         "instance0_registration_skipped" : true,
+         "instance1_registration_skipped" : false
+      },
+      {
+         "harvest_config" : 2,
+         "instance0_registration_skipped" : false,
+         "instance1_registration_skipped" : true
+      },
+      {
+         "harvest_config" : 3,
+         "instance0_registration_skipped" : true,
+         "instance1_registration_skipped" : true
+      }
+   ],
+   "source_checks" : [
+      "No-hardware mode returns zero",
+      "Submission result retained in ret",
+      "Fence comparison uses submitted index",
+      "RAS interrupt can break fence wait",
+      "Response handling guard excludes RAS interruption",
+      "Response error becomes return error only for VF ucode or timeout in this branch",
+      "Returned firmware address copied after response branch",
+      "Empty firmware pointer or size skips load"
+   ],
+   "source_sha256" : "4eb9ce8a315de3812a18aa28b412cde9b86749cdf7b9906cf3383f60abdfab7b",
+   "synthetic_response_cases" : [
+      {
+         "firmware_acceptance_proven" : false,
+         "modeled_return" : "0",
+         "name" : "bare_metal_zero",
+         "ras_interrupted" : 0,
+         "reaches_address_copy" : true,
+         "response_status" : "0x00000000",
+         "sriov" : 0,
+         "timeout_counter_nonzero" : 1
+      },
+      {
+         "firmware_acceptance_proven" : false,
+         "modeled_return" : "0",
+         "name" : "bare_metal_nonzero",
+         "ras_interrupted" : 0,
+         "reaches_address_copy" : true,
+         "response_status" : "0xffff0008",
+         "sriov" : 0,
+         "timeout_counter_nonzero" : 1
+      },
+      {
+         "firmware_acceptance_proven" : false,
+         "modeled_return" : "-EINVAL",
+         "name" : "vf_nonzero",
+         "ras_interrupted" : 0,
+         "reaches_address_copy" : false,
+         "response_status" : "0xffff0008",
+         "sriov" : 1,
+         "timeout_counter_nonzero" : 1
+      },
+      {
+         "firmware_acceptance_proven" : false,
+         "modeled_return" : "-EINVAL",
+         "name" : "timeout",
+         "ras_interrupted" : 0,
+         "reaches_address_copy" : false,
+         "response_status" : "0x00000000",
+         "sriov" : 0,
+         "timeout_counter_nonzero" : 0
+      },
+      {
+         "firmware_acceptance_proven" : false,
+         "modeled_return" : "0",
+         "name" : "ras_break",
+         "ras_interrupted" : 1,
+         "reaches_address_copy" : true,
+         "response_status" : "0xffff0008",
+         "sriov" : 0,
+         "timeout_counter_nonzero" : 1
+      }
+   ]
+}

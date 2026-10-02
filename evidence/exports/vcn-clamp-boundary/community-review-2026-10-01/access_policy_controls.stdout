@@ -1,0 +1,6 @@
+PASS Spanning interval detected even when neither endpoint lies inside VCN
+PASS Overlap scanning includes frames other than C
+PASS Preload distinguished from management descriptor
+PASS Reversed pair does not become an aperture
+PASS Truncated/oversized section rejected
+PASS Declared section count enforced

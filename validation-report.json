@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-01",
+  "schema_validation": "31 claims, 13 stages, 19 tasks, 3 reports passed",
+  "browser": "isolated Chromium headless",
+  "browser_errors": [],
+  "importer_checks": [
+    "message provenance",
+    "duplicate message handling",
+    "pending review preserved",
+    "script escaping",
+    "wrong-channel rejection"
+  ],
+  "limitations": [
+    "No live Discord ingestion",
+    "No public repository or hosting created",
+    "Browser drafts require reviewed shared submission",
+    "No hardware operation or new VCN proof"
+  ],
+  "previous_browser_checks": [
+    "12 map stages",
+    "25 claim rows",
+    "domain-C report pending",
+    "tab navigation",
+    "skill filtering",
+    "task claim form",
+    "local draft persistence",
+    "draft does not alter shared ownership",
+    "duplicate draft warning",
+    "reset claims C23/C25 displayed"
+  ],
+  "static_audits": {
+    "policy": "P3 t24/t45 and two SD directory copies checked",
+    "policy_fixture_controls": 6,
+    "load_reset_raw_checks": 26,
+    "load_reset_scoped_fixtures": 5,
+    "staging_scan_inputs": 30
+  },
+  "browser_checks": [
+    "13 stages including RSMU policy",
+    "29 claims",
+    "Review task excluded from ready recommendations",
+    "Review task opens validation",
+    "Review coordination warning",
+    "Open investigation remains claimable",
+    "Policy inspector shows audit + comparative filter lead",
+    "Dependency routes present"
+  ],
+  "upstream_checks": [
+    "live scheduled fetch succeeded",
+    "unchanged refresh creates no duplicate report",
+    "canonical data unchanged by refresh",
+    "supplied SMU size/hash matches upstream",
+    "Chromium renders upstream status, C30/C31 and T18/T19"
+  ]
+}
