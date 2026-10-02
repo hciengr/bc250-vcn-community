@@ -19,7 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Require authorized launch mode
-        run: ruby -rjson -e 'p=JSON.parse(File.read("review-policy.json")); abort "Public launch is blocked: authorize proposals-only mode or configure trusted reviewers." unless p["public_launch_ready"] == true && (p["contribution_mode"] == "proposals-only" || !p["trusted_reviewers"].empty?)'
+        run: |
+          ruby -rjson -e 'p=JSON.parse(File.read("review-policy.json")); abort "Public launch is blocked: authorize proposals-only mode or configure trusted reviewers." unless p["public_launch_ready"] == true && (p["contribution_mode"] == "proposals-only" || !p["trusted_reviewers"].empty?)'
       - run: ruby build.rb
       - run: ruby test_verification.rb
       - run: ruby package_public.rb
