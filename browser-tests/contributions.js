@@ -1,4 +1,4 @@
-window.addEventListener('load',()=>{
+window.addEventListener('load',async()=>{
  const results=[];
  function check(condition,message){if(!condition)throw Error(message);results.push('PASS '+message);}
  const e=id=>document.getElementById(id);
@@ -39,6 +39,24 @@ window.addEventListener('load',()=>{
   e('worker-dialog').close();
   e('contribute').click();check(e('evidence-dialog').open,'Header entry uses the guided evidence form');e('evidence-dialog').close();
   check(document.querySelectorAll('[data-worker]').length===23,'Every task offers direct worker linking');
+check(!document.querySelector('a[download]'),'No download links remain');
+document.querySelector('[data-packet="T02"]').click();
+const terminal=document.querySelector('.terminal-dialog'),output=terminal.querySelector('textarea');
+check(terminal.open&&JSON.parse(output.value).task.id==='T02','Task packet opens as terminal text');
+check(JSON.parse(output.value).ledger_sha256===window.VCN_TASK_PACKETS[0].ledger_sha256,'Terminal packet preserves snapshot identity');
+terminal.querySelector('.terminal-select').click();
+check(output.selectionStart===0&&output.selectionEnd===output.value.length,'Select all includes complete packet');
+let copied='';Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{copied=text;}}});
+await terminal.querySelector('.terminal-copy').onclick();
+check(copied===output.value&&terminal.querySelector('.terminal-status').textContent==='Copied.','Clipboard receives complete packet text');
+Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('Denied');}}});
+await terminal.querySelector('.terminal-copy').onclick();
+check(terminal.querySelector('.terminal-status').textContent.includes('Ctrl+C')&&output.selectionEnd===output.value.length,'Clipboard denial selects text for manual copy');
+terminal.querySelector('.terminal-close').click();
+ContributionFlow.worker('T02');e('worker-human').value='fixture-user';e('worker-name').value='fixture-worker';
+e('download-worker-packet').click();const linked=JSON.parse(output.value);
+check(terminal.open&&linked.worker.id==='fixture-worker'&&linked.worker.human_principal==='fixture-user','Worker packet retains human identity in terminal');
+terminal.close();check(e('worker-prompt').closest('.worker-terminal')!==null,'Worker instructions are visible in terminal frame');e('worker-dialog').close();
   document.body.dataset.browserTest='passed';
  }catch(error){results.push('FAIL '+error.message);document.body.dataset.browserTest='failed';}
  const pre=document.createElement('pre');pre.id='browser-test-results';pre.textContent=results.join('\n');document.body.appendChild(pre);

@@ -42,7 +42,7 @@ The importer checks the target channel, retains message/author IDs, timestamps, 
 
 ## Publish as a community project
 
-Public launch instructions are in `PUBLISHING.md`. `ruby package_public.rb` creates a static `_site` artifact; `.github/workflows/pages.yml` publishes it from a standalone repository. Each work card provides a downloadable AI task packet, and a shared issue link when `repository_url` is configured. All packets are also available in `agent-tasks.json`; `AGENTS.md` defines worker evidence and review requirements.
+Public launch instructions are in `PUBLISHING.md`. `ruby package_public.rb` creates a static `_site` artifact; `.github/workflows/pages.yml` publishes it from a standalone repository. Each work card opens a copyable task packet in a terminal-style text panel, and a shared issue link when `repository_url` is configured. All packets are also available in `agent-tasks.json`; `AGENTS.md` defines worker evidence and review requirements.
 
 This directory is ready to become its own repository. Initialize Git here, choose a repository destination, and push it. Enable static hosting for the project root if desired. Configure `repository_url` in `data.json`, rebuild, and direct contributors to repository issues/PRs. The issue templates and workflow are included; the source repository is configured under hciengr and GitHub Actions records website deployment status.
 

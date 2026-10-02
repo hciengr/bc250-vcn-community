@@ -8,11 +8,6 @@
   const snapshot=packets[0]?.ledger_sha256||'not available';
   const packetFor=id=>packets.find(p=>p.task.id===id);
   const issueSearch=id=>`${repo}/issues?q=${encodeURIComponent('is:issue '+id)}`;
-  const saveFile=(name,body,type='text/markdown')=>{
-    const url=URL.createObjectURL(new Blob([body],{type}));
-    const a=document.createElement('a');a.href=url;a.download=name;a.click();
-    setTimeout(()=>URL.revokeObjectURL(url),1000);
-  };
   const option=(select,value,text)=>select.add(new Option(text,value));
   option(el('easy-topic'),'general','Unassigned task / claim');
   data.tasks.forEach(t=>option(el('easy-topic'),t.id,`${t.id} · ${t.title}`));
@@ -139,6 +134,7 @@ ${JSON.stringify(p,null,2)}
   ['contribute','report-button','start-evidence'].forEach(id=>el(id).onclick=()=>evidence());
   ['link-worker','start-worker'].forEach(id=>el(id).onclick=()=>worker());
   document.addEventListener('click',event=>{
+    const packetButton=event.target.closest('[data-packet]');if(packetButton){const p=packetFor(packetButton.dataset.packet);if(p)TerminalView.show(`${p.task.id} · task packet`,JSON.stringify(p,null,2));return;}
     const close=event.target.closest('[data-close]');if(close)el(close.dataset.close).close();
     const button=event.target.closest('[data-worker]');if(button)worker(button.dataset.worker);
   });
@@ -146,7 +142,7 @@ ${JSON.stringify(p,null,2)}
     event.preventDefault();const record=evidenceRecord();if(!record)return;
     el('evidence-dialog').close();handoff(record,'evidence');
   };
-  el('easy-download').onclick=()=>{const record=evidenceRecord();if(record)saveFile('vcn-evidence.md',record.body);};
+  el('easy-download').onclick=()=>{const record=evidenceRecord();if(record)TerminalView.show('Evidence submission',record.body);};
   ['worker-task','worker-mode','worker-human','worker-name','worker-plan'].forEach(id=>el(id).addEventListener('input',()=>{
     if(id==='worker-task'&&['review','done'].includes(packetFor(el(id).value).task.status))el('worker-mode').value='reproduce';
     updateWorker();
@@ -154,7 +150,7 @@ ${JSON.stringify(p,null,2)}
   el('copy-worker-prompt').onclick=()=>copy(workerPrompt(),el('worker-copy-status'),el('worker-prompt'));
   el('download-worker-packet').onclick=()=>{
     const p=packetFor(el('worker-task').value);
-    saveFile(`${p.task.id}-worker-task.json`,JSON.stringify({...p,worker:{id:el('worker-name').value.trim()||null,human_principal:el('worker-human').value.trim()||null}},null,2),'application/json');
+    TerminalView.show(`${p.task.id} · task packet`,JSON.stringify({...p,worker:{id:el('worker-name').value.trim()||null,human_principal:el('worker-human').value.trim()||null}},null,2));
   };
   el('worker-form').onsubmit=event=>{
     event.preventDefault();if(!el('worker-form').reportValidity())return;
