@@ -1,0 +1,128 @@
+{
+  "kind": "static callback-registration follow-up; not runtime execution",
+  "inputs": {
+    "exports/pmfw-p3-const-full/decompiled/00001024.c": "057d4288da2c4e7320348386af6a65d2f12f18e739c5124fb6fab1601eb662db",
+    "exports/pmfw-p3-const-full/decompiled/000026b4.c": "43de1570e4bc49f231eb2bdbbdc9c67c3280fcf71a2e18cdcac95e19b5bcd668",
+    "exports/pmfw-p3-const-full/decompiled/0001b154.c": "a1ce6527918edd580fb9d27b33e4984366530c0acb253e1d6fd820eb679b5e39",
+    "exports/pmfw-p3-const-full/decompiled/0001b1e4.c": "c0a6f2c1e5b424163d05c56cd76951fbc09c1b9ee27076be03211d0d0b695536",
+    "exports/pmfw-p3-const-full/decompiled/0002e3e8.c": "a8f3319a91c5265b58f4555909b582adb56386256cc51425195137b5a5db0d73",
+    "exports/pmfw-p3-const-full/functions.jsonl": "617754c44bbc01d7e066429ad29bf24341728375495e7a664875e8c0177fee07",
+    "firmware/smu/smu_fw_robin_1_trim": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675"
+  },
+  "literals": [
+    {
+      "address": "00000ba4",
+      "value": "0001b154",
+      "bytes": "54b10100"
+    },
+    {
+      "address": "00017090",
+      "value": "0000c700",
+      "bytes": "00c70000"
+    },
+    {
+      "address": "00017098",
+      "value": "0000c7a0",
+      "bytes": "a0c70000"
+    },
+    {
+      "address": "000181dc",
+      "value": "0002e448",
+      "bytes": "48e40200"
+    },
+    {
+      "address": "00000b8c",
+      "value": "00007ad8",
+      "bytes": "d87a0000"
+    },
+    {
+      "address": "00017050",
+      "value": "00007ad8",
+      "bytes": "d87a0000"
+    }
+  ],
+  "functions": [
+    {
+      "entry": "00001024",
+      "calls": [
+        {
+          "function": "FUN_0000241c",
+          "entry": "0000241c"
+        },
+        {
+          "function": "FUN_000026b4",
+          "entry": "000026b4"
+        }
+      ],
+      "indirect_calls": [],
+      "decompiler": "\nvoid FUN_00001024(void)\n\n{\n  undefined *puVar1;\n  int iVar2;\n  \n  puVar1 = PTR_DAT_00000b8c;\n  memw();\n  if (*(int *)PTR_DAT_00000b8c == 0) {\n    iVar2 = FUN_000026b4(PTR_FUN_00000ba4,4,0,0,0,0);\n    if (iVar2 == 0) {\n      memw();\n      *(undefined4 *)puVar1 = 1;\n    }\n  }\n  else {\n    *(int *)(PTR_DAT_00000b8c + 0x68) = *(int *)(PTR_DAT_00000b8c + 0x68) + 1;\n  }\n  FUN_0000241c();\n  return;\n}\n\n"
+    },
+    {
+      "entry": "000026b4",
+      "calls": [
+        {
+          "function": "FUN_00001b78",
+          "entry": "00001b78"
+        },
+        {
+          "function": "FUN_00002de8",
+          "entry": "00002de8"
+        }
+      ],
+      "indirect_calls": [],
+      "decompiler": "\nundefined4\nFUN_000026b4(undefined4 param_1,uint param_2,undefined4 param_3,undefined2 param_4,int param_5,\n            byte param_6)\n\n{\n  byte bVar1;\n  byte bVar2;\n  undefined *puVar3;\n  undefined4 unaff_retaddr;\n  int iVar4;\n  undefined4 *puVar5;\n  char cVar6;\n  undefined *puVar7;\n  undefined4 uVar8;\n  undefined4 uVar9;\n  int iVar10;\n  undefined1 uVar11;\n  undefined1 in_MISC1;\n  undefined8 uVar12;\n  \n  uVar11 = 0;\n  param_2 = param_2 & 0xff;\n  iVar10 = 0;\n  uVar9 = 0;\n  uVar8 = rsil(2);\n  if ((param_5 == 0) && (0xe < (byte)PTR_DAT_00000d28[0xbc])) {\n    wsr(0,uVar8);\n    return 2;\n  }\n  puVar7 = PTR_DAT_00000d28;\n  if (PTR_DAT_00000d28[0xbc] == 0x14) {\n    memw();\n    uVar8 = *(undefined4 *)(DAT_00000b68 + 0x228);\n    uVar11 = 0;\n    uVar12 = FUN_00001b78(1,9,0,uVar8);\n    puVar7 = (undefined *)((ulonglong)uVar12 >> 0x20);\n    param_2 = (uint)uVar12;\n  }\n  bVar1 = puVar7[0xbe];\n  puVar5 = (undefined4 *)(PTR_DAT_00000cb0 + (uint)bVar1 * 0xc);\n  puVar7[0xbe] = *(undefined1 *)((int)puVar5 + 10);\n  *(undefined2 *)(puVar5 + 2) = param_4;\n  puVar5[1] = param_3;\n  *puVar5 = param_1;\n  *(byte *)((int)puVar5 + 0xb) = *(byte *)((int)puVar5 + 0xb) & 0xf0 | (byte)param_2 & 0xf;\n  *(byte *)((int)puVar5 + 0xb) = *(byte *)((int)puVar5 + 0xb) & 0xef | (param_6 & 1) << 4;\n  puVar3 = PTR_DAT_00000cb0;\n  if (puVar7[0xbc] != '\\0') {\n    if (PTR_DAT_00000cb0[param_2 + 0xf0] != '\\0') {\n      *(undefined *)((int)puVar5 + 10) =\n           PTR_DAT_00000cb0[(uint)(byte)PTR_DAT_00000cb0[param_2 + 0xf8] * 0xc + 10];\n      bVar2 = puVar3[param_2 + 0xf8];\nLAB_00002752:\n      puVar3[(uint)bVar2 * 0xc + 10] = bVar1;\n      goto LAB_00002758;\n    }\n    if (param_2 == 0) {\n      *(undefined *)((int)puVar5 + 10) = puVar7[0xbd];\n    }\n    else {\n      cVar6 = (char)(param_2 - 1);\n      iVar4 = (int)cVar6;\n      if (((param_2 - 1 & 0x80) == 0) &&\n         (0 < (int)((uint)((int)param_2 < 1) + ((int)param_2 >= 1) * param_2))) {\n        if (PTR_DAT_00000cb0[iVar4 + 0xf0] == '\\0') {\n          iVar4 = (int)(char)(cVar6 + -1);\n        }\n        else {\n          iVar10 = 1;\n        }\n      }\n      if (iVar10 != 0) {\n        *(undefined *)((int)puVar5 + 10) =\n             PTR_DAT_00000cb0[(uint)(byte)PTR_DAT_00000cb0[iVar4 + 0xf8] * 0xc + 10];\n        bVar2 = puVar3[iVar4 + 0xf8];\n        goto LAB_00002752;\n      }\n      *(undefined *)((int)puVar5 + 10) = puVar7[0xbd];\n    }\n  }\n  puVar7[0xbd] = bVar1;\nLAB_00002758:\n  puVar3[param_2 + 0xf0] = puVar3[param_2 + 0xf0] + '\\x01';\n  puVar7[0xbc] = puVar7[0xbc] + '\\x01';\n  puVar3[param_2 + 0xf8] = bVar1;\n  bVar1 = puVar7[0xbc];\n  if ((0xe < bVar1) && (param_5 == 1)) {\n    uVar9 = 1;\n  }\n  bVar2 = puVar7[0xc0];\n  puVar7[0xc0] = (bVar2 < bVar1) * bVar1 + (bVar2 >= bVar1) * bVar2;\n  if ((*(int *)(puVar7 + 0xf0) == 0) && (param_2 < *(byte *)(*(int *)(puVar7 + 0xec) + 0x29))) {\n    wsr(uVar11,uVar8);\n    wsr(in_MISC1,unaff_retaddr);\n    FUN_00002de8();\n  }\n  else {\n    wsr(uVar11,uVar8);\n  }\n  return uVar9;\n}\n\n"
+    },
+    {
+      "entry": "0001b154",
+      "calls": [
+        {
+          "function": "FUN_00002268",
+          "entry": "00002268"
+        },
+        {
+          "function": "FUN_0000231c",
+          "entry": "0000231c"
+        },
+        {
+          "function": "FUN_000024f0",
+          "entry": "000024f0"
+        }
+      ],
+      "indirect_calls": [
+        {
+          "at": "0001b171",
+          "target": "(unique, 0xed00, 4)"
+        }
+      ],
+      "decompiler": "\nvoid FUN_0001b154(void)\n\n{\n  undefined *puVar1;\n  int iVar2;\n  undefined *puVar3;\n  undefined4 *puVar4;\n  int iVar5;\n  int iVar6;\n  uint uVar7;\n  int iVar8;\n  float fVar9;\n  \n  FUN_00002268(1);\n  puVar3 = PTR_DAT_00017098;\n  iVar2 = DAT_00017094;\n  puVar1 = PTR_DAT_00017090;\n  memw();\n  iVar6 = *(int *)(DAT_00017094 + 0x3f0);\n  puVar4 = (undefined4 *)PTR_DAT_00017090;\n  iVar5 = iVar6;\n  do {\n    (*(code *)*puVar4)();\n    memw();\n    iVar8 = *(int *)(iVar2 + 0x3f0);\n    uVar7 = iVar8 - iVar6;\n    puVar4[0x28] = iVar8 - iVar5;\n    puVar4[0x52] = uVar7;\n    if ((uint)puVar4[0x7a] < uVar7) {\n      puVar4[0x7a] = uVar7;\n      puVar4[0xa2] = *(int *)(puVar1 + 0x140) + uVar7;\n    }\n    puVar4 = puVar4 + 1;\n    iVar5 = iVar8;\n  } while (puVar4 != (undefined4 *)puVar3);\n  memw();\n  if (*(int *)PTR_DAT_00017050 != 0) {\n    memw();\n    memw();\n    *(int *)PTR_DAT_00017050 = *(int *)PTR_DAT_00017050 + -1;\n  }\n  memw();\n  uVar7 = *(int *)(iVar2 + 0x3f0) - iVar6;\n  fVar9 = ((float)uVar7 / 1.0) * DAT_0001709c;\n  *(uint *)(puVar1 + 0x140) = uVar7;\n  *(float *)(puVar1 + 0x144) = fVar9;\n  FUN_0000231c(1);\n  if (*(int *)(PTR_DAT_000170a0 + 8) != 0) {\n    FUN_000024f0(3);\n  }\n  return;\n}\n\n"
+    },
+    {
+      "entry": "0001b1e4",
+      "calls": [],
+      "indirect_calls": [],
+      "decompiler": "\nvoid FUN_0001b1e4(int param_1,undefined4 param_2)\n\n{\n  *(undefined4 *)(PTR_DAT_00017090 + param_1 * 4) = param_2;\n  return;\n}\n\n"
+    },
+    {
+      "entry": "0002e3e8",
+      "calls": [
+        {
+          "function": "FUN_0001b1e4",
+          "entry": "0001b1e4"
+        },
+        {
+          "function": "FUN_000247e8",
+          "entry": "000247e8"
+        },
+        {
+          "function": "FUN_0002e69c",
+          "entry": "0002e69c"
+        }
+      ],
+      "indirect_calls": [],
+      "decompiler": "\nundefined4 FUN_0002e3e8(void)\n\n{\n  undefined1 uVar1;\n  undefined *puVar2;\n  undefined *puVar3;\n  \n  FUN_0002e69c(0);\n  FUN_0001b1e4(0x18,PTR_FUN_000181dc);\n  puVar3 = PTR_DAT_00017434;\n  puVar2 = PTR_DAT_0001710c;\n  *(undefined4 *)(PTR_DAT_00017434 + 0x18) = 0x3f000000;\n  *(undefined4 *)(puVar3 + 0x60) = 0x3f000000;\n  *(undefined4 *)(puVar3 + 0x1c8) = 0x3f000000;\n  uVar1 = puVar2[200];\n  puVar3[0x5d] = puVar2[0xc9];\n  puVar3[0x15] = uVar1;\n  PTR_DAT_00018010[0x45] = puVar2[0xca];\n  FUN_000247e8(0,0x3f000000);\n  FUN_000247e8(1,*(undefined4 *)(puVar3 + 0x60));\n  FUN_000247e8(6,*(undefined4 *)(puVar3 + 0x1c8));\n  return 1;\n}\n\n"
+    }
+  ],
+  "slot24_address": "0000c760",
+  "slot_count": 40,
+  "limitations": "Decompiler output retained as static evidence, not independently validated instruction semantics. Dispatcher queue entry 0x1024 has no recovered direct caller; trigger, queue-consumer execution and cadence are unresolved. No reset or current-state invalidation established."
+}

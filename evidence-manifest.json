@@ -32,6 +32,34 @@
     "sha256": "6bbbc68d01037ddcf767fb9de0c7b1da9fde3c41b0b9a7e46a7c4f8938a31976"
   },
   {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/callback-followup.json",
+    "sha256": "1a5d3fa8a21404999e7261582a12dffdf43400507c268c71dcd819f64bee1e0f"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/cleanup-audit.json",
+    "sha256": "f97ca7ca449bb13396bf1a1d60d9dfde13d946eeec2672a8a96068d94f60ca91"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/event-controls.json",
+    "sha256": "ab35fd0420e40f8c383fe74dc1e1862264c56d38a89a24d5f6bd378cd87048f3"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/event-dispatch.json",
+    "sha256": "246dfb91e22e107dae4505e9e0b902d25fb7b92e2ec8dc426be5fe5414a8cba3"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/manifest.json",
+    "sha256": "37f3c3c72ba49e1e61122b3f7f0a9c22cef8dc3a25a984cf6d923b45ae01ee6d"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/trace.json",
+    "sha256": "2ad683c060548c418319def8ff74537cf131bb03baf6dd049446033d855577d0"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/worker-snapshot.json",
+    "sha256": "838164cb53f650777e1500f4d0d73f3b88e14540707876099877e916b218135a"
+  },
+  {
     "path": "evidence/exports/vcn-clamp-boundary/audit.json",
     "sha256": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338"
   },

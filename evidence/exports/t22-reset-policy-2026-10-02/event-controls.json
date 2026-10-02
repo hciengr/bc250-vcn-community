@@ -1,0 +1,17 @@
+{
+  "kind": "input rejection controls",
+  "controls": [
+    {
+      "name": "changed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "output": "Changed input: firmware/smu/smu_fw_robin_1_trim\n"
+    },
+    {
+      "name": "missing",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "output": "Missing input: firmware/smu/smu_fw_robin_1_trim\n"
+    }
+  ]
+}

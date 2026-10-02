@@ -1221,12 +1221,22 @@
       "status": "open",
       "owner": null,
       "claimed_at": null,
-      "last_update": null,
+      "last_update": "2026-10-02",
       "claim_until": null,
       "question": "Capture the active policy, current/requested state, correctly indexed requests/readers, callback registration and parent/child observations together.",
       "done_when": "Capture the active policy, current/requested state, correctly indexed requests/readers, callback registration and parent/child observations together. Independent reviewer accepts the scoped evidence.",
-      "attempts": [],
-      "issue_url": null
+      "attempts": [
+        {
+          "author": "hciengr / codex-t22-reset-policy",
+          "author_principal": "hciengr",
+          "date": "2026-10-02",
+          "source": "submissions/t22-reset-policy-2026-10-02.md",
+          "review": "pending",
+          "result": "Conditional state path reaches policy copier; reviewed cleanup closures do not. Copier does not invalidate current state: modeled [0,0] remains gated. Soft-reset invocation and hardware application unresolved.",
+          "environment": "Hash-pinned P3 firmware/refined exports; static graph and three synthetic gate cases; no board access"
+        }
+      ],
+      "issue_url": "https://github.com/hciengr/bc250-vcn-community/issues/6"
     },
     {
       "id": "T23",
