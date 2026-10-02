@@ -1,0 +1,19 @@
+{
+  "tool_versions": {
+    "ruby": "ruby 3.3.8 (2025-04-09 revision b200bad6cd) [x86_64-linux-gnu]",
+    "perl": "v5.40.1",
+    "openssl": "OpenSSL 3.6.2 7 Apr 2026 (Library: OpenSSL 3.6.2 7 Apr 2026)"
+  },
+  "additional_observed_dependencies": {
+    "/lib/firmware/amdgpu/navi10_vcn.bin": "ac5f2182b0ddee7a2886bf1239a47b4027becd0c37a1b0b6cac1f335393302c9",
+    "/lib/firmware/amdgpu/navi10_sos.bin": "3112ea8519545ac89c1623e2e08e841a6a9bc31c2aab2f9b787979e51277e395",
+    "exports/navi10-vcn-key/navi10-vcn-c372-public.pem": "d91abdde030d89eb0e531bf9459dfb1a3e8b41767ee7122c0b3bce97d55dbde1",
+    "analysis/psp_extract/BC250_3.00_unique/BL_PUBLIC_KEY~0x50_1": "78c3fe9b99ca6c815715303c440de2a5ece6ef267ee5b50c89f559fe59eb963a",
+    "analysis/psp_extract/BC250_3.00_unique/TOS_PUBLIC_KEY~0x51_1": "1ca4d22f6eb87b0806aeb3061e0e4a31c567ea2c1b21df3d2132a1c4b90c0ede",
+    "analysis/reference-sources/vcn/vcn_2_0_0_offset.h": "026dabdbf0f2b731db71cd99a4f617f347589a61d8015afe29abb82f94ad5eb7",
+    "analysis/reference-sources/vcn/vcn_2_0_0_sh_mask.h": "4c9ed19c3e744be938ada218d188c19ad7dc71e0dfb1652637ab116618bd489e",
+    "exports/vcn-priority-audit/load-reset-functions.asm": "47248e97fcb7ad0edd037b80e5e77c623f4aa9757e7c7dda2f4ef5f09c224638"
+  },
+  "inventory_is_exhaustive": false,
+  "hardware_access": false
+}

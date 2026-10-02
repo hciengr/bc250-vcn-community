@@ -104,6 +104,10 @@
     "sha256": "2b1af85d1fbea407ee1367bce4a2fde601e04d14711219786b07c9bb8c9ceb34"
   },
   {
+    "path": "evidence/exports/t23-reproduction-2026-10-02/environment.json",
+    "sha256": "b722b006137d4a54809899e58b1e49980a91082a811766735bb0d0c15277bbe0"
+  },
+  {
     "path": "evidence/exports/t23-reproduction-2026-10-02/isa.stderr",
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
