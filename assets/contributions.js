@@ -14,7 +14,7 @@
     setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
   const option=(select,value,text)=>select.add(new Option(text,value));
-  option(el('easy-topic'),'general','Not sure / a new finding');
+  option(el('easy-topic'),'general','Unassigned task / claim');
   data.tasks.forEach(t=>option(el('easy-topic'),t.id,`${t.id} · ${t.title}`));
   data.stages.forEach(s=>option(el('easy-topic'),s.id,`${s.id} · ${s.title}`));
   data.claims.forEach(c=>option(el('easy-topic'),c.id,`${c.id} · ${c.title}`));
@@ -107,7 +107,7 @@ Read the project instructions, check existing issues for ${p.task.id}, and verif
 Question: ${p.task.question}
 Completion criterion: ${p.task.done_when}
 Dependencies: ${p.task.depends_on.join(', ')||'none'}
-Plan: ${el('worker-plan').value.trim()||'Start with one bounded step and report missing inputs.'}
+Plan: ${el('worker-plan').value.trim()||'Specify one bounded procedure, required inputs and stopping condition.'}
 
 Preserve original authors and evidence type. Provide exact methods, input hashes, raw outputs, expected/actual results, controls and limitations. Report negative results. Stop and hand off when required inputs are missing; do not expand into a new investigation without a source-backed question and stopping condition. An AI explanation is not evidence. Do not invent missing evidence, mark your work accepted, run board writes without the owner\'s authorization, or approve work from the same human coordinator. Submit results through the community site for independent review.
 
