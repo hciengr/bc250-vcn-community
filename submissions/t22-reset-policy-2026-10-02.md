@@ -67,6 +67,28 @@ There is also shared queue bookkeeping: literals `0x0b8c` and `0x17050` both poi
 
 `callback-followup.json` retains source hashes, literal bytes and the five recovered decompilations for review. The current-state word `0x13ed4`, requested-state word `0x13ed8` and bookkeeping word `0x7ad8` are distinct. Neither this queue registration nor the SSIP/SSIU store establishes invalidation of applied state. A queued worker could still skip processing when current equals requested.
 
+## Handler-registration follow-up
+
+The next literal-reference search finds `0x17078 = 0x1024`, read by initialization routine `0x1b024`. Its recovered call is `0x39db4(0, 0x61a8, 1, 1, 0x1024)`. The setup routine derives handler index `0*4 + 0x60 = 96`, then passes the pointer to registrar `0x39c04`. That registrar writes handler table base `0xab70 + 96*4 = 0xacf0` and calls the handler-enable helper. The table base agrees with the separately recovered dispatch loop `0x1e18`, whose indirect call at `0x1e57` uses the selected handler number read from PSP/PMFW-local MMIO `0x032003c4`.
+
+This is a static registration/dispatch match, not an observation that handler 96 was selected. The surrounding setup programs `0x03200410` with `0x61a8` (25,000) and configuration bytes in the `0x03200400` region. The parameter's units and resulting cadence are not established. Do not call it a measured timer frequency. These addresses belong to the PMFW address space; they are not host MMIO access instructions.
+
+The bounded route is now:
+
+```text
+initialization 1b024
+  -> registration 39db4 / 39c04: handler[96] = 1024
+handler dispatcher 1e18
+  -- indirect, if handler 96 selected --> 1024
+  -> queue insertion 26b4: callback = 1b154
+  -- queue consumer unresolved --> callback dispatcher 1b154
+  -- indirect, if slot 24 remains installed --> policy worker 2e448
+```
+
+No recovered entry into `0x1b024` is established by this inventory. Queue consumption remains unresolved. The callback registration and state mismatch remain necessary conditions within the recovered worker path; registration alone is insufficient. This result moves the event-dispatch question forward without establishing soft-reset coupling.
+
+Reproduce with `ruby audit-tools/t22-event-dispatch.rb /path/to/BC250`. It checks exact input hashes and literal relations, retains eight saved decompilations and emits the address calculations. Two consecutive outputs were byte-identical. A one-byte-changed firmware control and an absent-input control both exited with status 1 before emitting a result. This validates input refusal, not the decompiler or runtime behavior. Original input files were not modified.
+
 ## Bounded next step
 
 Identify one specific reset entry or command with input revision and call-site evidence. Test whether it writes the worker current state, changes requested state or reinstalls/invokes callback slot 24. Stop at an unresolved indirect edge rather than labeling it a reset-to-enable connection.

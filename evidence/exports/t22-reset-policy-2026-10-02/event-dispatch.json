@@ -1,0 +1,85 @@
+{
+  "kind": "static source/literal cross-check; address arithmetic is synthetic",
+  "inputs": {
+    "firmware/smu/smu_fw_robin_1_trim": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+    "exports/pmfw-p3-const-full/functions.jsonl": "617754c44bbc01d7e066429ad29bf24341728375495e7a664875e8c0177fee07",
+    "exports/pmfw-p3-const-full/decompiled/0001b024.c": "b54d9589a2f1e8551f561ca0da108fc54842a720b9a6796c2c0392e425957ff4",
+    "exports/pmfw-p3-const-full/decompiled/00039db4.c": "0d019589ee29e419a9f5b449be70f7db2aa76eda58d7698fb257e7c92213dd66",
+    "exports/pmfw-p3-const-full/decompiled/00039c04.c": "9cc1fc4ea75d86a0be2cecab7b964a84fc2f62ca22bce928ac51a3db97d1f43f",
+    "exports/pmfw-p3-const-full/decompiled/00001e18.c": "a2550ed0e63aff4b87a48f0ed94f2bb1e04916f4ec3792ca4fc31c2142cc0bbc",
+    "exports/pmfw-p3-const-full/decompiled/000028f8.c": "6630c4333d0306c445e74e72123755b00413dec869cdeca8772455455c0ee2f9",
+    "exports/pmfw-p3-const-full/decompiled/00001024.c": "057d4288da2c4e7320348386af6a65d2f12f18e739c5124fb6fab1601eb662db",
+    "exports/pmfw-p3-const-full/decompiled/000026b4.c": "43de1570e4bc49f231eb2bdbbdc9c67c3280fcf71a2e18cdcac95e19b5bcd668",
+    "exports/pmfw-p3-const-full/decompiled/0001b154.c": "a1ce6527918edd580fb9d27b33e4984366530c0acb253e1d6fd820eb679b5e39"
+  },
+  "literals": [
+    {
+      "address": "00017078",
+      "value": "00001024",
+      "bytes": "24100000"
+    },
+    {
+      "address": "00017074",
+      "value": "000061a8",
+      "bytes": "a8610000"
+    },
+    {
+      "address": "00018714",
+      "value": "0000ab70",
+      "bytes": "70ab0000"
+    },
+    {
+      "address": "00000ca4",
+      "value": "0000ab70",
+      "bytes": "70ab0000"
+    },
+    {
+      "address": "00018730",
+      "value": "03200380",
+      "bytes": "80032003"
+    },
+    {
+      "address": "00018734",
+      "value": "03200410",
+      "bytes": "10042003"
+    },
+    {
+      "address": "00000ba4",
+      "value": "0001b154",
+      "bytes": "54b10100"
+    },
+    {
+      "address": "00017090",
+      "value": "0000c700",
+      "bytes": "00c70000"
+    },
+    {
+      "address": "00017098",
+      "value": "0000c7a0",
+      "bytes": "a0c70000"
+    }
+  ],
+  "handler_index": 96,
+  "handler_slot": "0000acf0",
+  "callback_slot24": "0000c760",
+  "callback_count": 40,
+  "parameter_value": 25000,
+  "parameter_units": "unestablished",
+  "dispatch_site": [
+    {
+      "at": "00001e57",
+      "target": "(unique, 0xed00, 4)"
+    }
+  ],
+  "sources": {
+    "exports/pmfw-p3-const-full/decompiled/0001b024.c": "\nvoid FUN_0001b024(void)\n\n{\n  int iVar1;\n  int iVar2;\n  \n  FUN_0001b01c();\n  FUN_0001db70();\n  FUN_0002f190();\n  FUN_0002b800();\n  FUN_00039e1c();\n  FUN_0001b430();\n  memw();\n  *(undefined4 *)(DAT_00017048 + 0x260) = 0;\n  memw();\n  *(uint *)(PTR_DAT_00017050 + 100) = (*(uint *)(DAT_00017054 + 0x3c0) & DAT_0001704c) >> 0x13;\n  FUN_000219c8();\n  FUN_00021cac();\n  FUN_0001c6cc();\n  memw();\n  memw();\n  *(uint *)(DAT_00017058 + 0x200) = *(uint *)(DAT_00017058 + 0x200) & DAT_0001705c | DAT_00017060;\n  iVar2 = FUN_00029cd4(0xf);\n  iVar1 = DAT_00017064;\n  if (iVar2 == 0) {\n    memw();\n    *(undefined4 *)(DAT_00017064 + 0x224) = 0x1c0;\n    memw();\n    *(undefined4 *)(iVar1 + 0x324) = 0x1c0;\n    memw();\n    *(undefined4 *)(iVar1 + 0x244) = 0x420;\n    memw();\n    *(undefined4 *)(iVar1 + 0x344) = 0x420;\n  }\n  FUN_0001c6fc();\n  FUN_0001c734();\n  FUN_000234a0();\n  FUN_0002e858(DAT_00017068);\n  FUN_00023800(2,DAT_0001706c);\n  FUN_00023800(0,DAT_00017070);\n  FUN_00039db4(0,PTR_DAT_00017074,1,1,PTR_FUN_00017078);\n  FUN_000278f4();\n  memw();\n  memw();\n  *(uint *)(DAT_0001707c + 0x208) = *(uint *)(DAT_0001707c + 0x208) | 1;\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/00039db4.c": "\nvoid FUN_00039db4(int param_1,undefined4 param_2,undefined1 param_3,undefined1 param_4,int param_5)\n\n{\n  int iVar1;\n  undefined4 uVar2;\n  int iVar3;\n  undefined1 uVar4;\n  \n  uVar2 = rsil(2);\n  uVar4 = 0;\n  FUN_00039d50(param_1);\n  iVar3 = param_1 * 4 + 0x60;\n  iVar1 = param_1 * 0x24 + DAT_00018730;\n  if (param_5 == 0) {\n    FUN_00001d44(iVar3);\n  }\n  else {\n    FUN_00039c04(iVar3,1,0,0,param_5);\n    memw();\n    *(undefined1 *)(iVar1 + 0x8c) = 1;\n  }\n  memw();\n  *(undefined4 *)(param_1 * 0x24 + DAT_00018734) = param_2;\n  memw();\n  *(undefined1 *)(iVar1 + 0x82) = param_3;\n  memw();\n  *(undefined1 *)(iVar1 + 0x85) = param_4;\n  memw();\n  *(undefined1 *)(iVar1 + 0x81) = 1;\n  memw();\n  *(undefined1 *)(iVar1 + 0x80) = 1;\n  wsr(uVar4,uVar2);\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/00039c04.c": "\nvoid FUN_00039c04(uint param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5)\n\n{\n  undefined4 uVar1;\n  uint uVar2;\n  uint uVar3;\n  uint uVar4;\n  undefined1 uVar5;\n  \n  uVar1 = rsil(2);\n  *(undefined4 *)(PTR_PTR_00018714 + param_1 * 4) = param_5;\n  uVar5 = 0;\n  FUN_00039b7c(param_1,param_1);\n  if (param_2 == 1) {\n    FUN_00001d18(param_1);\n  }\n  else {\n    FUN_00001d44(param_1);\n  }\n  FUN_00039b8c(param_1,param_3);\n  uVar4 = *(uint *)(PTR_DAT_00018718 + (param_1 >> 5) * 4);\n  uVar2 = 1 << 0x20 - (0x20 - (param_1 & 0x1f));\n  uVar3 = uVar2 | uVar4;\n  if (param_4 != 1) {\n    uVar3 = uVar4 & (uVar2 ^ 0xffffffff);\n  }\n  *(uint *)(PTR_DAT_00018718 + (param_1 >> 5) * 4) = uVar3;\n  wsr(uVar5,uVar1);\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/00001e18.c": "\nvoid FUN_00001e18(void)\n\n{\n  int iVar1;\n  undefined *puVar2;\n  undefined *puVar3;\n  uint uVar4;\n  uint uVar5;\n  int iVar6;\n  \n  puVar3 = PTR_DAT_00000ca8;\n  puVar2 = PTR_PTR_00000ca4;\n  iVar1 = DAT_00000c9c;\n  memw();\n  iVar6 = *(int *)(DAT_00000c9c + 0x1c0);\n  while (iVar6 == 0) {\n    memw();\n    uVar4 = *(uint *)(iVar1 + 0x1c4);\n    uVar5 = *(uint *)(puVar3 + (uVar4 >> 5) * 4) & 1 << 0x20 - (0x20 - (uVar4 & 0x1f)) & 0xff;\n    if (uVar5 != 0) {\n      FUN_00001cf8(uVar4);\n    }\n    (**(code **)(puVar2 + uVar4 * 4))();\n    if (uVar5 == 0) {\n      FUN_00001cf8(uVar4);\n    }\n    FUN_000029d0(0);\n    memw();\n    iVar6 = *(int *)(iVar1 + 0x1c0);\n  }\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/000028f8.c": "\nvoid FUN_000028f8(int param_1,undefined4 param_2,undefined4 param_3)\n\n{\n  undefined *puVar1;\n  \n  puVar1 = PTR_DAT_00000d2c;\n  *(short *)(PTR_DAT_00000d2c + 0x78) = (short)param_1;\n  *(undefined4 *)(puVar1 + 0x7c) = param_2;\n  *(undefined4 *)(puVar1 + 0x74) = param_3;\n  if (param_1 == 4) {\n    FUN_00001c04(puVar1 + 0x58);\n    FUN_00001e18();\n    return;\n  }\n  if ((param_1 != 0x10) && (param_1 != 0x18)) {\n    if (param_1 == 0xd) {\n      FUN_000028a4();\n      return;\n    }\n    memw();\n    FUN_00001b78(1,0xc,param_1,*(undefined4 *)(DAT_00000b68 + 0x228));\n  }\n  FUN_00002b60(param_1,param_2);\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/00001024.c": "\nvoid FUN_00001024(void)\n\n{\n  undefined *puVar1;\n  int iVar2;\n  \n  puVar1 = PTR_DAT_00000b8c;\n  memw();\n  if (*(int *)PTR_DAT_00000b8c == 0) {\n    iVar2 = FUN_000026b4(PTR_FUN_00000ba4,4,0,0,0,0);\n    if (iVar2 == 0) {\n      memw();\n      *(undefined4 *)puVar1 = 1;\n    }\n  }\n  else {\n    *(int *)(PTR_DAT_00000b8c + 0x68) = *(int *)(PTR_DAT_00000b8c + 0x68) + 1;\n  }\n  FUN_0000241c();\n  return;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/000026b4.c": "\nundefined4\nFUN_000026b4(undefined4 param_1,uint param_2,undefined4 param_3,undefined2 param_4,int param_5,\n            byte param_6)\n\n{\n  byte bVar1;\n  byte bVar2;\n  undefined *puVar3;\n  undefined4 unaff_retaddr;\n  int iVar4;\n  undefined4 *puVar5;\n  char cVar6;\n  undefined *puVar7;\n  undefined4 uVar8;\n  undefined4 uVar9;\n  int iVar10;\n  undefined1 uVar11;\n  undefined1 in_MISC1;\n  undefined8 uVar12;\n  \n  uVar11 = 0;\n  param_2 = param_2 & 0xff;\n  iVar10 = 0;\n  uVar9 = 0;\n  uVar8 = rsil(2);\n  if ((param_5 == 0) && (0xe < (byte)PTR_DAT_00000d28[0xbc])) {\n    wsr(0,uVar8);\n    return 2;\n  }\n  puVar7 = PTR_DAT_00000d28;\n  if (PTR_DAT_00000d28[0xbc] == 0x14) {\n    memw();\n    uVar8 = *(undefined4 *)(DAT_00000b68 + 0x228);\n    uVar11 = 0;\n    uVar12 = FUN_00001b78(1,9,0,uVar8);\n    puVar7 = (undefined *)((ulonglong)uVar12 >> 0x20);\n    param_2 = (uint)uVar12;\n  }\n  bVar1 = puVar7[0xbe];\n  puVar5 = (undefined4 *)(PTR_DAT_00000cb0 + (uint)bVar1 * 0xc);\n  puVar7[0xbe] = *(undefined1 *)((int)puVar5 + 10);\n  *(undefined2 *)(puVar5 + 2) = param_4;\n  puVar5[1] = param_3;\n  *puVar5 = param_1;\n  *(byte *)((int)puVar5 + 0xb) = *(byte *)((int)puVar5 + 0xb) & 0xf0 | (byte)param_2 & 0xf;\n  *(byte *)((int)puVar5 + 0xb) = *(byte *)((int)puVar5 + 0xb) & 0xef | (param_6 & 1) << 4;\n  puVar3 = PTR_DAT_00000cb0;\n  if (puVar7[0xbc] != '\\0') {\n    if (PTR_DAT_00000cb0[param_2 + 0xf0] != '\\0') {\n      *(undefined *)((int)puVar5 + 10) =\n           PTR_DAT_00000cb0[(uint)(byte)PTR_DAT_00000cb0[param_2 + 0xf8] * 0xc + 10];\n      bVar2 = puVar3[param_2 + 0xf8];\nLAB_00002752:\n      puVar3[(uint)bVar2 * 0xc + 10] = bVar1;\n      goto LAB_00002758;\n    }\n    if (param_2 == 0) {\n      *(undefined *)((int)puVar5 + 10) = puVar7[0xbd];\n    }\n    else {\n      cVar6 = (char)(param_2 - 1);\n      iVar4 = (int)cVar6;\n      if (((param_2 - 1 & 0x80) == 0) &&\n         (0 < (int)((uint)((int)param_2 < 1) + ((int)param_2 >= 1) * param_2))) {\n        if (PTR_DAT_00000cb0[iVar4 + 0xf0] == '\\0') {\n          iVar4 = (int)(char)(cVar6 + -1);\n        }\n        else {\n          iVar10 = 1;\n        }\n      }\n      if (iVar10 != 0) {\n        *(undefined *)((int)puVar5 + 10) =\n             PTR_DAT_00000cb0[(uint)(byte)PTR_DAT_00000cb0[iVar4 + 0xf8] * 0xc + 10];\n        bVar2 = puVar3[iVar4 + 0xf8];\n        goto LAB_00002752;\n      }\n      *(undefined *)((int)puVar5 + 10) = puVar7[0xbd];\n    }\n  }\n  puVar7[0xbd] = bVar1;\nLAB_00002758:\n  puVar3[param_2 + 0xf0] = puVar3[param_2 + 0xf0] + '\\x01';\n  puVar7[0xbc] = puVar7[0xbc] + '\\x01';\n  puVar3[param_2 + 0xf8] = bVar1;\n  bVar1 = puVar7[0xbc];\n  if ((0xe < bVar1) && (param_5 == 1)) {\n    uVar9 = 1;\n  }\n  bVar2 = puVar7[0xc0];\n  puVar7[0xc0] = (bVar2 < bVar1) * bVar1 + (bVar2 >= bVar1) * bVar2;\n  if ((*(int *)(puVar7 + 0xf0) == 0) && (param_2 < *(byte *)(*(int *)(puVar7 + 0xec) + 0x29))) {\n    wsr(uVar11,uVar8);\n    wsr(in_MISC1,unaff_retaddr);\n    FUN_00002de8();\n  }\n  else {\n    wsr(uVar11,uVar8);\n  }\n  return uVar9;\n}\n\n",
+    "exports/pmfw-p3-const-full/decompiled/0001b154.c": "\nvoid FUN_0001b154(void)\n\n{\n  undefined *puVar1;\n  int iVar2;\n  undefined *puVar3;\n  undefined4 *puVar4;\n  int iVar5;\n  int iVar6;\n  uint uVar7;\n  int iVar8;\n  float fVar9;\n  \n  FUN_00002268(1);\n  puVar3 = PTR_DAT_00017098;\n  iVar2 = DAT_00017094;\n  puVar1 = PTR_DAT_00017090;\n  memw();\n  iVar6 = *(int *)(DAT_00017094 + 0x3f0);\n  puVar4 = (undefined4 *)PTR_DAT_00017090;\n  iVar5 = iVar6;\n  do {\n    (*(code *)*puVar4)();\n    memw();\n    iVar8 = *(int *)(iVar2 + 0x3f0);\n    uVar7 = iVar8 - iVar6;\n    puVar4[0x28] = iVar8 - iVar5;\n    puVar4[0x52] = uVar7;\n    if ((uint)puVar4[0x7a] < uVar7) {\n      puVar4[0x7a] = uVar7;\n      puVar4[0xa2] = *(int *)(puVar1 + 0x140) + uVar7;\n    }\n    puVar4 = puVar4 + 1;\n    iVar5 = iVar8;\n  } while (puVar4 != (undefined4 *)puVar3);\n  memw();\n  if (*(int *)PTR_DAT_00017050 != 0) {\n    memw();\n    memw();\n    *(int *)PTR_DAT_00017050 = *(int *)PTR_DAT_00017050 + -1;\n  }\n  memw();\n  uVar7 = *(int *)(iVar2 + 0x3f0) - iVar6;\n  fVar9 = ((float)uVar7 / 1.0) * DAT_0001709c;\n  *(uint *)(puVar1 + 0x140) = uVar7;\n  *(float *)(puVar1 + 0x144) = fVar9;\n  FUN_0000231c(1);\n  if (*(int *)(PTR_DAT_000170a0 + 8) != 0) {\n    FUN_000024f0(3);\n  }\n  return;\n}\n\n"
+  },
+  "limits": "These are saved Ghidra decompilations, not fresh disassembly or hardware traces. Entry to initialization, actual handler number, queue consumption, timing units and reset coupling are not established. Equal worker state can still skip processing."
+}
