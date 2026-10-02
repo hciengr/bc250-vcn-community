@@ -32,6 +32,22 @@
     "sha256": "6bbbc68d01037ddcf767fb9de0c7b1da9fde3c41b0b9a7e46a7c4f8938a31976"
   },
   {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/cleanup-audit.json",
+    "sha256": "f97ca7ca449bb13396bf1a1d60d9dfde13d946eeec2672a8a96068d94f60ca91"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/manifest.json",
+    "sha256": "3200b22795cabc2d6c052bb1c90717f5c5a4ce227224a6e6ebf8c2d12c29da91"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/trace.json",
+    "sha256": "2ad683c060548c418319def8ff74537cf131bb03baf6dd049446033d855577d0"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/worker-snapshot.json",
+    "sha256": "838164cb53f650777e1500f4d0d73f3b88e14540707876099877e916b218135a"
+  },
+  {
     "path": "evidence/exports/vcn-clamp-boundary/audit.json",
     "sha256": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338"
   },

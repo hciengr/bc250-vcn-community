@@ -1,0 +1,231 @@
+{
+  "kind": "bounded static inventory plus synthetic state cases",
+  "inputs": {
+    "firmware/smu/smu_fw_robin_1_trim": "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+    "exports/pmfw-p3-const-full/functions.jsonl": "617754c44bbc01d7e066429ad29bf24341728375495e7a664875e8c0177fee07",
+    "exports/pmfw-p3-const-full/state-evidence.asm": "4f8b8f574c686e59d245647d3d1736af7b6057c5b5c6efd502319aa4812716ae"
+  },
+  "gate_image": [
+    8,
+    0
+  ],
+  "policy_copy_callers": [
+    {
+      "function": "FUN_0002e190",
+      "entry": "0002e190"
+    },
+    {
+      "function": "FUN_0002e3e8",
+      "entry": "0002e3e8"
+    }
+  ],
+  "resolved_gate_writers": [
+    {
+      "function": "0002e448",
+      "at": "0002e4ff",
+      "target": "00013ed4",
+      "instruction": "s32i.n a14,a7,0x0"
+    },
+    {
+      "function": "0002e69c",
+      "at": "0002e6ad",
+      "target": "00013ed8",
+      "instruction": "s32i.n a2,a8,0x4"
+    }
+  ],
+  "direct_call_walks": [
+    {
+      "root": "0002ad78",
+      "nodes": 3,
+      "missing": [],
+      "indirect": [],
+      "target_paths": {
+        "0002e69c": null,
+        "0002e448": null
+      }
+    },
+    {
+      "root": "00029d04",
+      "nodes": 84,
+      "missing": [],
+      "indirect": [
+        {
+          "entry": "00001b78",
+          "sites": [
+            {
+              "at": "00001ba5",
+              "target": "(unique, 0xed00, 4)"
+            }
+          ]
+        },
+        {
+          "entry": "00002cdc",
+          "sites": [
+            {
+              "at": "00002ce1",
+              "target": "(unique, 0xe900, 4)"
+            }
+          ]
+        }
+      ],
+      "target_paths": {
+        "0002e69c": null,
+        "0002e448": null
+      }
+    },
+    {
+      "root": "0002b018",
+      "nodes": 36,
+      "missing": [],
+      "indirect": [
+        {
+          "entry": "00001b78",
+          "sites": [
+            {
+              "at": "00001ba5",
+              "target": "(unique, 0xed00, 4)"
+            }
+          ]
+        },
+        {
+          "entry": "00002cdc",
+          "sites": [
+            {
+              "at": "00002ce1",
+              "target": "(unique, 0xe900, 4)"
+            }
+          ]
+        }
+      ],
+      "target_paths": {
+        "0002e69c": null,
+        "0002e448": null
+      }
+    },
+    {
+      "root": "0002c10c",
+      "nodes": 100,
+      "missing": [],
+      "indirect": [
+        {
+          "entry": "00001b78",
+          "sites": [
+            {
+              "at": "00001ba5",
+              "target": "(unique, 0xed00, 4)"
+            }
+          ]
+        },
+        {
+          "entry": "00002cdc",
+          "sites": [
+            {
+              "at": "00002ce1",
+              "target": "(unique, 0xe900, 4)"
+            }
+          ]
+        }
+      ],
+      "target_paths": {
+        "0002e69c": null,
+        "0002e448": null
+      }
+    },
+    {
+      "root": "0002e0e8",
+      "nodes": 45,
+      "missing": [],
+      "indirect": [
+        {
+          "entry": "00001b78",
+          "sites": [
+            {
+              "at": "00001ba5",
+              "target": "(unique, 0xed00, 4)"
+            }
+          ]
+        },
+        {
+          "entry": "00002cdc",
+          "sites": [
+            {
+              "at": "00002ce1",
+              "target": "(unique, 0xe900, 4)"
+            }
+          ]
+        }
+      ],
+      "target_paths": {
+        "0002e69c": [
+          "0002e0e8",
+          "0002e190",
+          "0002e69c"
+        ],
+        "0002e448": null
+      }
+    },
+    {
+      "root": "0002e3e8",
+      "nodes": 26,
+      "missing": [],
+      "indirect": [
+        {
+          "entry": "00001b78",
+          "sites": [
+            {
+              "at": "00001ba5",
+              "target": "(unique, 0xed00, 4)"
+            }
+          ]
+        },
+        {
+          "entry": "00002cdc",
+          "sites": [
+            {
+              "at": "00002ce1",
+              "target": "(unique, 0xe900, 4)"
+            }
+          ]
+        }
+      ],
+      "target_paths": {
+        "0002e69c": [
+          "0002e3e8",
+          "0002e69c"
+        ],
+        "0002e448": null
+      }
+    }
+  ],
+  "models": [
+    {
+      "kind": "synthetic state-gate calculation",
+      "current_before": 8,
+      "policy_state": 0,
+      "requested_after": 0,
+      "worker_would_enter": true,
+      "current_after_if_worker_completes": 0
+    },
+    {
+      "kind": "synthetic state-gate calculation",
+      "current_before": 0,
+      "policy_state": 0,
+      "requested_after": 0,
+      "worker_would_enter": false,
+      "current_after_if_worker_completes": 0
+    },
+    {
+      "kind": "synthetic state-gate calculation",
+      "current_before": 1,
+      "policy_state": 0,
+      "requested_after": 0,
+      "worker_would_enter": true,
+      "current_after_if_worker_completes": 0
+    }
+  ],
+  "raw_writer_bytes": {
+    "0002e4ff": "e907",
+    "0002e6ad": "2918"
+  },
+  "limits": "Graph reachability is not feasible execution. Resolved WRITE references are not exhaustive alias analysis. SSIP is preferred static interpretation; neither SSIP/SSIU is runtime validated. No soft-reset entry was identified as invoking this path."
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/cleanup-audit.json",
+    "sha256": "f97ca7ca449bb13396bf1a1d60d9dfde13d946eeec2672a8a96068d94f60ca91"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/trace.json",
+    "sha256": "2ad683c060548c418319def8ff74537cf131bb03baf6dd049446033d855577d0"
+  },
+  {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/worker-snapshot.json",
+    "sha256": "838164cb53f650777e1500f4d0d73f3b88e14540707876099877e916b218135a"
+  },
+  {
+    "path": "audit-tools/t22-reset-policy.rb",
+    "sha256": "762f80d71f6610b62f2f26f103467dba9cc2820ca2af23cfa04fecc6395219ba"
+  }
+]

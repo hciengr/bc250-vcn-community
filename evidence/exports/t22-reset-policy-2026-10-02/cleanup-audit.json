@@ -1,0 +1,634 @@
+{
+   "cleanup_reapply_edge" : {
+      "cleared_current_byte" : "0x0001320c",
+      "cleared_current_word" : "0x000131fc",
+      "consumer" : "0002acb8",
+      "explicit_child_argument" : 25,
+      "explicit_parent_argument" : 7,
+      "prerequisite_mailbox_state" : "0x0001334c",
+      "prerequisite_parent_cache" : "0x0000f75c",
+      "preserved_requested_byte" : "0x0001320d",
+      "preserved_requested_word" : "0x00013200",
+      "producer" : "0002ad78",
+      "qualification" : "Conditional reapply to row 7; no proof of next invocation or retention across any reset.",
+      "stock_child_parent" : 7
+   },
+   "cleanup_writes" : [
+      {
+         "address" : "0x000131fc",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 4,
+         "value" : "0"
+      },
+      {
+         "address" : "0x00013204",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 4,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001320c",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001320f",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x000131f8",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 4,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001337c",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001337d",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001334c",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x00010864",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002ad78",
+         "size" : 4,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0001881c",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002c3d0(0)",
+         "size" : 4,
+         "value" : "0"
+      },
+      {
+         "address" : "0x00010878",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0002c3d0(0)",
+         "size" : 1,
+         "value" : "0"
+      },
+      {
+         "address" : "0x0000c72c",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0001b1f4(11)",
+         "size" : 4,
+         "value" : "0x0001b220"
+      },
+      {
+         "address" : "0x0000c758",
+         "overlaps_known_row6_sinks" : [],
+         "owner" : "0001b1f4(22)",
+         "size" : 4,
+         "value" : "0x0001b220"
+      }
+   ],
+   "direct_call_walks" : [
+      {
+         "indirect_calls" : [],
+         "missing" : [],
+         "nodes" : 3,
+         "root" : "0002ad78",
+         "target_paths" : {
+            "0002362c" : null,
+            "00023730" : null,
+            "00023b14" : null,
+            "000247e8" : null,
+            "0002e448" : null,
+            "0002e69c" : null,
+            "0002e6c8" : null
+         }
+      },
+      {
+         "indirect_calls" : [
+            {
+               "calls" : [
+                  {
+                     "at" : "00001ba5",
+                     "target" : "(unique, 0xed00, 4)"
+                  }
+               ],
+               "entry" : "00001b78"
+            },
+            {
+               "calls" : [
+                  {
+                     "at" : "00002ce1",
+                     "target" : "(unique, 0xe900, 4)"
+                  }
+               ],
+               "entry" : "00002cdc"
+            }
+         ],
+         "missing" : [],
+         "nodes" : 84,
+         "root" : "00029d04",
+         "target_paths" : {
+            "0002362c" : [
+               "00029d04",
+               "00029e44",
+               "00023800",
+               "0002362c"
+            ],
+            "00023730" : null,
+            "00023b14" : [
+               "00029d04",
+               "00029e44",
+               "00023800",
+               "0002362c",
+               "00023b14"
+            ],
+            "000247e8" : null,
+            "0002e448" : null,
+            "0002e69c" : null,
+            "0002e6c8" : null
+         }
+      },
+      {
+         "indirect_calls" : [
+            {
+               "calls" : [
+                  {
+                     "at" : "00001ba5",
+                     "target" : "(unique, 0xed00, 4)"
+                  }
+               ],
+               "entry" : "00001b78"
+            },
+            {
+               "calls" : [
+                  {
+                     "at" : "00002ce1",
+                     "target" : "(unique, 0xe900, 4)"
+                  }
+               ],
+               "entry" : "00002cdc"
+            }
+         ],
+         "missing" : [],
+         "nodes" : 36,
+         "root" : "0002b018",
+         "target_paths" : {
+            "0002362c" : null,
+            "00023730" : null,
+            "00023b14" : [
+               "0002b018",
+               "000246c8",
+               "00023b14"
+            ],
+            "000247e8" : null,
+            "0002e448" : null,
+            "0002e69c" : null,
+            "0002e6c8" : null
+         }
+      },
+      {
+         "indirect_calls" : [
+            {
+               "calls" : [
+                  {
+                     "at" : "00001ba5",
+                     "target" : "(unique, 0xed00, 4)"
+                  }
+               ],
+               "entry" : "00001b78"
+            },
+            {
+               "calls" : [
+                  {
+                     "at" : "00002ce1",
+                     "target" : "(unique, 0xe900, 4)"
+                  }
+               ],
+               "entry" : "00002cdc"
+            }
+         ],
+         "missing" : [],
+         "nodes" : 100,
+         "root" : "0002c10c",
+         "target_paths" : {
+            "0002362c" : [
+               "0002c10c",
+               "0002c780",
+               "0002ad54",
+               "0002acb8",
+               "0002362c"
+            ],
+            "00023730" : null,
+            "00023b14" : [
+               "0002c10c",
+               "000246c8",
+               "00023b14"
+            ],
+            "000247e8" : [
+               "0002c10c",
+               "0002c780",
+               "0002ad54",
+               "0002acb8",
+               "000247e8"
+            ],
+            "0002e448" : null,
+            "0002e69c" : null,
+            "0002e6c8" : null
+         }
+      }
+   ],
+   "known_row6_sinks" : [
+      {
+         "name" : "row6 parent record",
+         "size" : 72,
+         "start" : "0x0000f700"
+      },
+      {
+         "name" : "children 22..24",
+         "size" : 84,
+         "start" : "0x0000f9f8"
+      },
+      {
+         "name" : "worker gate words",
+         "size" : 8,
+         "start" : "0x00013ed4"
+      },
+      {
+         "name" : "callback slot 24",
+         "size" : 4,
+         "start" : "0x0000c760"
+      },
+      {
+         "name" : "child 22 requested value",
+         "size" : 4,
+         "start" : "0x000140c8"
+      },
+      {
+         "name" : "child 23 requested value",
+         "size" : 4,
+         "start" : "0x000140d4"
+      },
+      {
+         "name" : "child 24 requested value",
+         "size" : 4,
+         "start" : "0x00014098"
+      }
+   ],
+   "limitations" : [
+      "Store expressions and save/restore pairs are manually instruction-reviewed; this is not a general symbolic executor.",
+      "No alias between PSP local registers, PMFW RAM, and host registers is assumed.",
+      "Call graphs omit SVC and unresolved indirect edges and may include infeasible argument branches.",
+      "Startup restore branch requires incoming r0 != 0 and earlier mode gates; physical retention and reset provenance are unverified.",
+      "No hardware execution, register writes, or dynamic snapshots were performed."
+   ],
+   "psp_register_save_restore_pairs" : [
+      {
+         "register" : "0x03200200",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034000"
+      },
+      {
+         "register" : "0x03200204",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034004"
+      },
+      {
+         "register" : "0x03200208",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034008"
+      },
+      {
+         "register" : "0x0320020c",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x0003400c"
+      },
+      {
+         "register" : "0x03200210",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034020"
+      },
+      {
+         "register" : "0x03200214",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034024"
+      },
+      {
+         "register" : "0x03200218",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034028"
+      },
+      {
+         "register" : "0x0320021c",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x0003402c"
+      },
+      {
+         "register" : "0x03200220",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034040"
+      },
+      {
+         "register" : "0x03200224",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034044"
+      },
+      {
+         "register" : "0x03200228",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034048"
+      },
+      {
+         "register" : "0x0320022c",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x0003404c"
+      },
+      {
+         "register" : "0x03200164",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034060"
+      },
+      {
+         "register" : "0x03200168",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034064"
+      },
+      {
+         "register" : "0x0320016c",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034068"
+      },
+      {
+         "register" : "0x03200170",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x0003406c"
+      },
+      {
+         "register" : "0x03200174",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034070"
+      },
+      {
+         "register" : "0x03200178",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034074"
+      },
+      {
+         "register" : "0x0320017c",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x00034078"
+      },
+      {
+         "register" : "0x03200180",
+         "restore_function" : "00003a68",
+         "save_function" : "00003dd4",
+         "saved_offset" : "0x0003407c"
+      },
+      {
+         "register" : "0x03010a00",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034080"
+      },
+      {
+         "register" : "0x03010a04",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034084"
+      },
+      {
+         "register" : "0x03010a08",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034088"
+      },
+      {
+         "register" : "0x03010a0c",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x0003408c"
+      },
+      {
+         "register" : "0x03010a10",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034090"
+      },
+      {
+         "register" : "0x03010a14",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034094"
+      },
+      {
+         "register" : "0x03010a18",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x00034098"
+      },
+      {
+         "register" : "0x03010a1c",
+         "restore_function" : "00003a40",
+         "save_function" : "00003d98",
+         "saved_offset" : "0x0003409c"
+      },
+      {
+         "register" : "0x03010544",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340a0"
+      },
+      {
+         "register" : "0x03010548",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340a4"
+      },
+      {
+         "register" : "0x0301054c",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340a8"
+      },
+      {
+         "register" : "0x03010550",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340ac"
+      },
+      {
+         "register" : "0x03010554",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340b0"
+      },
+      {
+         "register" : "0x03010558",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340b4"
+      },
+      {
+         "register" : "0x0301055c",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340b8"
+      },
+      {
+         "register" : "0x03200900",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340bc"
+      },
+      {
+         "register" : "0x03200904",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340c0"
+      },
+      {
+         "register" : "0x03200908",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340c4"
+      },
+      {
+         "register" : "0x0320090c",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340c8"
+      },
+      {
+         "register" : "0x03200910",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340cc"
+      },
+      {
+         "register" : "0x03200914",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340d0"
+      },
+      {
+         "register" : "0x03200918",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340d4"
+      },
+      {
+         "register" : "0x0320091c",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340d8"
+      },
+      {
+         "register" : "0x03200924",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340dc"
+      },
+      {
+         "register" : "0x03200920",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340e0"
+      },
+      {
+         "register" : "0x0301056c",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340e4"
+      },
+      {
+         "register" : "0x03010994",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340e8"
+      },
+      {
+         "register" : "0x03010998",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340ec"
+      },
+      {
+         "register" : "0x030109e8",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340f0"
+      },
+      {
+         "register" : "0x030109ec",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340f4"
+      },
+      {
+         "register" : "0x030109f0",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340f8"
+      },
+      {
+         "register" : "0x030109f4",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x000340fc"
+      },
+      {
+         "register" : "0x030109f8",
+         "restore_function" : "00003ae0",
+         "save_function" : "00003e64",
+         "saved_offset" : "0x00034100"
+      }
+   ],
+   "scope" : "Static stock-P3 cleanup writes, direct-call reachability, PSP register save/restore",
+   "source_hashes" : {
+      "exports/boot-trace/t02-thumb-entry.asm" : "ed025f7b4755c489647e939cd3285aafd5a4da220b14da3243129b727c126c82",
+      "exports/cleanup-restart-dataflow/pmfw-cleanup.asm" : "d172fa2f568607dc9e44ff405c2abc27f7b17ed0ea9e997a21a904079ed607e8",
+      "exports/cleanup-restart-dataflow/pmfw-consumers.asm" : "4134e847bcf44d90f63cdf52f5922d0f7ee1f639a7c7263b2b3fcea4cd5b3e24",
+      "exports/cleanup-restart-dataflow/psp-restore.asm" : "0f901db992d5285473d247f0ba4b783d2e1e2ff41727692d2519972931df25ce",
+      "exports/cleanup-restart-dataflow/psp-save.asm" : "0c2e1e0b9cffbd66dd7f4bd48c33d85d7c12bce5476aa083f7ed533bef45ad92",
+      "exports/pmfw-p3-const-full/functions.jsonl" : "617754c44bbc01d7e066429ad29bf24341728375495e7a664875e8c0177fee07",
+      "firmware/smu/smu_fw_robin_1_trim" : "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+      "ghidra/inputs/psp-p3/t02-payload.bin" : "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d"
+   }
+}

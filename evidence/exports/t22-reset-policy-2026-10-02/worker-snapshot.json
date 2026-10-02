@@ -1,0 +1,167 @@
+{
+  "task": {
+    "id": "T22",
+    "title": "Correlate BIOS policy and worker application",
+    "stage": "S04",
+    "skills": [
+      "firmware analysis",
+      "evidence review"
+    ],
+    "priority": 1,
+    "depends_on": [
+      "T01"
+    ],
+    "status": "open",
+    "owner": null,
+    "claimed_at": null,
+    "last_update": null,
+    "claim_until": null,
+    "question": "Capture the active policy, current/requested state, correctly indexed requests/readers, callback registration and parent/child observations together.",
+    "done_when": "Capture the active policy, current/requested state, correctly indexed requests/readers, callback registration and parent/child observations together. Independent reviewer accepts the scoped evidence.",
+    "attempts": [],
+    "issue_url": null
+  },
+  "stage": {
+    "id": "S04",
+    "title": "Video domain + clocks",
+    "column": "left",
+    "row": 2,
+    "state": "partial",
+    "claims": [
+      "C12",
+      "C13",
+      "C14",
+      "C24",
+      "C31",
+      "C38",
+      "C39"
+    ],
+    "next_evidence": "Capture active BIOS clock policy, worker gate words and parent/child observations; table roles and ordered protocol are recovered."
+  },
+  "claims": [
+    {
+      "id": "C12",
+      "title": "Row-6 children 23/22 are VCLK/DCLK",
+      "state": "proven",
+      "kind": "static",
+      "scope": "Independent metrics ABI link identifies software clock roles, not measured clocks.",
+      "sources": [
+        "evidence/notes/domain-identity-and-psp-handoffs.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C13",
+      "title": "Row-6 parent/child protocols and cache bypasses are recovered",
+      "state": "proven",
+      "kind": "static",
+      "scope": "Ordered polls, not required edges; f714 cache can bypass. Physical bit meanings open.",
+      "sources": [
+        "evidence/notes/power-acknowledgment.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C14",
+      "title": "SSIP is preferred policy-copy inference; runtime semantics open",
+      "state": "partial",
+      "kind": "static",
+      "scope": "SSIP aligns all twenty worker slots and a second initializer; CONST.S supports the option. Index19 feeds child12/parent1. Shared opcode prevents raw-bit selection; runtime remains unvalidated.",
+      "sources": [
+        "evidence/notes/isa-cross-reference.md"
+      ],
+      "review": "seeded",
+      "reviewers": []
+    },
+    {
+      "id": "C24",
+      "title": "SMU power already up and secure/LMA bypass paths are reported",
+      "state": "partial",
+      "kind": "community-report",
+      "scope": "One dom6 sample is insufficient for physical power. Master/path-specific filter behavior remains unvalidated.",
+      "sources": [
+        "evidence/community-domain-c.md"
+      ],
+      "review": "pending",
+      "reviewers": []
+    },
+    {
+      "id": "C31",
+      "title": "Upstream reports SMU prerequisite rejection and harvest/fuse leads",
+      "state": "partial",
+      "kind": "community-report",
+      "scope": "Messages 2A/2B reportedly return FD through the documented SMN mailbox. Exact handler identity, prerequisite cause, and fuse interpretation require validation; mailbox aliasing is unresolved.",
+      "sources": [
+        "evidence/shalasere-upstream-2026-10-01.md"
+      ],
+      "review": "pending",
+      "reviewers": []
+    },
+    {
+      "id": "C38",
+      "title": "Worker gate and selector conventions constrain clock application",
+      "state": "partial",
+      "kind": "static",
+      "scope": "Feature13 installs callback24; equal current/requested states skip application. Setter does not advance the gate; setter/read selectors differ by one and readers return caches.",
+      "sources": [
+        "evidence/notes/pmfw-state-gate.md"
+      ],
+      "review": "pending",
+      "reviewers": []
+    },
+    {
+      "id": "C39",
+      "title": "Refined Ghidra export recovers additional functions and calls",
+      "state": "partial",
+      "kind": "static",
+      "scope": "1290 -> 1297 functions; halt_baddata-affected functions 97 -> 7; 158 added direct edges among shared entries. Experimental decoding and remaining truncations are recorded.",
+      "sources": [
+        "evidence/notes/pmfw-state-gate.md"
+      ],
+      "review": "pending",
+      "reviewers": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "T01",
+      "title": "Pin down one reproducible board baseline",
+      "stage": "S01",
+      "skills": [
+        "board access",
+        "Linux"
+      ],
+      "priority": 1,
+      "depends_on": [],
+      "status": "open",
+      "owner": null,
+      "claimed_at": null,
+      "last_update": null,
+      "claim_until": null,
+      "question": "Which BIOS, kernel, candidate and startup route produce the failure?",
+      "done_when": "Attach BIOS/candidate hashes, exact kernel/patches, firmware filename, admission and harvest trace, full timestamped log.",
+      "attempts": [],
+      "issue_url": null
+    }
+  ],
+  "instructions": "Read AGENTS.md and VERIFICATION.md. Sync the repository and check issues before claiming. Workers submit evidence; a different human principal must reproduce and approve. Preserve snapshot SHA-256 in submissions.",
+  "sources": {
+    "evidence/notes/domain-identity-and-psp-handoffs.md": "7cc2ad503617e7486735a5ac9891ef755c5e410b95fe9571368fa954c44d077f",
+    "evidence/notes/power-acknowledgment.md": "400620d20e2984a48071ce102bfda64c471639cf8ba4cdcb78702085cabf8dd8",
+    "evidence/notes/isa-cross-reference.md": "7e44da23213bc27e1e69de6f8862e70d6d75e067874aef4935e4dd434c1b783a",
+    "evidence/community-domain-c.md": "bdc041f3cae676140f3cfb0e3a6e09697d96be5b462d9d315c4857920d077fc7",
+    "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1",
+    "evidence/notes/pmfw-state-gate.md": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
+  },
+  "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+  "repository_url": "https://github.com/hciengr/bc250-vcn-community",
+  "baseline_date": "2026-10-01",
+  "worker": {
+    "id": "codex-t22-reset-policy",
+    "human_principal": "hciengr",
+    "source_commit": "444c2d857470031a4f1c0a4adf20b9e5f6b52af9",
+    "synced_at": "2026-10-02T07:11:58Z"
+  }
+}
