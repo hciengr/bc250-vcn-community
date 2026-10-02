@@ -57,6 +57,16 @@ perl tools/audit-cleanup-restart.pl
 
 Fresh outputs are bundled under `evidence/exports/t22-reset-policy-2026-10-02/`. The underlying firmware, refined graph, instruction export and cleanup auditor are not all included in a fresh community checkout; report those missing inputs. Root source notes: `notes/isa-cross-reference.md`, `notes/pmfw-state-gate.md`, `notes/gfx-to-video-path-trace.md`, `notes/cleanup-restart-dataflow.md`. The local Cadence reference was consulted; its status says the PDF is available, but it is not redistributed here.
 
+## Callback scheduling follow-up
+
+The offline follow-up narrows one previously unresolved edge. Literal `0x0ba4` contains dispatcher address `0x1b154`; routine `0x1024` passes that pointer to `0x26b4` with second argument 4. The recovered `0x26b4` stores its first argument into a queued 12-byte record. This supports a queued callback-dispatch mechanism, not a proven invocation on the board.
+
+The feature hook `0x2e3e8` calls `0x1b1e4(24, 0x2e448)`. The registrar stores the pointer at callback base `0xc700 + 24*4 = 0xc760`. Dispatcher `0x1b154` walks from `0xc700` to `0xc7a0`, a 40-slot range containing that slot, and makes an indirect call through each pointer. These matching producer/consumer addresses provide a static route from feature registration to the policy worker, conditional on the installed pointer remaining present and the dispatcher actually executing.
+
+There is also shared queue bookkeeping: literals `0x0b8c` and `0x17050` both point to `0x7ad8`. Routine `0x1024` attempts to enqueue only when that word is zero and sets it to one on a zero return from `0x26b4`; the dispatcher decrements it when nonzero. This is consistent with limiting outstanding dispatch requests. The source of entry into `0x1024`, queue consumer and cadence are unresolved; this is not evidence of a reset trigger.
+
+`callback-followup.json` retains source hashes, literal bytes and the five recovered decompilations for review. The current-state word `0x13ed4`, requested-state word `0x13ed8` and bookkeeping word `0x7ad8` are distinct. Neither this queue registration nor the SSIP/SSIU store establishes invalidation of applied state. A queued worker could still skip processing when current equals requested.
+
 ## Bounded next step
 
 Identify one specific reset entry or command with input revision and call-site evidence. Test whether it writes the worker current state, changes requested state or reinstalls/invokes callback slot 24. Stop at an unresolved indirect edge rather than labeling it a reset-to-enable connection.

@@ -32,12 +32,16 @@
     "sha256": "6bbbc68d01037ddcf767fb9de0c7b1da9fde3c41b0b9a7e46a7c4f8938a31976"
   },
   {
+    "path": "evidence/exports/t22-reset-policy-2026-10-02/callback-followup.json",
+    "sha256": "1a5d3fa8a21404999e7261582a12dffdf43400507c268c71dcd819f64bee1e0f"
+  },
+  {
     "path": "evidence/exports/t22-reset-policy-2026-10-02/cleanup-audit.json",
     "sha256": "f97ca7ca449bb13396bf1a1d60d9dfde13d946eeec2672a8a96068d94f60ca91"
   },
   {
     "path": "evidence/exports/t22-reset-policy-2026-10-02/manifest.json",
-    "sha256": "3200b22795cabc2d6c052bb1c90717f5c5a4ce227224a6e6ebf8c2d12c29da91"
+    "sha256": "a0cf945ea0d7d7cdcf2d709cfbe01ff0b0a8a915ba9f57024e51fafb57099857"
   },
   {
     "path": "evidence/exports/t22-reset-policy-2026-10-02/trace.json",
