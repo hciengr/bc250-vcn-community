@@ -1,0 +1,127 @@
+{
+   "checks" : [
+      "Ladder header offset and base index: UVD_PGFSM_CONFIG",
+      "Ladder header offset and base index: UVD_PGFSM_STATUS",
+      "Ladder header offset and base index: UVD_POWER_STATUS",
+      "Ladder header offset and base index: CC_UVD_HARVESTING",
+      "Ladder header offset and base index: UVD_JPEG_POWER_STATUS",
+      "Ladder header offset and base index: UVD_MASTINT_EN",
+      "Ladder header offset and base index: UVD_STATUS",
+      "Ladder header offset and base index: UVD_VERSION",
+      "Ladder header offset and base index: UVD_NO_OP",
+      "Ladder header offset and base index: UVD_JPEG_CNTL",
+      "Ladder header offset and base index: UVD_JRBC_STATUS",
+      "Ladder has eleven distinct reference registers",
+      "All-ones POWER_STATUS branch ends in return False",
+      "Clamp return precedes PGFSM and clock-gating writes",
+      "Driver clears REGS_MODE in second CGC_CTRL update",
+      "Loader only updates CGC_CTRL once",
+      "Loader CGC_CTRL update clears only DYN_CLOCK_MODE",
+      "Loader contains no SUVD CGC register programming",
+      "Loader ordinary CGC_GATE clear agrees with driver",
+      "Driver PGFSM waits remain unchecked"
+   ],
+   "clock_comparison" : {
+      "driver_second_ctrl_clear_mask" : "0x7ffff800",
+      "driver_second_ctrl_fields" : [
+         "UVD_CGC_CTRL__UDEC_RE_MODE_MASK",
+         "UVD_CGC_CTRL__UDEC_CM_MODE_MASK",
+         "UVD_CGC_CTRL__UDEC_IT_MODE_MASK",
+         "UVD_CGC_CTRL__UDEC_DB_MODE_MASK",
+         "UVD_CGC_CTRL__UDEC_MP_MODE_MASK",
+         "UVD_CGC_CTRL__SYS_MODE_MASK",
+         "UVD_CGC_CTRL__UDEC_MODE_MASK",
+         "UVD_CGC_CTRL__MPEG2_MODE_MASK",
+         "UVD_CGC_CTRL__REGS_MODE_MASK",
+         "UVD_CGC_CTRL__RBC_MODE_MASK",
+         "UVD_CGC_CTRL__LMI_MC_MODE_MASK",
+         "UVD_CGC_CTRL__LMI_UMC_MODE_MASK",
+         "UVD_CGC_CTRL__IDCT_MODE_MASK",
+         "UVD_CGC_CTRL__MPRD_MODE_MASK",
+         "UVD_CGC_CTRL__MPC_MODE_MASK",
+         "UVD_CGC_CTRL__LBSI_MODE_MASK",
+         "UVD_CGC_CTRL__LRBBM_MODE_MASK",
+         "UVD_CGC_CTRL__WCB_MODE_MASK",
+         "UVD_CGC_CTRL__VCPU_MODE_MASK",
+         "UVD_CGC_CTRL__SCPU_MODE_MASK"
+      ],
+      "matched_gate_clear_mask" : "0x000fffff",
+      "omitted_suvd_sequence" : true,
+      "regs_mode_mask" : "0x00080000",
+      "synthetic_regs_mode_example" : {
+         "initial" : "0x00080000",
+         "loader_final" : "0x00080104",
+         "provenance" : "Arithmetic counterexample, not a captured register value",
+         "reference_final_mgcg_disabled" : "0x00000104"
+      }
+   },
+   "conclusion" : "The all-ones loader path stops before PGFSM/local-CGC programming. Local-CGC omissions concern only the later reachable path and do not explain the earlier clamp observation.",
+   "hardware_operations" : 0,
+   "kind" : "offline_static_comparison",
+   "ladder" : [
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x1f800",
+         "name" : "UVD_PGFSM_CONFIG"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x1f804",
+         "name" : "UVD_PGFSM_STATUS"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x1f810",
+         "name" : "UVD_POWER_STATUS"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x1f81c",
+         "name" : "CC_UVD_HARVESTING"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x1f828",
+         "name" : "UVD_JPEG_POWER_STATUS"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x20000",
+         "name" : "UVD_MASTINT_EN"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x201bc",
+         "name" : "UVD_STATUS"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x20f24",
+         "name" : "UVD_VERSION"
+      },
+      {
+         "base_index" : 1,
+         "mmio_byte_offset" : "0x20efc",
+         "name" : "UVD_NO_OP"
+      },
+      {
+         "base_index" : 0,
+         "mmio_byte_offset" : "0x1e200",
+         "name" : "UVD_JPEG_CNTL"
+      },
+      {
+         "base_index" : 0,
+         "mmio_byte_offset" : "0x1e424",
+         "name" : "UVD_JRBC_STATUS"
+      }
+   ],
+   "limitation" : "Pinned local sources only. No installed-kernel equivalence, physical clamp location, clock activity, or board readiness established.",
+   "runtime_cause" : null,
+   "schema" : 1,
+   "source_sha256" : {
+      "community_enable_vcn.py" : "19f9a01c4183b3a1155a2eb161d4ba2e648ccc1e4ff6ba6d2d29fdbc60e88f3d",
+      "vcn_2_0_0_offset.h" : "026dabdbf0f2b731db71cd99a4f617f347589a61d8015afe29abb82f94ad5eb7",
+      "vcn_2_0_0_sh_mask.h" : "4c9ed19c3e744be938ada218d188c19ad7dc71e0dfb1652637ab116618bd489e",
+      "vcn_v2_0.c" : "753849c7c491b137913668f77b8a3a0f539c7cf5cd46423db22b8f1513d9d9f6"
+   }
+}

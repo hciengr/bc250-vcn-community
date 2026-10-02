@@ -1245,8 +1245,19 @@
       "claim_until": null,
       "question": "Run the sixteen offline auditors on pinned inputs, retain the manifest and review static-versus-fixture scope; do not infer hardware enablement.",
       "done_when": "Run the sixteen offline auditors on pinned inputs, retain the manifest and review static-versus-fixture scope; do not infer hardware enablement. Independent reviewer accepts the scoped evidence.",
-      "attempts": [],
-      "issue_url": null
+      "attempts": [
+        {
+          "author": "hciengr / codex-t23-reproduction",
+          "author_principal": "hciengr",
+          "worker_id": "codex-t23-reproduction",
+          "date": "2026-10-02",
+          "result": "Fresh workspace run reproduces all sixteen baseline outputs exactly. Community clone lacks thirteen auditor scripts, the runner and all six recorded core inputs; standalone policy fixtures pass. Same coordinator: independent acceptance outstanding.",
+          "source": "submissions/t23-reproduction-2026-10-02.md",
+          "review": "pending",
+          "environment": "Pinned main snapshot plus original research workspace; offline only, no board access"
+        }
+      ],
+      "issue_url": "https://github.com/hciengr/bc250-vcn-community/issues/2"
     }
   ],
   "edges": [
@@ -1382,6 +1393,18 @@
       "message_url": null,
       "received_at": "2026-10-01",
       "summary": "Expanded ring-worker/context, late completion, SSIP layout and loader-boundary findings; sixteen offline auditors rerun. Independent review pending."
+    },
+    {
+      "id": "R05",
+      "type": "static-analysis",
+      "status": "pending",
+      "source": "submissions/t23-reproduction-2026-10-02.md",
+      "claims": [
+        "C40"
+      ],
+      "message_url": null,
+      "received_at": "2026-10-02",
+      "summary": "T23 fresh workspace reproduction matches all sixteen baseline outputs. Public checkout missing thirteen auditors and six core inputs; preflight added. Same coordinator, independent acceptance outstanding."
     }
   ],
   "verifications": []

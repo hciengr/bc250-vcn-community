@@ -1,0 +1,422 @@
+{
+   "active" : "0x00007b54",
+   "gate" : {
+      "condition" : "current != requested",
+      "current" : "0x00013ed4",
+      "requested" : "0x00013ed8"
+   },
+   "interpretations" : {
+      "SSIP" : [
+         {
+            "child" : 13,
+            "destination" : "0x00014020",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 0,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x48",
+            "state0_source" : "0x00007b9c",
+            "worker_index" : 0
+         },
+         {
+            "child" : 0,
+            "destination" : "0x0001402c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 1,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x4c",
+            "state0_source" : "0x00007ba0",
+            "worker_index" : 1
+         },
+         {
+            "child" : 1,
+            "destination" : "0x00014038",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 2,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x50",
+            "state0_source" : "0x00007ba4",
+            "worker_index" : 2
+         },
+         {
+            "child" : 2,
+            "destination" : "0x00014044",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 3,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x54",
+            "state0_source" : "0x00007ba8",
+            "worker_index" : 3
+         },
+         {
+            "child" : 3,
+            "destination" : "0x00014050",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 4,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x58",
+            "state0_source" : "0x00007bac",
+            "worker_index" : 4
+         },
+         {
+            "child" : 4,
+            "destination" : "0x0001405c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 5,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x5c",
+            "state0_source" : "0x00007bb0",
+            "worker_index" : 5
+         },
+         {
+            "child" : 5,
+            "destination" : "0x00014068",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 6,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x60",
+            "state0_source" : "0x00007bb4",
+            "worker_index" : 6
+         },
+         {
+            "child" : 6,
+            "destination" : "0x00014074",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 7,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x64",
+            "state0_source" : "0x00007bb8",
+            "worker_index" : 7
+         },
+         {
+            "child" : 7,
+            "destination" : "0x00014080",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 8,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x68",
+            "state0_source" : "0x00007bbc",
+            "worker_index" : 8
+         },
+         {
+            "child" : 10,
+            "destination" : "0x0001408c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 9,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x6c",
+            "state0_source" : "0x00007bc0",
+            "worker_index" : 9
+         },
+         {
+            "child" : 24,
+            "destination" : "0x00014098",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 10,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x70",
+            "state0_source" : "0x00007bc4",
+            "worker_index" : 10
+         },
+         {
+            "child" : 19,
+            "destination" : "0x000140a4",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 11,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x74",
+            "state0_source" : "0x00007bc8",
+            "worker_index" : 11
+         },
+         {
+            "child" : 20,
+            "destination" : "0x000140b0",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 12,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x78",
+            "state0_source" : "0x00007bcc",
+            "worker_index" : 12
+         },
+         {
+            "child" : 21,
+            "destination" : "0x000140bc",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 13,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x7c",
+            "state0_source" : "0x00007bd0",
+            "worker_index" : 13
+         },
+         {
+            "child" : 22,
+            "destination" : "0x000140c8",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 14,
+            "name" : "DCLK",
+            "source_formula" : "policy + 0x64*state + 0x80",
+            "state0_source" : "0x00007bd4",
+            "worker_index" : 14
+         },
+         {
+            "child" : 23,
+            "destination" : "0x000140d4",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 15,
+            "name" : "VCLK",
+            "source_formula" : "policy + 0x64*state + 0x84",
+            "state0_source" : "0x00007bd8",
+            "worker_index" : 15
+         },
+         {
+            "child" : 11,
+            "destination" : "0x000140e0",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 16,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x88",
+            "state0_source" : "0x00007bdc",
+            "worker_index" : 16
+         },
+         {
+            "child" : 8,
+            "destination" : "0x000140ec",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 17,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x8c",
+            "state0_source" : "0x00007be0",
+            "worker_index" : 17
+         },
+         {
+            "child" : 9,
+            "destination" : "0x000140f8",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 18,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x90",
+            "state0_source" : "0x00007be4",
+            "worker_index" : 18
+         },
+         {
+            "child" : 12,
+            "destination" : "0x00014104",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 19,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x94",
+            "state0_source" : "0x00007be8",
+            "worker_index" : 19
+         }
+      ],
+      "SSIU" : [
+         {
+            "child" : 0,
+            "destination" : "0x0001402c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 0,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x48",
+            "state0_source" : "0x00007b9c",
+            "worker_index" : 1
+         },
+         {
+            "child" : 1,
+            "destination" : "0x00014038",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 1,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x4c",
+            "state0_source" : "0x00007ba0",
+            "worker_index" : 2
+         },
+         {
+            "child" : 2,
+            "destination" : "0x00014044",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 2,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x50",
+            "state0_source" : "0x00007ba4",
+            "worker_index" : 3
+         },
+         {
+            "child" : 3,
+            "destination" : "0x00014050",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 3,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x54",
+            "state0_source" : "0x00007ba8",
+            "worker_index" : 4
+         },
+         {
+            "child" : 4,
+            "destination" : "0x0001405c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 4,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x58",
+            "state0_source" : "0x00007bac",
+            "worker_index" : 5
+         },
+         {
+            "child" : 5,
+            "destination" : "0x00014068",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 5,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x5c",
+            "state0_source" : "0x00007bb0",
+            "worker_index" : 6
+         },
+         {
+            "child" : 6,
+            "destination" : "0x00014074",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 6,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x60",
+            "state0_source" : "0x00007bb4",
+            "worker_index" : 7
+         },
+         {
+            "child" : 7,
+            "destination" : "0x00014080",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 7,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x64",
+            "state0_source" : "0x00007bb8",
+            "worker_index" : 8
+         },
+         {
+            "child" : 10,
+            "destination" : "0x0001408c",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 8,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x68",
+            "state0_source" : "0x00007bbc",
+            "worker_index" : 9
+         },
+         {
+            "child" : 24,
+            "destination" : "0x00014098",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 9,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x6c",
+            "state0_source" : "0x00007bc0",
+            "worker_index" : 10
+         },
+         {
+            "child" : 19,
+            "destination" : "0x000140a4",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 10,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x70",
+            "state0_source" : "0x00007bc4",
+            "worker_index" : 11
+         },
+         {
+            "child" : 20,
+            "destination" : "0x000140b0",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 11,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x74",
+            "state0_source" : "0x00007bc8",
+            "worker_index" : 12
+         },
+         {
+            "child" : 21,
+            "destination" : "0x000140bc",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 12,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x78",
+            "state0_source" : "0x00007bcc",
+            "worker_index" : 13
+         },
+         {
+            "child" : 22,
+            "destination" : "0x000140c8",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 13,
+            "name" : "DCLK",
+            "source_formula" : "policy + 0x64*state + 0x7c",
+            "state0_source" : "0x00007bd0",
+            "worker_index" : 14
+         },
+         {
+            "child" : 23,
+            "destination" : "0x000140d4",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 14,
+            "name" : "VCLK",
+            "source_formula" : "policy + 0x64*state + 0x80",
+            "state0_source" : "0x00007bd4",
+            "worker_index" : 15
+         },
+         {
+            "child" : 11,
+            "destination" : "0x000140e0",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 15,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x84",
+            "state0_source" : "0x00007bd8",
+            "worker_index" : 16
+         },
+         {
+            "child" : 8,
+            "destination" : "0x000140ec",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 16,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x88",
+            "state0_source" : "0x00007bdc",
+            "worker_index" : 17
+         },
+         {
+            "child" : 9,
+            "destination" : "0x000140f8",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 17,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x8c",
+            "state0_source" : "0x00007be0",
+            "worker_index" : 18
+         },
+         {
+            "child" : 12,
+            "destination" : "0x00014104",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 18,
+            "name" : "other",
+            "source_formula" : "policy + 0x64*state + 0x90",
+            "state0_source" : "0x00007be4",
+            "worker_index" : 19
+         },
+         {
+            "child" : null,
+            "destination" : "0x00014110",
+            "initial_source_word" : "0x00000000",
+            "iteration" : 19,
+            "name" : "outside traced worker range",
+            "source_formula" : "policy + 0x64*state + 0x94",
+            "state0_source" : "0x00007be8",
+            "worker_index" : 20
+         }
+      ]
+   },
+   "limitation" : "Cadence ISA pp620-622 assigns identical opcode bits to SSIP and SSIU under different configurations. Target configuration/runtime remains unverified. Source words are not a BIOS-upload capture. No row-7 tuple input is used by this copy loop.",
+   "mode" : "Static dataflow only; no runtime input or hardware execution",
+   "preferred_static_interpretation" : "SSIP: both examined producer/consumer layouts align; CONST.S encoding also matches the documented Floating-Point Coprocessor option",
+   "semantics" : "20 hardware-loop iterations; unsigned source converted to float. Shared opcode: SSIP stores at old base, SSIU at base+12; both update base by 12.",
+   "size" : "0x49c",
+   "staging" : "0x00007ff0",
+   "table_id" : 0,
+   "upload_callback" : "0x0001bbbc"
+}

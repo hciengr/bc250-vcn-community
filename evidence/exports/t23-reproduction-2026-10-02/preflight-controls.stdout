@@ -1,0 +1,5 @@
+PASS missing prerequisites rejected
+PASS matching recorded minimums recognized without execution
+PASS changed input hash rejected
+PASS changed script hash rejected
+PASS exact bundled script alias recognized

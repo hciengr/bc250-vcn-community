@@ -1,0 +1,37 @@
+[
+  {
+    "name": "community-preflight",
+    "command": [
+      "ruby",
+      "/home/hci/Desktop/BC250/community/t23-review/audit-tools/check-suite-inputs.rb",
+      "/home/hci/Desktop/BC250/community/t23-review"
+    ],
+    "expected_exit": 1,
+    "actual_exit": 1,
+    "stdout_sha256": "63ddaf7c3cfb079a24fd1cd2f289cbe3195a26e92507b6266a01de1ecd7f698a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "workspace-preflight",
+    "command": [
+      "ruby",
+      "/home/hci/Desktop/BC250/community/t23-review/audit-tools/check-suite-inputs.rb",
+      "/home/hci/Desktop/BC250"
+    ],
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "stdout_sha256": "703b52e076596dd70f5a8458c5b8b47a860812181d1996ce34d488cd1a536dbf",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "preflight-controls",
+    "command": [
+      "ruby",
+      "/home/hci/Desktop/BC250/community/t23-review/audit-tools/test-suite-inputs.rb"
+    ],
+    "expected_exit": 0,
+    "actual_exit": 0,
+    "stdout_sha256": "fd7390daf85292b382e70159862e4a9dbee13db65cf174d6663caca5e73d026c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "ruby",
+    "audit-tools/test-vcn-policy-coverage.rb"
+  ],
+  "exit_code": 0,
+  "kind": "synthetic fixtures",
+  "stdout_sha256": "7e5922d5c0adbf03bd7bf59cd0063e8ff1b6ac53ab10ed82150ada4f6309fa6e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hardware_operations": 0
+}

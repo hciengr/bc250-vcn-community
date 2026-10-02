@@ -1,0 +1,6 @@
+stock_bl: key_id_missing (0xffff0008)
+stock_tos: key_id_missing (0xffff0008)
+reference_key: signature_valid
+wrong_usage_fixture: usage_rejected (0x80000205)
+corrupted_image: signature_invalid
+All five expected outcomes confirmed. Report: exports/navi10-vcn-auth-check/report.json

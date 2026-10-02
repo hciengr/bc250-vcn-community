@@ -1,0 +1,103 @@
+{
+   "completion_mask" : 15,
+   "completion_register_pmfw_local" : "0x03270100",
+   "descriptor_store_checks" : [
+      {
+         "offset" : "0x00000010",
+         "pc" : "0x0003a87d",
+         "store" : "a8 to descriptor byte"
+      },
+      {
+         "offset" : "0x00000011",
+         "pc" : "0x0003a880",
+         "store" : "a8 to descriptor byte"
+      },
+      {
+         "offset" : "0x00000010",
+         "pc" : "0x0003a8c9",
+         "store" : "a8 to descriptor byte"
+      },
+      {
+         "offset" : "0x00000011",
+         "pc" : "0x0003a8cc",
+         "store" : "a8 to descriptor byte"
+      }
+   ],
+   "descriptor_values_from_instruction_trace" : {
+      "channel" : 0,
+      "wait_bypass" : 0
+   },
+   "firmware_sha256" : "8c29cf0b1c5ea713f1f8ae95ed4c1dc547d00c530530c131950cfd5eb08c6675",
+   "hardware_operations" : 0,
+   "independently_decoded_calls" : [
+      {
+         "pc" : "0x0003a883",
+         "target" : "0x00039488"
+      },
+      {
+         "pc" : "0x0003a888",
+         "target" : "0x000019ec"
+      },
+      {
+         "pc" : "0x0003a88f",
+         "target" : "0x000398b0"
+      },
+      {
+         "pc" : "0x0003a8cf",
+         "target" : "0x00039488"
+      },
+      {
+         "pc" : "0x0003a8d4",
+         "target" : "0x000019ec"
+      },
+      {
+         "pc" : "0x0003a8db",
+         "target" : "0x000398b0"
+      },
+      {
+         "pc" : "0x000369ad",
+         "target" : "0x000253c4"
+      },
+      {
+         "pc" : "0x000253db",
+         "target" : "0x0003a850"
+      },
+      {
+         "pc" : "0x000253f7",
+         "target" : "0x0003a89c"
+      },
+      {
+         "pc" : "0x000251f7",
+         "target" : "0x000360e8"
+      },
+      {
+         "pc" : "0x000251fe",
+         "target" : "0x00000fe4"
+      },
+      {
+         "pc" : "0x00025205",
+         "target" : "0x00000fa8"
+      },
+      {
+         "pc" : "0x00001a2d",
+         "target" : "0x00001b78"
+      },
+      {
+         "pc" : "0x00039434",
+         "target" : "0x000030b0"
+      },
+      {
+         "pc" : "0x00039339",
+         "target" : "0x000030b0"
+      }
+   ],
+   "limitations" : "Selected raw checks plus static instruction trace. No live device, payload result, host mapping or coherency validation.",
+   "live_completion_established" : false,
+   "outcomes" : {
+      "0" : "normal return",
+      "15" : "fatal handler; no ordinary return",
+      "other" : "continue polling"
+   },
+   "software_status_byte" : "0x0000aa94",
+   "submit_busy_register_pmfw_local" : "0x03270d00"
+}
