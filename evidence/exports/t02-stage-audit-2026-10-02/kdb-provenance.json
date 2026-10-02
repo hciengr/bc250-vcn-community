@@ -1,0 +1,63 @@
+{
+   "destination_analysis_va" : "0xe25834",
+   "firmware" : [
+      {
+         "file" : "ghidra/inputs/psp-p3/t02-payload.bin",
+         "sha256" : "19f091ded7bea3ee3c61adc3b6a7e1d2a48c8a7817f885bdb43b9c1f2b6bc43d"
+      },
+      {
+         "file" : "ghidra/inputs/psp-p3/t28-payload.bin",
+         "sha256" : "edae7f4dcdbeab4267b5201218ea7c1be56e8d6cfb9bf1909fba893eb13042c9"
+      }
+   ],
+   "inventory" : {
+      "file" : "analysis/psp_extract/BC250_3.00_entries.json",
+      "sha256" : "7cec1c7eec043fabdfbb46e6ae7efcd34ee73dcdb023f0b61226868fc5b24ccd"
+   },
+   "missing_id_gate" : "No matching ID returns 0xffff0008 before SVC 0x87",
+   "objects" : [
+      {
+         "excluded_trailer_bytes" : 512,
+         "file" : "analysis/psp_extract/BC250_3.00_unique/BL_PUBLIC_KEY~0x50_1",
+         "file_bytes" : 3536,
+         "file_sha256" : "78c3fe9b99ca6c815715303c440de2a5ece6ef267ee5b50c89f559fe59eb963a",
+         "initializer_copy_bytes" : 3024,
+         "initializer_copy_sha256" : "86393582695a6b1473398458a22d2b7567c9a804ab873675a99b1872dcec742f",
+         "kdb_bytes" : 2768,
+         "kdb_only_sha256" : "cce2f63bde701768c46630aed958941f4f913859560857e2602cbe49e83197bf",
+         "rom_offset" : "0x9dad00",
+         "rom_slice_equal" : true
+      },
+      {
+         "excluded_trailer_bytes" : 512,
+         "file" : "analysis/psp_extract/BC250_3.00_unique/TOS_PUBLIC_KEY~0x51_1",
+         "file_bytes" : 1856,
+         "file_sha256" : "1ca4d22f6eb87b0806aeb3061e0e4a31c567ea2c1b21df3d2132a1c4b90c0ede",
+         "initializer_copy_bytes" : 1344,
+         "initializer_copy_sha256" : "b5c9319705c65679225b7b952cff79b3dbcdda7c195596845031c29808b722ba",
+         "kdb_bytes" : 1088,
+         "kdb_only_sha256" : "cfc1b0ef089c8dd021f7d1abd7f1fe9da525119d1e5919751e8a9354deac8803",
+         "rom_offset" : "0x9dbb00",
+         "rom_slice_equal" : true
+      }
+   ],
+   "provenance" : "ROM-to-extraction byte identity verified; staging producer and runtime byte identity unresolved",
+   "rom" : {
+      "file" : "firmware/stock/BC250_3.00.ROM",
+      "sha256" : "07595ca3aecf8a4caa28a397b5298f3946a1b769f87b16f67adc369c3f69045c"
+   },
+   "staging_source" : "0x04000000 + (u32[boot_context+0x23c] & 0x03ffffff) + 0x784000",
+   "svc_dispatch" : [
+      {
+         "svc" : "0x73",
+         "table_word_offset" : "0x466c",
+         "target" : "0x4c7e"
+      },
+      {
+         "svc" : "0x87",
+         "table_word_offset" : "0x46bc",
+         "target" : "0x4dce"
+      }
+   ],
+   "usage_gate" : "After ID match: SVC 0x87 returns (kernel byte[0x6007] == 0)"
+}

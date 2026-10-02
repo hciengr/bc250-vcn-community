@@ -1,0 +1,38 @@
+[
+  {
+    "path": "controls.json",
+    "sha256": "98e5456144f9635b70bead7364821e4b18e7ee3430013bc20a1114bf572b447e"
+  },
+  {
+    "path": "inputs.json",
+    "sha256": "08aebb1f5ac539bfbc8c8c77c43af80809e640b4c929d5b844c0f940e7dfe8f0"
+  },
+  {
+    "path": "kdb-provenance.json",
+    "sha256": "3239b2f4da123038fa5f64928ae70fb821c89be596d9b67ac58a552f321a34dc"
+  },
+  {
+    "path": "load-contract.json",
+    "sha256": "7ba3c824e83c39dc86efaa3bee470a0f721fc35974a28ba6cfb9f955dc9d6202"
+  },
+  {
+    "path": "load-reset-gate.json",
+    "sha256": "86b09e91edf357ad1f4e44bf0fef663c8c780695cff936104c674be842c6d466"
+  },
+  {
+    "path": "local-device-inventory.json",
+    "sha256": "5e8ba6c559299a4b5717038daaa81ed118e9d1915748c255aeed020c0980cf18"
+  },
+  {
+    "path": "navi10-header.json",
+    "sha256": "da4872a62e07d5b87aa185d472a200acdc99cd4cddacbd171637dc368347a600"
+  },
+  {
+    "path": "vangogh-header.json",
+    "sha256": "b671be98722dcfea5e86bbabe0f261939f2ec68ae2d559e1493e11092430a3c3"
+  },
+  {
+    "path": "worker-snapshot.json",
+    "sha256": "2c4044323fb734bb73f4e2753f506fad1d3540af6e908c674e62cd3931a8bc66"
+  }
+]

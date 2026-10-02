@@ -1,0 +1,10 @@
+{
+  "sha256": "eafebdb4043b825b12826198a7d76d8acc4e251fb102329dc1c78cf7bdcc15e2",
+  "payload_offset": 256,
+  "payload_length": 572112,
+  "first_header_key_id": "70ec3e2d8a694792ac7969ff8ac9caca",
+  "byte_7f": 0,
+  "word_18": 0,
+  "retry_after_failed_first_lookup": false,
+  "scope": "Conditional on this exact payload header reaching analysis VA e0a0e8 unchanged; no live execution evidence"
+}

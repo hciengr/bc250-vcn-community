@@ -1,0 +1,63 @@
+[
+  {
+    "control": 0,
+    "kind": "synthetic branch model",
+    "actual": {
+      "attempts": 1,
+      "returned_index": 0,
+      "returned_status": 8
+    }
+  },
+  {
+    "control": 1,
+    "kind": "synthetic branch model",
+    "actual": {
+      "attempts": 1,
+      "returned_index": 0,
+      "returned_status": 8
+    }
+  },
+  {
+    "control": 2,
+    "kind": "synthetic branch model",
+    "actual": {
+      "attempts": 2,
+      "returned_index": 1,
+      "returned_status": 0
+    }
+  },
+  {
+    "control": 3,
+    "kind": "synthetic branch model",
+    "actual": {
+      "attempts": 4,
+      "returned_index": 4,
+      "returned_status": 8
+    }
+  },
+  {
+    "control": 4,
+    "kind": "synthetic branch model",
+    "actual": {
+      "attempts": 1,
+      "returned_index": 0,
+      "returned_status": 0
+    }
+  },
+  {
+    "control": "valid synthetic file",
+    "passed": true
+  },
+  {
+    "control": "invalid input",
+    "rejection": "Input SHA-256 mismatch"
+  },
+  {
+    "control": "invalid input",
+    "rejection": "Truncated outer header"
+  },
+  {
+    "control": "invalid input",
+    "rejection": "Invalid payload bounds"
+  }
+]
