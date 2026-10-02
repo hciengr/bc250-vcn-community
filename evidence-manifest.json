@@ -32,6 +32,18 @@
     "sha256": "6bbbc68d01037ddcf767fb9de0c7b1da9fde3c41b0b9a7e46a7c4f8938a31976"
   },
   {
+    "path": "evidence/exports/t02-route-comparison-2026-10-02/manifest.json",
+    "sha256": "c5e6fc13e3cc38f2a1eb6a08d238bf13769da58db731ae1625dd47f6b4bad079"
+  },
+  {
+    "path": "evidence/exports/t02-route-comparison-2026-10-02/source-inspection.json",
+    "sha256": "ad3d840f214222972ed4b46edcfb279c2a266441878f0936f6eab11ea4a61487"
+  },
+  {
+    "path": "evidence/exports/t02-route-comparison-2026-10-02/worker-snapshot.json",
+    "sha256": "a30b9b4243b0a73038bfd9e98b264ae3adc5d760ee9eb48923878259351974e4"
+  },
+  {
     "path": "evidence/exports/t02-stage-audit-2026-10-02/controls.json",
     "sha256": "98e5456144f9635b70bead7364821e4b18e7ee3430013bc20a1114bf572b447e"
   },

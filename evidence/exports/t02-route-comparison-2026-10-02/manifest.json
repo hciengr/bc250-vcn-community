@@ -1,0 +1,14 @@
+[
+  {
+    "path": "evidence/exports/t02-route-comparison-2026-10-02/source-inspection.json",
+    "sha256": "ad3d840f214222972ed4b46edcfb279c2a266441878f0936f6eab11ea4a61487"
+  },
+  {
+    "path": "evidence/exports/t02-route-comparison-2026-10-02/worker-snapshot.json",
+    "sha256": "a30b9b4243b0a73038bfd9e98b264ae3adc5d760ee9eb48923878259351974e4"
+  },
+  {
+    "path": "audit-tools/t02-upstream-route.rb",
+    "sha256": "94520dbce3954790ee5c3707e02315b23fbd5813d163c6e8248142ffbdfe12d4"
+  }
+]
