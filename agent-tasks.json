@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+  "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
   "tasks": [
     {
       "task": {
@@ -66,7 +66,25 @@
       "sources": {
         "evidence/notes/driver-to-bc250-enablement.md": "1e9ab39c5a2f6ce4b52f0ddf343ac38bc274de5a57d6128e7bd4e85387ab8516"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -199,7 +217,25 @@
         "evidence/exports/vcn-kdb-provenance/README.md": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78",
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -317,7 +353,25 @@
         "evidence/exports/vcn-kdb-provenance/README.md": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78",
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -396,7 +450,25 @@
       "sources": {
         "evidence/notes/driver-to-bc250-enablement.md": "1e9ab39c5a2f6ce4b52f0ddf343ac38bc274de5a57d6128e7bd4e85387ab8516"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -505,7 +577,25 @@
         "evidence/exports/vcn-kdb-provenance/README.md": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78",
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -574,7 +664,25 @@
         "evidence/notes/vcn-startup-dependencies.md": "5345319eda8892343b507d845abe37cb42fd4aa82591d20088d0134ee31ba8da",
         "evidence/analysis/steamdeck-comparison/vangogh-candidate.json": "99fa5c574154af68dbcf01b75a6d12591b2b0ba455905b744eaa1698437e8ecc"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -735,7 +843,25 @@
         "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1",
         "evidence/notes/pmfw-state-gate.md": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -876,7 +1002,25 @@
         "evidence/exports/vcn-kdb-provenance/README.md": "39691be34f07f220bd499ef61e5e8056cfe9716e981bab90cb946db99d7bae78",
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1027,7 +1171,25 @@
         "evidence/notes/harvest-indirect-write-path.md": "90b4652ea0e5b0fec56c0f5ac5aec469167d490813865e7c157b2d48f06928ef",
         "evidence/notes/psp-smu-ordering-and-register-roles.md": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1165,7 +1327,25 @@
         "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1",
         "evidence/notes/pmfw-state-gate.md": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1290,7 +1470,25 @@
       "sources": {
         "evidence/notes/driver-to-bc250-enablement.md": "1e9ab39c5a2f6ce4b52f0ddf343ac38bc274de5a57d6128e7bd4e85387ab8516"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1395,7 +1593,25 @@
       "sources": {
         "evidence/notes/vcn-startup-dependencies.md": "5345319eda8892343b507d845abe37cb42fd4aa82591d20088d0134ee31ba8da"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1476,7 +1692,25 @@
       "sources": {
         "evidence/notes/driver-to-bc250-enablement.md": "1e9ab39c5a2f6ce4b52f0ddf343ac38bc274de5a57d6128e7bd4e85387ab8516"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1637,7 +1871,25 @@
         "evidence/notes/harvest-indirect-write-path.md": "90b4652ea0e5b0fec56c0f5ac5aec469167d490813865e7c157b2d48f06928ef",
         "evidence/notes/psp-smu-ordering-and-register-roles.md": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1815,7 +2067,25 @@
         "evidence/notes/psp-vcn-completion-state-flow.md": "789f957bd1e6d408f47529f368a880234d16ef7413b1e7d2c9afb125c1acb478",
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -1967,7 +2237,25 @@
         "evidence/notes/harvest-indirect-write-path.md": "90b4652ea0e5b0fec56c0f5ac5aec469167d490813865e7c157b2d48f06928ef",
         "evidence/notes/psp-smu-ordering-and-register-roles.md": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2119,7 +2407,25 @@
         "evidence/notes/harvest-indirect-write-path.md": "90b4652ea0e5b0fec56c0f5ac5aec469167d490813865e7c157b2d48f06928ef",
         "evidence/notes/psp-smu-ordering-and-register-roles.md": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2202,7 +2508,25 @@
         "evidence/notes/psp-service-chain.md": "3fbc36fec9f083b1924d20a7349a311a83340217d07ff2f584fe245b75b4526c",
         "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2340,7 +2664,25 @@
         "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1",
         "evidence/notes/pmfw-state-gate.md": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2472,7 +2814,25 @@
         "evidence/notes/vcn-priority-audit-2026-10-01.md": "b884c1d46d4ca04ca234fb3ee7ef687c0481b4b8410e4a5587a46390d98adbed",
         "evidence/notes/psp-smu-ordering-and-register-roles.md": "3a1aed3f6a30d7f8bbf1193bf998e371710996d00fd3d7786a87ae85dd5d1fee"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2569,7 +2929,25 @@
         "evidence/exports/vcn-clamp-boundary/audit.json": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338",
         "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/manifest.json": "eed42a5e62456a8196d812122130f62dd8a13dd33aa4b18c76c70455b3a37d9b"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2730,7 +3108,25 @@
         "evidence/shalasere-upstream-2026-10-01.md": "85394e5535edbc859f8349c5d842893ae02a804faf076e64cef78259583f97e1",
         "evidence/notes/pmfw-state-gate.md": "43eb57e8b4c0bbc5b60afd30f495e8eb43f6566fede739de19d0c20414bb6e27"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     },
@@ -2802,7 +3198,25 @@
         "evidence/exports/vcn-clamp-boundary/audit.json": "9503146a90bf472c62eaeca9b5ad214223a871390df1201f1074270e4b0d8338",
         "evidence/exports/vcn-clamp-boundary/community-review-2026-10-01/manifest.json": "eed42a5e62456a8196d812122130f62dd8a13dd33aa4b18c76c70455b3a37d9b"
       },
-      "ledger_sha256": "541cdc29d87939f6603851deefb31dfff4175e3b2881acd6e10a504ad4622f7a",
+      "contributors": [
+        {
+          "handle": "daveconde",
+          "profile_url": "https://github.com/daveconde",
+          "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+          "project": "bc250-vcn-enable",
+          "contribution": "VCN enablement tooling and investigation",
+          "recognition": "Contributor confirmed by hciengr"
+        },
+        {
+          "handle": "rw-r-r-0644",
+          "profile_url": "https://github.com/rw-r-r-0644",
+          "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+          "project": "bc250-smu-unlock",
+          "contribution": "BC250 SMU access and unlock tooling",
+          "recognition": "Contributor confirmed by hciengr"
+        }
+      ],
+      "ledger_sha256": "9f0232fd4a6e36d82968bc8c3408f0e33aba321d522154f95e3729d81b74fc52",
       "repository_url": "https://github.com/hciengr/bc250-vcn-community",
       "baseline_date": "2026-10-01"
     }

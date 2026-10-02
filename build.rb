@@ -39,7 +39,7 @@ packets=d['tasks'].map do |t|
  {task:t,stage:stage,claims:claims,dependencies:d['tasks'].select{|x|t['depends_on'].include?(x['id'])},
  instructions:'Read AGENTS.md and VERIFICATION.md. Sync the repository and check issues before claiming. Workers submit evidence; a different human principal must reproduce and approve. Preserve snapshot SHA-256 in submissions.',
  sources:claims.flat_map{|c|c['sources']}.uniq.to_h{|p|[p,Digest::SHA256.file(File.join(root,p)).hexdigest]},
- ledger_sha256:ledger_hash,repository_url:d['repository_url'],baseline_date:d['baseline_date']}
+ contributors:d.fetch('contributors',[]),ledger_sha256:ledger_hash,repository_url:d['repository_url'],baseline_date:d['baseline_date']}
 end
 File.write("#{root}/agent-tasks.json",JSON.pretty_generate({schema_version:2,ledger_sha256:ledger_hash,tasks:packets})+"\n")
 File.write("#{root}/assets/data.js",'window.VCN_DATA = '+JSON.generate(d).gsub('<','\\u003c')+";\nwindow.VCN_TASK_PACKETS = "+JSON.generate(packets).gsub('<','\u003c')+";\n")

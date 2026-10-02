@@ -1384,5 +1384,23 @@
       "summary": "Expanded ring-worker/context, late completion, SSIP layout and loader-boundary findings; sixteen offline auditors rerun. Independent review pending."
     }
   ],
-  "verifications": []
+  "verifications": [],
+  "contributors": [
+    {
+      "handle": "daveconde",
+      "profile_url": "https://github.com/daveconde",
+      "project_url": "https://github.com/daveconde/bc250-vcn-enable",
+      "project": "bc250-vcn-enable",
+      "contribution": "VCN enablement tooling and investigation",
+      "recognition": "Contributor confirmed by hciengr"
+    },
+    {
+      "handle": "rw-r-r-0644",
+      "profile_url": "https://github.com/rw-r-r-0644",
+      "project_url": "https://github.com/rw-r-r-0644/bc250-smu-unlock",
+      "project": "bc250-smu-unlock",
+      "contribution": "BC250 SMU access and unlock tooling",
+      "recognition": "Contributor confirmed by hciengr"
+    }
+  ]
 }

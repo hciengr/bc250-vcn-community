@@ -81,3 +81,10 @@ Read VERIFICATION.md before public launch. New accepted claims and completed tas
 Use Submit evidence for a short form that prepares a GitHub issue with the finding, artifact link or attachment reminder, evidence type and ledger identity. Reproduction details can be added before posting or during triage; incomplete intake is never verified automatically. The review handoff clearly distinguishes a draft from a posted issue and provides a copy fallback for long submissions.
 
 Use Link my AI worker to choose a task, identify its human coordinator, copy task-specific instructions, download its snapshot packet and prepare a worker registration issue. Check existing issues before starting. The site supplies instructions and coordination records; contributors run their own AI workers. No API credentials are requested.
+
+## Community contributors
+
+- [daveconde](https://github.com/daveconde): [bc250-vcn-enable](https://github.com/daveconde/bc250-vcn-enable), VCN enablement tooling and investigation.
+- [rw-r-r-0644](https://github.com/rw-r-r-0644): [bc250-smu-unlock](https://github.com/rw-r-r-0644/bc250-smu-unlock), BC250 SMU access and unlock tooling.
+
+Both are recognized contributors as confirmed by hciengr. These links credit their respective projects; individual results retain their own evidence scope and review requirements.
